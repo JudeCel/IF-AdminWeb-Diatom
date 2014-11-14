@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>Home | InsiderFocus Entertainment System</title>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" href="scripts/vendor/slickGrid/slick.grid.css">
+	<link rel="stylesheet" href="scripts/vendor/slickGrid/slick.headerbuttons.css">
+	<link rel="stylesheet" href="scripts/vendor/bootstrap-select.css">
+	<link rel="stylesheet" href="scripts/vendor/select2/select2.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="scripts/vendor/jcarousel/tango/skin.css"/>
+	<link rel="stylesheet" href="scripts/vendor/bootstrap-datepicker.css">
+	<!-- When you load angular at the bottom, you need to create the "ng-cloak" rules yourself -->
+	<style type="text/css">
+		@charset "UTF-8";
+		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+			display: none;
+		}
+
+		ng\:form {
+			display: block;
+		}
+	</style>
+
+	<!--<script type="text/javascript">-->
+		<!--if (window.location.protocol != "https:")-->
+			<!--window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);-->
+
+		<!--window.console = window.console || {};-->
+		<!--window.console.log = window.console.log || function () {};-->
+		<!--var _gaq = _gaq || [];-->
+		<!--var _aaq = _aaq || [];-->
+	<!--</script>-->
+</head>
+<body ng-app="adminWebApp" ng-controller="MainCtrl">
+
+<!--[if lt IE 9]>
+<script src="scripts/vendor/es5-shim.min.js"></script>
+<script src="scripts/vendor/json3.min.js"></script>
+<![endif]-->
+
+<div class="mf-full-height-wrapper">
+	<div class="mf-full-height-limit feedback-push"></div>
+</div>
+
+<div id="appWrapper" class="sticky-footer-wrapper date-picker-container mf-fill-height-container">
+	<div class="container-fluid sticky-footer-app">
+		<div ng-include src="page.header" ng-show="page.header" class="pagePadding app-header ng-cloak"></div>
+		<div ng-class="{loadingBlocker:loading}" style="display:none;"><img src="/Admin/images/spinner.gif"/></div>
+		<div ng-view></div>
+		<div class="feedback-push"></div>
+	</div>
+</div>
+<div class="feedback-footer">
+	<div ng-include src="page.footer" ng-show="page.footer" class="app-footer ng-cloak" style="width: 100%;"></div>
+</div>
+
+<div id="lightboxBG">
+	&nbsp;
+</div>
+
+<!--<script src="/AdminGS/ifConfig"></script>-->
+<script src="ifConfig.js"></script>
+<script>
+	if (!window.ifConfig) {
+		window.location.href = window.location.protocol + '//' + window.location.host + '/logout.aspx';
+	}
+</script>
+
+<!-- bower components -->
+<script src="components/jquery/jquery.min.js"></script>
+<script src="components/underscore/underscore-min.js"></script>
+
+<!-- vendor -->
+<script src="scripts/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="scripts/vendor/angular/angular.min.js"></script>
+<script src="scripts/vendor/angular/angular-route.min.js"></script>
+<script src="scripts/vendor/angular/angular-resource.min.js"></script>
+<script src="scripts/vendor/angular/angular-loader.min.js"></script>
+<script src="scripts/vendor/angular-strap.js"></script>
+<script src="scripts/vendor/angular/angular-sanitize.min.js"></script>
+<script src="scripts/vendor/twitter-bootstrap/bootstrap.min.js"></script>
+<script src="scripts/vendor/jquery.event.drag-2.0.min.js"></script>
+<script src="scripts/vendor/jquery.cookie.js"></script>
+<script src="scripts/vendor/bootstrap-select.js"></script>
+<script src="scripts/vendor/browser-detect.js"></script>
+<script src="scripts/vendor/bootstrap-datepicker.js"></script>
+<script src="scripts/vendor/sortable.js"></script>
+<script src="scripts/vendor/select2/select2.min.js"></script>
+<script src="scripts/vendor/html5placeholder.jquery.js"></script>
+<script src="scripts/vendor/angular-ui/common/module.js"></script>
+<script src="scripts/vendor/angular-ui/modules/directives/select2/select2.js"></script>
+<script src="scripts/vendor/angularui-bootstrap/ui-bootstrap-custom-tpls-0.6.0.min.js"></script>
+<script src="scripts/vendor/jcarousel/jquery.jcarousel.min.js"></script>
+
+<!-- build:js scripts/scripts.js-->
+<script src="scripts/vendor/stacktrace.js"></script>
+<script src="scripts/vendor/swfobject.js"></script>
+<script src="scripts/vendor/swfupload.js"></script>
+
+
+<script src="app.js"></script>
+<script src="scripts/main.js"></script>
+<script src="pages/title/title.js"></script>
+<script src="pages/home/home.js"></script>
+<script src="pages/home/homeDirective.js"></script>
+<script src="pages/home/homeCtrlResolver.js"></script>
+<script src="pages/home/homeResource.js"></script>
+
+<script src="pages/manageProfile/manageProfile.js"></script>
+<script src="pages/manageProfile/manageProfileCtrlResolver.js"></script>
+
+<script src="pages/manageSessions/manageSessions.js"></script>
+<script src="pages/manageSessions/manageSessionsCtrlResolver.js"></script>
+
+<script src="pages/manageResources/manageResources.js"></script>
+<script src="pages/manageResources/gallery.js"></script>
+<script src="pages/manageResources/contactLists.js"></script>
+<script src="pages/manageResources/topics.js"></script>
+<script src="pages/manageResources/emailTemplates.js"></script>
+<script src="pages/manageResources/coloursGallery.js"></script>
+
+<script src="pages/manageResources/coloursGalleryResource.js"></script>
+<script src="pages/manageResources/emailTemplatesResource.js"></script>
+<script src="pages/manageResources/topicsResource.js"></script>
+<script src="pages/manageResources/contactListsResource.js"></script>
+<script src="pages/manageResources/galleryResource.js"></script>
+
+<script src="pages/manageResources/manageResourcesCtrlResolver.js"></script>
+<script src="pages/manageResources/contactListsCtrlResolver.js"></script>
+<script src="pages/manageResources/galleryCtrlResolver.js"></script>
+<script src="pages/manageResources/coloursGalleryCtrlResolver.js"></script>
+<script src="pages/manageResources/topicsCtrlResolver.js"></script>
+<script src="pages/manageResources/emailTemplatesCtrlResolver.js"></script>
+
+<script src="pages/manageSessions/sessionBuilderCtrlResolver.js"></script>
+<script src="pages/manageSessions/sessionBuilder.js"></script>
+<script src="pages/manageSessions/editChatSession.js"></script>
+<script src="pages/manageSessions/facilitatorAndTopics.js"></script>
+<script src="pages/manageSessions/manageParticipants.js"></script>
+<script src="pages/manageSessions/manageObservers.js"></script>
+<script src="pages/manageSessions/sessionEmails.js"></script>
+
+<script src="pages/header/header.js"></script>
+<script src="pages/footer/footer.js"></script>
+<script src="pages/footer/footerDirective.js"></script>
+<script src="scripts/services/errorHandler.js"></script>
+<script src="scripts/services/accountFeatures.js"></script>
+<script src="scripts/services/authProvider.js"></script>
+<script src="scripts/services/authView.js"></script>
+<script src="scripts/services/urlHelper.js"></script>
+<script src="scripts/services/accountService.js"></script>
+<script src="scripts/services/defaultResolver.js"></script>
+<script src="scripts/services/loadIndicator.js"></script>
+<script src="scripts/services/gridFormatters.js"></script>
+<script src="scripts/services/modalHelper.js"></script>
+<script src="scripts/services/gridUtils.js"></script>
+<script src="scripts/services/validationService.js"></script>
+
+<script src="scripts/services/refreshSession.js"></script>
+<script src="scripts/services/dateHelper.js"></script>
+
+<script src="scripts/services/navigationHelper.js"></script>
+
+<script src="scripts/directives/slickGrid.js"></script>
+<script src="scripts/directives/directives.js"></script>
+<script src="scripts/mtypes.js"></script>
+
+<script src="pages/modals/unsavedChanges.js"></script>
+<script src="scripts/vendor/slickGrid/slick.autotooltips.js"></script>
+<script src="scripts/vendor/slickGrid/slick.core.js"></script>
+<script src="scripts/vendor/slickGrid/slick.dataview.js"></script>
+<script src="scripts/vendor/slickGrid/slick.grid.js"></script>
+<script src="scripts/vendor/slickGrid/slick.checkboxselectcolumn.js"></script>
+<script src="scripts/vendor/slickGrid/slick.columnpicker.js"></script>
+<script src="scripts/vendor/slickGrid/slick.rowselectionmodel.js"></script>
+<script src="scripts/vendor/slickGrid/slick.cellselectionmodel.js"></script>
+<script src="scripts/vendor/slickGrid/slick.headerbuttons.js"></script>
+<script src="scripts/vendor/slickGrid/slick.editors.js"></script>
+
+<script src="scripts/windowHelper.js"></script>
+<script src="scripts/uriHelper.js"></script>
+<script src="scripts/textHelper.js"></script>
+<script src="scripts/emailHelper.js"></script>
+
+<script src="scripts/vendor/jquery.cycle.all.js"></script>
+<script src="scripts/vendor/jquery.easing.1.3.js"></script>
+<script src="scripts/vendor/respond.min.js"></script>
+
+</body>
+</html>

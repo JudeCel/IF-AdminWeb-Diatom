@@ -1,0 +1,46 @@
+.tab-content {
+  overflow: hidden;
+}
+
+.nav {
+  margin-top: -2px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+  > li {
+	width: 90px;
+	> a {
+	  color: #fff;
+	  height: 23px;
+	  margin: auto;
+	  text-align: center;
+	  line-height: 23px;
+	}
+  }
+}
+
+.nav-tabs a {
+  outline: 0;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  @include box-shadow(0px -4px 10px rgba(50, 50, 50, 0.05));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dee9ee), to(#fff));
+  border-color: #fff;
+  border-width: 2px;
+  color: $insiderFocusBlue;
+  font-weight: bold;
+  margin: -2px;
+  @include border-top-right-radius(7px);
+  @include border-top-left-radius(7px);
+}
+
+.nav-tabs > li > a:hover {
+  color: $insiderFocusBlue;
+  border: none;
+  background-color: transparent;
+}

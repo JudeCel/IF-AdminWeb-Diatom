@@ -1,0 +1,11 @@
+<div style="float: left; padding: 20px">
+	<ul ng-model="currentTab">
+		<li ng-repeat="tab in tabs" ng-class="{active:tab.selected}">
+			<a ng-href="#/ManageProfile/{{tab.name}}" id={{tab.title}}>{{tab.title}}</a>
+		</li>
+	</ul>
+</div>
+
+<div style="padding: 20px">
+	<div ng-include="contentSrc"></div>
+</div>

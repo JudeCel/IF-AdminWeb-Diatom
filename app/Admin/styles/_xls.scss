@@ -1,0 +1,158 @@
+.xls-container {
+	padding-top: 10px;
+}
+
+/*Upload screen*/
+.xlsupload-container {
+	height: 200px;
+	width: 262px;
+
+  	display: block;
+  	margin: 0px auto;
+  	margin-top: 80px;
+
+	.image {
+		position: absolute;
+		left: 15px;
+		top: 20px;
+	}
+
+	.image-button-container {
+		width: 262px;
+		height: 120px;
+		position: relative;
+
+		.button-container {
+			width: 90px;
+			height: 30px;
+			position: absolute;
+			top: 50px;
+			right: 15px;
+
+			.swfupload {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+
+	.centered-text {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.xlsupload-progress-container {
+	height: 80px;
+	width: 280px;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+	margin-top: -40px;
+	margin-left: -140px;
+
+	border: 1px solid #D0D0D0;
+	@include border-radius(6px);
+
+	.xlsupload-progress {
+		height: 25px;
+		margin: 16px 8px 0 8px;
+	}
+
+	.bar {
+		@extend .bar;
+		width: 100%;
+		height: 30px;
+	}
+
+	.progress-text {
+		position: absolute;
+		top: 40px;
+		left: 8px;
+	}
+}
+
+.xls-err {
+	color: #f00;
+	small {
+		font-size: 10px;
+		display: block;
+	}
+}
+
+.xls-confirm-container {
+	i {
+		color: #f00;
+	}
+}
+
+/*Mapping screen*/
+#available-fields {
+	list-style-type: none;
+	margin: 0;
+	overflow-y: auto;
+}
+
+.available-field {
+	@extend .mapped;
+}
+
+.field-name {
+	text-align: right;
+	line-height: 36px;
+	padding-right: 6px;
+}
+
+.place-holder, .drag-over-place-holder {
+	@include well($white, 5px, 4px);
+	background-color: $grayMedium;
+	color: $grayMidLighter;
+	border: 1px solid $grayMidLighter;
+}
+
+#mapped-fields {
+	list-style-type: none;
+	margin: 0;
+}
+
+.mapped {
+	@include well($white, 5px, 4px);
+	padding-left: 10px;
+	background-color: $insiderFocusLightBlue;
+	color: $insiderFocusBlue;
+	border: 1px solid #93cdee;
+	cursor: grab !important;
+	cursor: -moz-grab;
+	cursor: url(../images/openhand.cur), move !important;
+	cursor: -webkit-grab;
+
+	.iconHandle {
+		display: inline-block;
+		width: 11px;
+		height: 14px;
+		margin-right: 5px;
+		background: image-url('handle-blue.png') no-repeat;
+	}
+}
+
+.showRequiredIcon:after {
+	content: '*';
+}
+
+.full-height-inner-column {
+	@include well(#fff, 0px, 0px);
+	border-color: $sectionOuterBorder;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+.xls-confirm-grid {
+	min-height: 200px !important;
+	.bg-warning {
+		background-color: #fffdda !important;
+	}
+}

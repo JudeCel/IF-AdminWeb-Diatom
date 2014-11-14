@@ -1,0 +1,84 @@
+
+
+.user-sidebar, .user-sidebar-collapsed {
+  padding: 9px 0;
+}
+
+.row-fluid > .user-sidebar{
+  position: relative;
+  top: 0;
+  left:auto;
+  width: 350px;
+}
+
+.row-fluid > .user-sidebar-collapsed  {
+  width: 10px;
+  position: absolute;
+  top:auto;
+  left:auto;
+  right: 1px;
+}
+
+
+.user-content-fluid-fixed {
+  margin-left:auto !important;
+  & > div {
+	position: relative;
+  }
+}
+
+.no-users-message {
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.show-sidebar {
+  margin-right: 370px;
+}
+
+#users-grid {
+  margin-bottom: 33px;
+
+  .slick-row.archivedUserRow {
+	background-color: #f4f4f4;
+	color: #666666;
+  }
+
+  .slick-row.archivedUserRow:hover {
+	background-color: #D6EBF6;
+	color: $textColor;
+  }
+}
+
+// move to slick grid?
+.users-grid-footer {
+  height: 17px;
+  border-top: 1px solid $slickBorderColor;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $slickHeaderColor;
+  padding: 8px;
+  @include border-bottom-radius($baseBorderRadius);
+  & > label > input {
+	margin: 0;
+  }
+}
+
+.make-course-required-checkbox {
+  margin-right: 12px;
+  padding-top: 2px;
+}
+
+.add-users-or-line {
+  line-height: 15px;
+  display: table-cell;
+  padding-bottom: 8px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 0;
+}
+
+.row-fluid [class*="span"] {
+	min-height: 22px;
+}
+
+h4, h5 {
+	font-weight: normal;
+}

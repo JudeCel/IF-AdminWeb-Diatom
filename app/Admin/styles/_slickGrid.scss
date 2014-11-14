@@ -1,0 +1,307 @@
+.mf-grid {
+	height: 100%;
+	//clear: both;
+}
+
+.slick-header-columns {
+	background-color: $slickHeaderColor;
+	border-bottom: 1px solid $slickBorderColor;
+}
+
+.slick-header-column.ui-state-default {
+	height: 21px;
+	padding: 5px 6px 0 6px;
+	vertical-align: middle;
+}
+
+.slick-header-column.ui-state-default input {
+	margin-left: 0px;
+}
+
+.slick-sort-indicator {
+	display: inline-block;
+	width: 8px;
+	height: 5px;
+	margin-left: 4px;
+}
+
+.slick-header-column-sorted {
+	font-style: normal;
+}
+
+.slick-sort-indicator-desc {
+	background: url(../images/sort-desc.gif);
+}
+
+.slick-sort-indicator-asc {
+	background: url(../images/sort-asc.gif);
+}
+
+.slick-cell-wrap {
+	border: none;
+	padding: 10px;
+	font-size: $baseFontSize;
+	white-space: normal !important;
+	overflow: auto !important;
+}
+
+.slick-cell {
+	border: none;
+	padding: 10px;
+	font-size: $baseFontSize;
+}
+
+.slick-container {
+	@include well($grayLighter, 0 0 0 0, 0);
+	border-color: $grayMedium;
+	position: relative;
+}
+
+.grid-canvas .slick-cell.active {
+	background-color: #7fceff;
+}
+
+.boldedRow > .slick-cell {
+	font-weight: bold;
+}
+
+.shiftedRow > .slick-cell {
+	padding-left: 20px;
+}
+
+.cell-title div {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.expanded .cell-title div,
+.collapsed .cell-title div {
+	padding-left: 20px;
+}
+
+.collapsed > .cell-title > span,
+.expanded > .cell-title > span {
+	position: absolute;
+	top: 10px;
+	font-family: FontAwesome;
+	color: #88bfde;
+	left: 14px;
+	cursor: pointer;
+}
+
+.collapsed > .cell-title > span:before {
+	content: "\f0da";
+}
+
+.expanded > .cell-title > span:before {
+	content: "\f0d7";
+}
+
+.courseRow > .cell-title, .courseHeaderRow > .cell-title {
+	padding-left: 30px;
+}
+
+.action-certificate {
+	padding: 0;
+	&.disabled {
+		display: none;
+	}
+	background: image-url('certificate_icon.png') no-repeat;
+	width: 15px;
+	height: 22px;
+	position: absolute;
+	margin-left: 5px;
+	.courseRow & {
+		top: 5px;
+	}
+}
+
+.action-passed-checkmark:before {
+	content: "\f00c";
+	font-family: FontAwesome;
+	padding: 6px 4px;
+	color: #1daf1d;
+}
+
+.action-failed-checkmark:before {
+	content: "\f00d";
+	font-family: FontAwesome;
+	padding: 6px 4px;
+	color: red;
+}
+
+.cell-title .action {
+	visibility: hidden;
+	top: 3px;
+}
+
+.cell-title-centered {
+	text-align: center;
+}
+
+.header-column-first > .slick-column-name {
+	padding-left: 10px;
+}
+
+.slick-column-name {
+	max-width: 90%;
+	overflow: hidden;
+	padding-left: 5px;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	color: $grayDark;
+}
+
+.action > i {
+	font-size: 14px;
+}
+
+.btn.action-invite {
+	visibility: visible;
+	width: 50px;
+}
+
+.btn.action-remind {
+	position: absolute;
+	right: 5px;
+	margin-top: 6px;
+	&.disabled {
+		@include opacity(50);
+	}
+}
+
+.btn.action-delete {
+	position: absolute;
+	right: 60px;
+	margin-top: 6px;
+	&.moved {
+		right: 72px;
+	}
+}
+
+.btn.action-reinvite {
+	position: absolute;
+	right: 102px;
+	margin-top: 6px;
+	&.moved {
+		right: 114px;
+	}
+	&.disabled {
+		@include opacity(50);
+	}
+}
+
+.slick-row:hover .action {
+	visibility: visible;
+}
+
+.inline-invite-button {
+	float: right;
+	margin-left: 10px;
+}
+
+.inline-email {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+.email-cell-wrapper {
+	overflow: hidden;
+	width: 100%;
+}
+
+.selectable-row {
+	.slick-row.even:hover,
+	.slick-row:hover,
+	.slick-row.odd:hover {
+		background-color: #effaff;
+	}
+
+	.slick-row.even.highlightRow,
+	.slick-row.highlightRow,
+	.slick-row.odd.highlightRow {
+		background-color: #effaff;
+	}
+}
+
+.no-grid-header {
+	.slick-header-columns {
+		height: 0px;
+		border: none;
+	}
+}
+
+.slick-row.ui-widget-content {
+	border-bottom: 1px solid $slickBorderColor;
+	background-color: #fff;
+	color: #696969;
+	@include box-sizing(border-box);
+	&.even {
+		background-color: #f6f6f6;
+	}
+	&.disabledRow {
+		background-color: #f0f0f0;
+	}
+	&.courseRow {
+		background-color: #fff;
+	}
+	&.expanded {
+		background-color: #edf8ff;
+		font-weight: bold;
+		color: #757676;
+	}
+	&.courseHeaderRow {
+		background-color: #f5fdfe;
+		> .slick-cell {
+			font-weight: bold;
+			color: $grayDark;
+		}
+	}
+}
+
+.slick-viewport {
+	//overflow-x: hidden !important;
+	overflow: auto;
+}
+
+.certficate-container {
+	width: 36px;
+	text-align: right;
+}
+
+.grade-passed {
+	color: green;
+}
+
+.grade-failed {
+	color: red;
+}
+
+.group-name-cell-wrapper {
+	overflow: hidden;
+	margin-bottom: 5px;
+	white-space: nowrap;
+	text-overflow: clip !important;
+}
+
+.inline-group-name {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	width: auto;
+	margin-right: 3px;
+	max-width: 85%;
+	float: left;
+}
+
+.inline-count {
+	position: relative;
+	right: 0;
+	display: inline-block;
+}
+
+.slick-cell-checkboxsel {
+	text-overflow: clip;
+}

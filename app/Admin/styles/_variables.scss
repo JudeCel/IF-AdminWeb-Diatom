@@ -1,0 +1,112 @@
+//body
+
+// insiderFocus colors
+// -------------------------
+$insiderFocusDarkBlue: #88bfdf;
+$insiderFocusLightBlue: #d6ebf6;
+$insiderFocusBlue: #0078cd;
+$insiderFocusHighlight: #dcedf4;
+
+$sectionHeader: #f4f4f4;
+$sectionFooter: #ececec;
+$sectionOuterBorder: #d0d0d0;
+$sectionInnerBorder: #c5c5c5;
+
+$insiderFocusOrange: #ffa408;
+
+// Page Defaults
+// -------------------------
+$pageMinWidth: 970px;
+$pageMinHeight: 700px;
+$pagePaddingLeft: 30px;
+$pagePaddingRight: 30px;
+
+// Text box
+// -------------------------
+$textBoxBorderRadius: 4px;
+
+$placeholderText: #c4c4c4;
+
+$defaultBoxShadow: #cdcdcd;
+
+// Grays
+// -------------------------
+$grayLighter: #f4f4f4;
+$grayMedium: #cccccc;
+$grayMidDark: #474747 !default;
+$grayMidLighter: #8e8e8e !default;
+$grayMidLighter2: #e6e6e6;
+
+// Slickgrid
+// -------------------------
+$slickHeaderColor: #ececec;
+$slickFooterColor: #ececec;
+$slickBorderColor: #c5c5c5;
+
+// Scaffolding
+// -------------------------
+$textColor: $grayMidDark !default;
+
+// Tooltips and popovers
+// -------------------------
+//$tooltipColor:            $textColor !default;
+//$tooltipBackground:       #fefefe !default;
+
+// Typography
+// -------------------------
+$sansFontFamily: Arial !default;
+$baseFontSize: 12px !default;
+$baseLineHeight: 16px !default;
+$smallFontSize: 10px !default;
+$intermediateFontSize: 11px !default;
+
+$linkColor: #00aeef !default;
+$linkColorHover: darken($linkColor, 15%) !default;
+
+// https://github.com/yeoman/yeoman/issues/419
+// Sprite icons path
+// -------------------------
+//$iconSpritePath:          "/images/glyphicons-halflings.png" !default;
+//$iconWhiteSpritePath:     "/images/glyphicons-halflings-white.png" !default;
+
+// Font awesome path
+// -------------------------
+//$font_path: "/styles/fonts/fontawesome-webfont" !default;
+
+// Buttons
+//-------------------------
+//$btnBackground:                     $white !default;
+//$btnBackgroundHighlight:            darken($white, 10%) !default;
+//$btnBorder:                         #bbb !default;
+
+$btnPrimaryBackground: #5f8aa7 !default;
+$btnPrimaryBackgroundHighlight: #5f8aa7 !default;
+
+$btnInfoBackground: #cbe9fa !default;
+$btnInfoBackgroundHighlight: #cbe9fa !default;
+
+$btnSuccessBackground: #ffe569 !default;
+$btnSuccessBackgroundHighlight: #ffe569 !default;
+
+$btnGeneralBackground: #f0f0f0 !default;
+$btnGeneralBackgroundHighlight: #f0f0f0 !default;
+
+//$btnWarningBackground:              lighten($orange, 15%) !default;
+//$btnWarningBackgroundHighlight:     $orange !default;
+
+$btnDangerBackground: #ff3333 !default;
+$btnDangerBackgroundHighlight: #cc0000 !default;
+
+//$btnInverseBackground:              #444 !default;
+//$btnInverseBackgroundHighlight:     $grayDarker !default;
+
+//Buttons - Font Colors
+//-------------------------
+$btnPrimaryFontColor: #000000;
+$btnInfoFontColor: #6a6e6d;
+$btnSuccessFontColor: #52514d;
+$btnDangerFontColor: #ffffff;
+$btnGeneralFontColor: #6a6e6d;
+
+$warningText: #484848 !default;
+$warningBackground: #FAE8A9 !default;

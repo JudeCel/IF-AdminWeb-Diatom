@@ -1,0 +1,122 @@
+.ie8 {
+	select {
+		height: auto;
+	}
+
+	input[type="search"] {
+		outline: none !important;
+	}
+
+	input[type="text"] {
+		outline: none !important;
+	}
+
+    .seriesTextInputLengthIndicator {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 52px;
+        line-height: 44px;
+		font-size: 10px;
+    }
+
+    .inputLengthIndicatorNear {
+        display: block;
+        z-index: 10;
+        color: $grayMidDark;
+    }
+
+    .inputLengthIndicatorOver {
+        @extend .inputLengthIndicatorNear;
+        color: red !important;
+    }
+
+	.container-fluid {
+		margin-bottom: 30px;
+	}
+
+	.icon-search {
+		top: 12px;
+	}
+
+	#users-container {
+		margin-bottom: 30px;
+	}
+
+	.user-sidebar {
+		min-height: 510px;
+	}
+
+	.btn-info {
+		border-left-color: #B7D2E1;
+		border-top-color: #B7D2E1;
+		border-right-color: #B7D2E1;
+		border-bottom-color: #99AFBC;
+	}
+
+    .header-tier-label{
+        position: absolute;
+    }
+
+	.slick-header-column.ui-state-default {
+		text-overflow: clip;
+	}
+}
+
+.ie9 {
+	input[type="search"] {
+		outline: none !important;
+	}
+
+	input[type="text"] {
+		outline: none !important;
+	}
+
+	.seriesTextInputLengthIndicator {
+		position: absolute;
+		font-size: 10px;
+		right: 0;
+		top: 12px;
+		width: 52px;
+		line-height: 44px;
+	}
+
+	.inputLengthIndicatorNear {
+		display: block;
+		z-index: 10;
+		color: $grayMidDark;
+	}
+
+	.inputLengthIndicatorOver {
+		@extend .inputLengthIndicatorNear;
+		color: red !important;
+	}
+
+	.container-fluid {
+		margin-bottom: 20px;
+	}
+
+	.icon-search {
+		top: 12px;
+	}
+
+	.free-content-sidebar-templates {
+		.template-container {
+			i {
+				filter: none !important;
+			}
+		}
+	}
+
+
+}
+
+.ie10 {
+  input[type="search"] {
+    outline: none !important;
+  }
+
+  input[type="text"] {
+    outline: none !important;
+  }
+}

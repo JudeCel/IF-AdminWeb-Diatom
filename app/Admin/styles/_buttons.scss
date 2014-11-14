@@ -1,0 +1,98 @@
+.btn-add,
+.btn-add:hover {
+	color: $black;
+	text-shadow: 1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-danger {
+	color: $white;
+}
+
+.btn-success {
+	//color: $btnSuccessFontColor;
+}
+
+.btn-primary {
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+	// Disabled state
+	&.disabled,
+	&[disabled] {
+		@include buttonBackground(#c5c5c5, #c5c5c5, #686868);
+	}
+}
+
+.btn-mini {
+	padding: 0px 6px;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn.datepicker {
+	padding: 4px 12px;
+}
+
+.btn-general {
+	@include buttonBackground($btnGeneralBackground, $btnGeneralBackgroundHighlight, #565656);
+	border: 1px solid #a6a6a6;
+}
+
+.btn-group-flat > .btn {
+	background: #fff;
+	color: #9abbce;
+	box-shadow: none;
+
+	&.active {
+		color: #ccc;
+		cursor: default;
+	}
+
+}
+
+.pill {
+	border: none;
+	color: $textColor;
+	padding: 5px 10px;
+	background-color: transparent;
+	outline: none;
+
+	&.active,
+	&:active {
+		background-color: $insiderFocusHighlight;
+		color: $insiderFocusBlue;
+		border: none;
+		font-weight: bold;
+	}
+}
+
+.btn-success {
+	color: $btnSuccessFontColor;
+	&:hover,
+	&:focus {
+		color: $btnSuccessFontColor;
+	}
+}
+
+.btn-info {
+	color: $btnInfoFontColor;
+	&:hover,
+	&:focus {
+		color: $btnInfoFontColor;
+	}
+}
+
+.btn-link[disabled] {
+	&:hover,
+	&:focus {
+		color: $grayLight;
+		text-decoration: none;
+		cursor: default;
+	}
+	color: $grayLight;
+	text-decoration: none;
+	cursor: default;
+}

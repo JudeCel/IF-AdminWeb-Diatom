@@ -1,0 +1,341 @@
+.home-tile {
+	display: inline-block;
+	position: relative;
+	width: 160px;
+	height: 190px;
+	border: 1px solid #cbd4d9;
+	margin: 15px;
+	vertical-align: top;
+	background-color: #e6ecf0;
+	border-radius: 5px;
+	@include box-sizing(border-box);
+
+	& > * {
+		position: absolute;
+		left: 9px;
+		width: 140px;
+	}
+
+	&:hover {
+		@include box-shadow(0px 0px 2px 2px #59a3f4);
+	}
+}
+
+.home-tile-box {
+	overflow: auto;
+	position: relative;
+
+	//Make sure that any spaces between the inline tiles are crushed flat! I want those hours of my life back...
+	font-size: 0;
+	& > div {
+		font-size: $baseFontSize;
+	}
+}
+
+.home-tile-series {
+	box-shadow: 1px 1px 0px 1px #e4e4e4, 2px 2px 0px 1px #a3aaaf, 4px 4px 0px 1px #e4e4e4, 5px 5px 0px 1px #a3aaaf;
+}
+
+.home-tile-online {
+	@include box-shadow(1px 1px 3px 0px #a3aaaf);
+}
+
+.home-tile-status {
+	top: 3px;
+	font-size: 10px;
+	font-weight: normal;
+	.icon-circle {
+		text-shadow: 0px 1px 0px #fff, 0px -1px 0px #fff;
+		font-size: 9px;
+	}
+}
+
+.home-item-status-series > i {
+	font-size: 9px;
+}
+
+.home-item-status-draft > i {
+	color: #f6a70c;
+	font-size: 9px;
+}
+
+.home-item-status-active > i {
+	color: #08a701;
+	font-size: 9px;
+}
+
+.home-item-status-archive > i {
+	color: #888;
+	font-size: 9px;
+}
+
+.home-tile-img {
+	top: 20px;
+	height: 105px;
+	overflow: hidden;
+	& > img {
+		border-radius: 5px;
+	}
+	&:after {
+		content: "";
+		@include box-shadow(inset 1px 1px 2px 1px #CCC);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 3px;
+	}
+}
+
+.home-tile-name {
+	top: 130px;
+	height: 38px;
+	font-size: 11px;
+	line-height: 12px;
+	overflow: hidden;
+}
+
+.home-tile-open {
+	width: 15px;
+	top: 3px;
+	left: 143px;
+	font-size: 13px;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.home-tile-free {
+	position: relative;
+	@include box-shadow(1px 1px 3px 0px #A3AAAF);
+	background: #FFF;
+	cursor: pointer;
+
+	div.free-content-icon {
+		top: 40px;
+		left: 31px;
+		width: 98px;
+		height: 100px;
+		background: image-url('/Admin/images/free-content/tn_slides.png') no-repeat;
+	}
+
+	span.free-content-label {
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		top: 150px;
+		text-align: center;
+		font-size: 14px;
+		color: #00AEEF;
+		font-weight: bold;
+	}
+}
+
+.home-tile-upload {
+	position: relative;
+	@include box-shadow(1px 1px 3px 0px #A3AAAF);
+	background: #FFF;
+	cursor: pointer;
+
+	div.upload-icon {
+		top: 15px;
+		left: 5px;
+		width: 151px;
+		height: 139px;
+		background: image-url('/Admin/images/free-content/tn_docs.png') no-repeat;
+	}
+
+	span.upload-label {
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		top: 165px;
+		text-align: center;
+		font-size: 14px;
+		color: #00AEEF;
+		font-weight: bold;
+	}
+}
+
+.home-tile-selected {
+	@include box-shadow(0px 0px 2px 2px #59a3f4);
+	border: 1px solid #59a3f4;
+}
+
+.home-tile-sort .icon-ok {
+	margin-right: 5px;
+	color: white;
+}
+
+.home-list-row-open {
+	visibility: hidden;
+	margin-left: 10px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.home-item-name {
+  	padding-left: 6px;
+	max-width: 85%;
+}
+
+.slick-row:hover .home-list-row-open {
+	visibility: visible;
+}
+
+.home-coursegrid-odd {
+	background-color: #ffffff;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-right: 15px;
+}
+
+.home-coursegrid-even {
+	background-color: #f6f6f6;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-right: 15px;
+}
+
+.home-trainees-status {
+	line-height: 22px;
+
+	.odd {
+		background-color: #fff;
+	}
+
+	.even {
+		background-color: #F6F6F6;
+	}
+
+	.home-trainees-status-value {
+		padding-left: 15px;
+		padding-top: 5px;
+		padding-bottom: 4px;
+		padding-right: 15px;
+		position: relative;
+
+		.action-button {
+			position: absolute;
+			top: 6px;
+			right: 10px;
+			display: none;
+		}
+	}
+
+	.home-trainees-highlight:hover {
+		background-color: #effaff;
+	}
+
+	.home-trainees-status-value:hover {
+
+
+
+		.action-button {
+			display: inline-block;
+		}
+	}
+}
+
+.home-right-rail-course-info {
+	font-weight: normal;
+	padding-top: 10px;
+}
+
+.home-course-carousel {
+	ul {
+		width: 700px;
+		height: 90px;
+		margin-left: 15px;
+		padding: 23px 3px 9px 3px;
+
+		li {
+			float: left;
+			list-style: none;
+			margin-right: 12px;
+		}
+	}
+	.home-course-carousel-image {
+		@include box-shadow(-1px -1px 2px 1px #CCC);
+		border-radius: 5px;
+		width: 113px;
+		background-color: white;
+
+		img {
+			border-radius: 5px;
+			display: block;
+			height: 85px;
+			margin: auto;
+		}
+	}
+	.jcarousel-skin-tango {
+		.jcarousel-container {
+			background: none;
+			border: none;
+		}
+		.jcarousel-prev-horizontal {
+			left: 0px;
+			width: auto;
+			height: auto;
+			top: 50px;
+			font-size: 20px;
+			background: none;
+		}
+		.jcarousel-container-horizontal {
+			padding: 20px 15px;
+		}
+		.jcarousel-next-disabled, .jcarousel-prev-disabled {
+			display: none !important;
+		}
+		.jcarousel-clip-horizontal {
+			width: 285px;
+			height: 90px;
+		}
+		.jcarousel-item {
+			width: 115px !important;
+		}
+		.jcarousel-next-horizontal {
+			right: -35px;
+			top: 50px;
+			width: auto;
+			height: auto;
+			background: none;
+			font-size: 20px;
+		}
+		.jcarousel-list-horizontal {
+			overflow: visible !important;
+			padding: 3px !important;
+		}
+	}
+}
+
+.home-sidebar {
+	.user-sidebar-field-value {
+		width: 100%;
+	}
+}
+
+.home-sidebar-item-name {
+	font-size: 14px;
+}
+
+.home-sidebar-main-header {
+	background-color: #dcdcdc;
+}
+
+.home-sidebar-catalog-detail {
+	margin-right: 15px;
+}
+
+.home-sidebar-catalog-item {
+	padding: 10px 0 0 10px;
+}
+
+#goto-catalog-button {
+	margin-left: 3px;
+}

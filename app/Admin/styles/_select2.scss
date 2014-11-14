@@ -1,0 +1,128 @@
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+	border-radius: 2px;
+}
+
+.select2-results li.select2-result-with-children > .select2-result-label {
+	.more {
+		font-weight: normal;
+	}
+}
+
+/* results */
+.select2-results {
+	padding: 0;
+	margin: 4px 0;
+	.match-italic {
+		font-style: italic;
+	}
+}
+
+.select2-results .select2-highlighted {
+	background: #DCEDF4;
+	color: #0078CD;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+// Bug fix in IE
+.select2-offscreen, .select2-offscreen:focus {
+	clip: rect(0 0 0 0) !important;
+	width: 1px !important;
+	height: 1px !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	position: absolute !important;
+	outline: 0 !important;
+	left: 0px !important;
+}
+
+.select2-clean {
+	bottom: 7px;
+	top: auto;
+}
+
+.select2-dropdown-size-hack {
+	display: none !important;
+}
+
+.trainees-page {
+	.grayLighterGrid1 .select2-container {
+		vertical-align: top;
+		margin-top: 1px;
+	}
+}
+
+// Select2 stuff
+.user-sidebar-section-container {
+	margin: 10px 10px 0 10px;
+
+	.select2-search-choice {
+		max-width: 88%;
+	}
+
+	.select2-search-choice > div {
+		word-wrap: break-word;
+	}
+}
+
+.edit-user-info {
+	.select2-container {
+		margin: 0 0 10px 0;
+	}
+
+	.indicatorVisible {
+		padding-right: 65px;
+	}
+
+	.userInfoTextInputLengthIndicator {
+		position: absolute;
+		right: 25px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+}
+
+// select2
+.traineesFilter {
+	padding: 0 0 0 0;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 13px;
+	position: relative;
+	.select2-container {
+		width: 100%;
+	}
+	.select2-choices {
+		padding-right: 30px;
+	}
+
+	.select2-search-choice > div {
+		max-width: 200px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		padding-bottom: 2px;
+	}
+
+	.compositeSearchIconContainer {
+		position: absolute;
+		top: 7px;
+		right: 10px
+	}
+}
+
+.select2-short-dropdown
+{
+	ul.select2-results {
+		max-height: 120px;
+	}
+}
+
+

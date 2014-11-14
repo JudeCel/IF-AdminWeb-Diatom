@@ -1,0 +1,133 @@
+// Header Defaults
+// -------------------------
+$appHeaderHeight: 96px;
+$pageHeaderHeight: 20px;
+
+.app-header {
+	background-color: #fff;
+	height: $appHeaderHeight;
+}
+
+.header-tier-label {
+	//text next to insiderFocus logo
+	color: #ffa408;
+	vertical-align: bottom;
+	position: relative;
+	padding-left: 6px;
+	bottom: -3px;
+	font-size: 16px;
+}
+
+.main-page-header {
+	background-color: $insiderFocusDarkBlue;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 0 ($pageHeaderHeight / 2) 0;
+	padding: ($pageHeaderHeight / 2 - 3) 0 ($pageHeaderHeight / 2 - 3) 0;
+	font-size: 14px;
+}
+
+.home-page-header {
+	background-color: $grayMidLighter2 !important;
+	@extend .main-page-header;
+	padding-left: $pagePaddingLeft;
+	padding-right: $pagePaddingRight;
+	/* min-height: 25px;*/
+
+}
+
+.series-page-header {
+	@extend .main-page-header;
+	padding-left: $pagePaddingLeft;
+	padding-right: $pagePaddingRight;
+	max-height: 16px;
+
+	// move tabs up
+	&:first-child .tabbable {
+		margin-top: -10px;
+	}
+}
+
+// Banner
+.user-link {
+	padding-top: 8px;
+	& .dropdown-toggle {
+		padding-left: 20px;
+		text-overflow: ellipsis;
+		width: 210px;
+		text-align: right;
+		padding-right: 30px;
+		display: inline-block;
+		overflow: hidden;
+	}
+	& .dropdown-menu {
+		background-color: $grayLighter;
+		border: 1px solid $grayMedium;
+		// Fallback for IE7-8
+		margin-top: 0;
+		@include border-radius(4px);
+		& li > a {
+			color: $insiderFocusBlue;
+			&:hover {
+				color: $insiderFocusDarkBlue;
+				background-color: transparent;
+				background-image: none;
+				// Remove CSS gradient
+				@include reset-filter();
+			}
+		}
+	}
+}
+
+.down-arrow {
+	background: image-url('/Admin/images/dropdown_arrow.png') no-repeat;
+	height: 8px;
+	width: 10px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 4px;
+}
+
+.open > .dropdown-toggle > .down-arrow {
+	@include mf-scaleY();
+}
+
+.header-row {
+	position: relative;
+	height: 55px;
+	margin-bottom: 8px;
+}
+
+.logoBox {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.upsell-banner {
+	padding-top: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	text-align: center;
+	white-space: nowrap;
+	width: 400px;
+	> img {
+		padding-bottom: 7px;
+	}
+}
+
+.account-status-warning-message {
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	text-align: center;
+	white-space: nowrap;
+	width: 400px;
+	> img {
+		padding-bottom: 7px;
+	}
+	color: #ff0000;
+}

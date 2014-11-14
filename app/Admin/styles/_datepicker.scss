@@ -1,0 +1,37 @@
+.datepicker-dropdown {
+  z-index: 500 !important;
+}
+
+.datepicker-dropdown:before {
+  border: none !important;
+}
+
+.datepicker-dropdown:after {
+  border: none !important;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover {
+  background: #0088CC !important;
+}
+
+.datepicker table tr td.active.pastDeadline,
+.datepicker table tr td.active.pastDeadline:hover,
+.datepicker table tr td.active.pastDeadline.disabled,
+.datepicker table tr td.active.pastDeadline.disabled:hover,
+.datepicker table tr td span.active.pastDeadline,
+.datepicker table tr td span.active.pastDeadline:hover,
+.datepicker table tr td span.active.pastDeadline.disabled,
+.datepicker table tr td span.active.pastDeadline.disabled:hover {
+  background: red !important;
+}
+
+.datepicker table tr td span {
+  width: 22% !important;
+}
