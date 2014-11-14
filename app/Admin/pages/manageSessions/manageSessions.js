@@ -93,7 +93,7 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 			}
 
 			function showDropConfirmation(item) {
-				$rootScope.$broadcast('deleteSessionEvent', item);
+				$scope.$broadcast('deleteSessionEvent', item);
 			}
 
 			$scope.$on('deleteSessionConfirmEvent', function (event, session, cb) {

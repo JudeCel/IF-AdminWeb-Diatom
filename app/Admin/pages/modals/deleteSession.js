@@ -15,7 +15,7 @@ angular.module('adminWebApp.modals')
 		});
 	};
 
-	$rootScope.$on('deleteSessionEvent', function(event, session) {
+	$scope.$on('deleteSessionEvent', function(event, session) {
 		if(!session) return;
 		$scope.modal.content = 1;
 		$scope.modal.data = session;
