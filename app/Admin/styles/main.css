@@ -7392,7 +7392,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/bootstrap\/_accordion\.scss}line{font-family:\0000312}}
-.accordion-group, #accordion1 .accordion-group {
+.accordion-group {
   margin-bottom: 2px;
   border: 1px solid #e5e5e5;
   -webkit-border-radius: 4px;
@@ -7684,30 +7684,6 @@ h4, h5 {
   font-weight: normal;
 }
 
-@media (max-width: 1338px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_trainees_responsive\.scss}line{font-family:\000033}}
-  .responsive-series-trainees [class*="span"] {
-    float: none !important;
-    display: block;
-    width: 100%;
-    margin-left: 0;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_trainees_responsive\.scss}line{font-family:\000038}}
-  .responsive-series-trainees [class*="span"].responsive-max {
-    max-width: 452px;
-  }
-}
-@media (max-width: 1006px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_trainees_responsive\.scss}line{font-family:\0000315}}
-  .responsive-series-trainees .pull-right {
-    float: left !important;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_trainees_responsive\.scss}line{font-family:\0000319}}
-  .responsive-series-trainees .grayLighterGrid1 {
-    height: 100px;
-  }
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_buttons\.scss}line{font-family:\000032}}
 .btn-add,
 .btn-add:hover {
@@ -7999,12 +7975,12 @@ input[type="checkbox"] {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003109}}
 .iconHandle {
-  background: url('/Admin/images/handle-grey.png?1363687988') no-repeat;
+  background: url('/Admin/images/handle-grey.png?1415901523') no-repeat;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003113}}
 .iconLightBulb {
-  background: url('/Admin/images/icon_rightrail_tips.png?1363687988') no-repeat;
+  background: url('/Admin/images/icon_rightrail_tips.png?1415901523') no-repeat;
   height: 18px;
   width: 25px;
   display: inline-block;
@@ -8215,30 +8191,6 @@ input[type="checkbox"] {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003235}}
-.invite-trainees {
-  height: 100%;
-  background: url('/Admin/images/add_trainees_arrow.png') no-repeat;
-  margin: 0px;
-  width: 114px;
-  height: 113px;
-  position: absolute;
-  right: 50px;
-  top: -88px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003246}}
-.add-groups {
-  height: 100%;
-  background: url('/Admin/images/add_groups_arrow.png') no-repeat;
-  margin: 0px;
-  width: 146px;
-  height: 131px;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003257}}
 .no-trainees-in-series-box {
   background-color: white;
   border: 3px solid #bfbfbf;
@@ -8249,43 +8201,12 @@ input[type="checkbox"] {
   margin-top: 80px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003267}}
-.invite-trainees-empty-grid {
-  height: 100%;
-  background: url('/Admin/images/add_trainees_envelope.png') no-repeat;
-  width: 110px;
-  height: 80px;
-  margin: 30px 20px 0 20px;
-  float: left;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003276}}
-.no-trainees-in-series-message {
-  line-height: 25px;
-  color: #378ad3;
-  font-size: 24px;
-  text-align: left;
-  float: left;
-  margin-top: 50px;
-  margin-left: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003286}}
-.no-courses-in-series-wrapper, .yammer-not-loggedin-wrapper {
-  position: absolute;
-  top: 96px;
-  z-index: 10;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003245}}
 .yammer-not-loggedin-wrapper {
   background-color: rgba(136, 136, 136, 0.8);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003299}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003249}}
 .no-courses-in-series-box, .yammer-not-loggedin-box, .course-archived-box {
   border: 3px solid #bfbfbf;
   border-radius: 10px;
@@ -8295,18 +8216,18 @@ input[type="checkbox"] {
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003308}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003258}}
 .yammer-not-loggedin-box {
   border: 6px solid #6b6b6b;
   margin-top: 75px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003263}}
 .course-archived-box {
   margin-top: 80px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003267}}
 .no-courses-in-series-message, .course-archived-message {
   margin: 0px auto;
   line-height: 25px;
@@ -8318,7 +8239,7 @@ input[type="checkbox"] {
   max-width: 400px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003278}}
 .yammer-not-loggedin-message {
   margin: 0px auto;
   line-height: 25px;
@@ -8328,10 +8249,9 @@ input[type="checkbox"] {
   margin-top: 44px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003287}}
 .add-courses-manage-trainees {
   height: 100%;
-  background: url('/Admin/images/add_courses_left_arrow.png') no-repeat;
   margin: 0px;
   width: 146px;
   height: 131px;
@@ -8341,40 +8261,40 @@ input[type="checkbox"] {
   z-index: 99;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003299}}
 .add-courses-empty-grid, .course-archived-grid {
   height: 100%;
-  background: url('/Admin/images/exclamation_icon.png?1363774457') no-repeat;
+  background: url('/Admin/images/exclamation_icon.png?1415901523') no-repeat;
   width: 80px;
   height: 80px;
   margin: 30px 20px 0 20px;
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003308}}
 .home-header-exclamation {
   height: 100%;
-  background: url('/Admin/images/alert-light-grey-19x17.png?1381310999') no-repeat;
+  background: url('/Admin/images/alert-light-grey-19x17.png?1415901523') no-repeat;
   width: 19px;
   height: 17px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003315}}
 .add-trainees-page {
   margin-bottom: 22px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003319}}
 .manage-page {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003323}}
 .customize-page {
   margin-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003327}}
 .nothing-found-message {
   margin: 0px auto;
   width: 322px;
@@ -8385,14 +8305,14 @@ input[type="checkbox"] {
   line-height: 100px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003337}}
 .small-alert {
   font-size: 13px;
   margin-bottom: 10px;
   padding: 8px 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003343}}
 .trainees-count-box {
   height: 24px;
   width: 180px;
@@ -8407,12 +8327,12 @@ input[type="checkbox"] {
   margin-right: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003405}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003355}}
 .banner-box {
   margin-left: 230px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003409}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003359}}
 .trial-banner {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFAFAFA', endColorstr='#FFF1F1F1');
@@ -8445,29 +8365,29 @@ input[type="checkbox"] {
   white-space: nowrap;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003431}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003381}}
 .trial-banner > img {
   margin-right: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003436}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003386}}
 .inputLengthIndicatorOff {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003440}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003390}}
 .inputLengthIndicatorNear, .inputLengthIndicatorOver, .inputLengthIndicatorAt, .ie8 .inputLengthIndicatorOver, .ie9 .inputLengthIndicatorOver {
   display: block;
   z-index: 10;
   color: #474747;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003396}}
 .inputLengthIndicatorOver, .inputLengthIndicatorAt {
   color: red !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003451}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003401}}
 .seriesTextInputLengthIndicator {
   position: absolute;
   right: 5px;
@@ -8475,7 +8395,7 @@ input[type="checkbox"] {
   font-size: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003459}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003409}}
 .groupNameInputLengthIndicator, .editGroupNameInputLengthIndicator {
   position: absolute;
   right: 5px;
@@ -8483,7 +8403,7 @@ input[type="checkbox"] {
   line-height: 27px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003466}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003416}}
 .textInputLengthIndicator {
   position: relative;
   line-height: 30px;
@@ -8491,7 +8411,7 @@ input[type="checkbox"] {
   font-size: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003473}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003423}}
 .wrapperOverlay {
   position: absolute;
   display: none;
@@ -8502,12 +8422,12 @@ input[type="checkbox"] {
   z-index: 300;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003483}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003433}}
 #flexWrapper {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003487}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003437}}
 #lightboxBG {
   display: none;
   position: fixed;
@@ -8519,7 +8439,7 @@ input[type="checkbox"] {
   z-index: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003498}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003448}}
 .hideOffscreen {
   position: absolute !important;
   top: 0px !important;
@@ -8527,22 +8447,22 @@ input[type="checkbox"] {
   margin: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003505}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003455}}
 .removedFromLayout {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003509}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003459}}
 #altContentNoFlash {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003513}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003463}}
 .pointer-cursor {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003517}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003467}}
 .modal-header {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VhZWFlYSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZThlOGU4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDlkOWQ5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
@@ -8555,18 +8475,18 @@ input[type="checkbox"] {
   border-bottom: 1px solid #c4c4c4;
   border-radius: 5px 5px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003522}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003472}}
 .modal-header h3 {
   color: #336DC9;
   font-size: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003525}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003475}}
 .modal-header h3 i {
   font-size: 30px;
   padding-right: 8px;
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003531}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003481}}
 .modal-header .close {
   border: 6px solid #6b6b6b;
   border-radius: 14px;
@@ -8585,12 +8505,12 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003549}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003499}}
 .modal-warn h3 {
   color: #e5191b;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003553}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003503}}
 .modal-footer {
   border: 0;
   border-top: 1px solid #ececec;
@@ -8598,32 +8518,32 @@ input[type="checkbox"] {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003560}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003510}}
 .modal {
   border: 6px solid #6b6b6b;
   border-radius: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003565}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003515}}
 .modal-backdrop {
   background-color: #888;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003569}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003519}}
 .lastBreadcrumbItem {
   font-weight: bold;
   color: #484848;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003575}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003525}}
 .lastBreadcrumbItem:hover {
   font-weight: bold;
   color: #484848;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003581}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003531}}
 .trainee-in-progress-background {
   border: 2px solid #ebebeb;
   border-radius: 20px;
@@ -8639,81 +8559,81 @@ input[type="checkbox"] {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003598}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003548}}
 .action-required.enabled {
   color: #0078cd;
   text-decoration: underline;
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003605}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003555}}
 .bg-success {
   background-color: #dff0d8 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003609}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003559}}
 .bg-error {
   background-color: #f2dede !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003613}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003563}}
 .bg-warning {
   background-color: #fae8a9 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003617}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003567}}
 .bg-info {
   background-color: #d9edf7 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003621}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003571}}
 .add-picker-section {
   margin-bottom: 10px;
 }
 
 /*Server error popup styles*/
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003626}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003576}}
 .modal-header h1 {
   font-size: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003630}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003580}}
 .modal-body p {
   font-size: 16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003634}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003584}}
 .black-caret {
   margin-top: 6px !important;
   border-top-color: black !important;
   border-bottom-color: black !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003640}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003590}}
 .header-links {
   list-style: none outside none;
   margin: 10px 0 0 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003645}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003595}}
 .header-links > li {
   float: left;
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003650}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003600}}
 .odd-coloumn {
   margin-left: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003654}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003604}}
 .mf-full-height-limit {
   position: absolute;
   bottom: 0;
   margin-top: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003660}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003610}}
 .mf-full-height-wrapper {
   position: absolute;
   top: 0;
@@ -8722,18 +8642,18 @@ input[type="checkbox"] {
   min-height: 700px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003668}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003618}}
 .icon-remove {
   color: #888888;
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003673}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003623}}
 .icon-remove:hover {
   color: #464646;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003677}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003627}}
 .box-header {
   border-bottom: 1px solid #d0d0d0;
   background-color: #f4f4f4;
@@ -8744,13 +8664,13 @@ input[type="checkbox"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003685}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003635}}
 .box-header h5 {
   margin: 5px 0 0 0;
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003691}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003641}}
 .disabled-overlay {
   height: 100%;
   width: 100%;
@@ -8761,12 +8681,12 @@ input[type="checkbox"] {
   z-index: 99;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003703}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003653}}
 .dropdown-menu > li > a {
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003707}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_style\.scss}line{font-family:\00003657}}
 .clear {
   clear: both;
 }
@@ -8871,281 +8791,6 @@ input[type="checkbox"] {
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_datepicker\.scss}line{font-family:\0000335}}
 .datepicker table tr td span {
   width: 22% !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\000031}}
-.series-manage-sort-header {
-  cursor: pointer;
-  font-weight: bold;
-  color: #333333;
-  background-color: #e9e9e9;
-  line-height: 26px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\000037}}
-.series-manage-sort-header > div {
-  padding-left: 10px;
-  padding-right: 8px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000310}}
-.series-manage-sort-header > div div.row-fluid > div {
-  border-right: 1px solid #d0d0d0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000313}}
-.series-manage-sort-header > div div.row-fluid > div:first-child {
-  padding-left: 18px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000316}}
-.series-manage-sort-header > div div.row-fluid > div:last-child {
-  border: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000320}}
-.series-manage-sort-header a {
-  color: #474747;
-  padding-left: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000323}}
-.series-manage-sort-header a:hover {
-  text-decoration: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000329}}
-.series-dnd-grid {
-  min-height: 20px;
-  padding: 5px;
-  margin-bottom: 4px;
-  background-color: white;
-  border: 1px solid #ededed;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding-left: 20px;
-  line-height: 22px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_mixin\.scss}line{font-family:\000039}}
-.series-dnd-grid blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000333}}
-.series-dnd-grid .status {
-  padding-left: 35px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000336}}
-.series-dnd-grid .iconDrag {
-  padding-right: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000339}}
-.series-dnd-grid.disabled {
-  background-color: #e4e4e4;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000341}}
-.series-dnd-grid.disabled .iconDrag {
-  visibility: hidden;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000347}}
-.course-drop-area {
-  border-top: solid 30px #d2d2d2;
-  display: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000352}}
-#dragProxy {
-  cursor: url(../images/closedhand.cur), pointer !important;
-  pointer-events: none;
-  position: absolute;
-  z-index: 1000;
-  background-color: #d6ebf6;
-  color: #0078cd;
-  border: 1px solid #6baaef;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-box-shadow: #cfe0e9 0px 0px 13px 2px;
-  -moz-box-shadow: #cfe0e9 0px 0px 13px 2px;
-  box-shadow: #cfe0e9 0px 0px 13px 2px;
-  height: 34px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000366}}
-.active-course {
-  cursor: grab !important;
-  cursor: -moz-grab;
-  cursor: url(../images/openhand.cur), move !important;
-  cursor: -webkit-grab;
-  background-color: #d6ebf6;
-  color: #0078cd;
-  border: 1px solid #93cdee;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000374}}
-.active-course .iconHandle {
-  background: url('/Admin/images/handle-blue.png?1363687988') no-repeat;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000377}}
-.active-course.dragging {
-  cursor: grabbing !important;
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-  cursor: url(../images/closedhand.cur), move !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000383}}
-.active-course:hover {
-  border-color: #0078cd;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000388}}
-#courseList {
-  overflow-y: auto;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000392}}
-#series-course-list {
-  overflow-y: auto;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\0000396}}
-.course div {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003100}}
-.action-bar-container {
-  text-align: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003102}}
-.action-bar-container.on-collapsed {
-  display: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003107}}
-.form-information {
-  padding-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003109}}
-.form-information .editable-data-container > div {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003112}}
-.form-information .editable-data-container > div input[type="text"] {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-right: 55px;
-  height: 38px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003118}}
-.form-information .editable-data-container > div textarea {
-  height: 70px;
-  padding-right: 75px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003123}}
-.form-information > .form-section {
-  border-top: 1px solid #dddddd;
-  margin-top: 20px;
-  padding-top: 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003127}}
-.form-information > .form-section p {
-  margin-bottom: 0;
-  min-height: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003133}}
-.form-information .editable-container .editable-data-container:first-child {
-  padding-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003136}}
-.form-information .editable-container .editable-data-container:last-child {
-  padding-right: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003142}}
-.ordered-header {
-  cursor: pointer;
-  border-bottom: 1px solid #d0d0d0;
-  background-color: #e9e9e9;
-  height: 26px;
-  margin-bottom: 9px;
-  line-height: 34px;
-  padding-left: 10px;
-  padding-top: 8px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003153}}
-.on-collapsed {
-  display: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_manage\.scss}line{font-family:\00003157}}
-.user-management-form-section {
-  padding: 0px 0px 10px 0px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_tabs\.scss}line{font-family:\000031}}
-.tab-content {
-  overflow: hidden;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_tabs\.scss}line{font-family:\000035}}
-.nav {
-  margin-top: -2px;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_tabs\.scss}line{font-family:\0000311}}
-.nav-tabs {
-  border-bottom: none !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_tabs\.scss}line{font-family:\0000313}}
-.nav-tabs > li {
-  width: 90px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_tabs\.scss}line{font-family:\0000315}}
-.nav-tabs > li > a {
-  color: #fff;
-  height: 23px;
-  margin: auto;
-  text-align: center;
-  line-height: 23px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_tabs\.scss}line{font-family:\0000325}}
-.nav-tabs a {
-  outline: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_tabs\.scss}line{font-family:\0000330}}
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
-  -webkit-box-shadow: 0px -4px 10px rgba(50, 50, 50, 0.05);
-  -moz-box-shadow: 0px -4px 10px rgba(50, 50, 50, 0.05);
-  box-shadow: 0px -4px 10px rgba(50, 50, 50, 0.05);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dee9ee), to(white));
-  border-color: #fff;
-  border-width: 2px;
-  color: #0078cd;
-  font-weight: bold;
-  margin: -2px;
-  -webkit-border-top-right-radius: 7px;
-  -moz-border-radius-topright: 7px;
-  border-top-right-radius: 7px;
-  -webkit-border-top-left-radius: 7px;
-  -moz-border-radius-topleft: 7px;
-  border-top-left-radius: 7px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_tabs\.scss}line{font-family:\0000342}}
-.nav-tabs > li > a:hover {
-  color: #0078cd;
-  border: none;
-  background-color: transparent;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_home\.scss}line{font-family:\000031}}
@@ -9294,7 +8939,6 @@ input[type="checkbox"] {
   left: 31px;
   width: 98px;
   height: 100px;
-  background: url('/Admin/images/free-content/tn_slides.png') no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_home\.scss}line{font-family:\00003123}}
 .home-tile-free span.free-content-label {
@@ -9323,7 +8967,6 @@ input[type="checkbox"] {
   left: 5px;
   width: 151px;
   height: 139px;
-  background: url('/Admin/images/free-content/tn_docs.png') no-repeat;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_home\.scss}line{font-family:\00003149}}
 .home-tile-upload span.upload-label {
@@ -9508,7 +9151,7 @@ input[type="checkbox"] {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_home\.scss}line{font-family:\00003318}}
-.home-sidebar .user-sidebar-field-value, .home-sidebar .user-sidebar-field-header {
+.home-sidebar .user-sidebar-field-value {
   width: 100%;
 }
 
@@ -9706,7 +9349,7 @@ input[type="checkbox"] {
   width: 11px;
   height: 14px;
   margin-right: 5px;
-  background: url('/Admin/images/handle-blue.png?1363687988') no-repeat;
+  background: url('/Admin/images/handle-blue.png?1415901523') no-repeat;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_xls\.scss}line{font-family:\00003141}}
@@ -9745,93 +9388,6 @@ input[type="checkbox"] {
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_xls\.scss}line{font-family:\00003155}}
 .xls-confirm-grid .bg-warning {
   background-color: #fffdda !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\000031}}
-.custom-fields-list {
-  list-style: none;
-  float: left;
-  margin-left: 10px;
-  min-width: 404px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\000038}}
-.custom-field {
-  min-height: 20px;
-  padding: 5px;
-  margin-bottom: 4px;
-  background-color: white;
-  border: 1px solid #ededed;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  background-color: #d6ebf6;
-  color: #0078cd;
-  border: 1px solid #93cdee;
-  min-height: 25px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_mixin\.scss}line{font-family:\000039}}
-.custom-field blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000315}}
-.custom-field .icon-handle {
-  display: inline-block;
-  width: 11px;
-  height: 14px;
-  margin: 5px 0 0 0;
-  background: url('/Admin/images/handle-blue.png?1363687988') no-repeat;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000323}}
-.custom-field .icon-pencil {
-  margin: 7px 3px 5px 2px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000327}}
-.custom-field .field-label {
-  margin-top: 5px;
-  max-width: 335px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000332}}
-.custom-field .field-text-input {
-  margin: 0;
-  min-width: 334px;
-  padding-right: 48px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000338}}
-.custom-field .field-pcp-checkbox {
-  margin: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000343}}
-.custom-fields-delete {
-  list-style: none;
-  float: left;
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000348}}
-.custom-fields-delete li {
-  min-height: 35px;
-  margin-bottom: 6px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000352}}
-.custom-fields-delete li .icon-remove-sign {
-  font-size: 16px;
-  margin-top: 12px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000356}}
-.custom-fields-delete li .icon-red {
-  font-size: 16px;
-  margin-top: 12px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_manage_custom_fields\.scss}line{font-family:\0000363}}
-.add-custom-field {
-  padding-left: 8px;
-  padding-bottom: 10px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\000031}}
@@ -9972,24 +9528,6 @@ input[type="checkbox"] {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003104}}
-.action-certificate {
-  padding: 0;
-  background: url('/Admin/images/certificate_icon.png') no-repeat;
-  width: 15px;
-  height: 22px;
-  position: absolute;
-  margin-left: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003106}}
-.action-certificate.disabled {
-  display: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003114}}
-.courseRow .action-certificate {
-  top: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003119}}
 .action-passed-checkmark:before {
   content: "\f00c";
   font-family: FontAwesome;
@@ -9997,7 +9535,7 @@ input[type="checkbox"] {
   color: #1daf1d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003111}}
 .action-failed-checkmark:before {
   content: "\f00d";
   font-family: FontAwesome;
@@ -10005,23 +9543,23 @@ input[type="checkbox"] {
   color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003118}}
 .cell-title .action {
   visibility: hidden;
   top: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003123}}
 .cell-title-centered {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003127}}
 .header-column-first > .slick-column-name {
   padding-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003131}}
 .slick-column-name {
   max-width: 90%;
   overflow: hidden;
@@ -10031,100 +9569,100 @@ input[type="checkbox"] {
   color: #333333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003140}}
 .action > i {
   font-size: 14px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003144}}
 .btn.action-invite {
   visibility: visible;
   width: 50px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003149}}
 .btn.action-remind {
   position: absolute;
   right: 5px;
   margin-top: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003153}}
 .btn.action-remind.disabled {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003158}}
 .btn.action-delete {
   position: absolute;
   right: 60px;
   margin-top: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003162}}
 .btn.action-delete.moved {
   right: 72px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003167}}
 .btn.action-reinvite {
   position: absolute;
   right: 102px;
   margin-top: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003171}}
 .btn.action-reinvite.moved {
   right: 114px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003174}}
 .btn.action-reinvite.disabled {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003179}}
 .slick-row:hover .action {
   visibility: visible;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003183}}
 .inline-invite-button {
   float: right;
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003188}}
 .inline-email {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003194}}
 .email-cell-wrapper {
   overflow: hidden;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003202}}
 .selectable-row .slick-row.even:hover,
 .selectable-row .slick-row:hover,
 .selectable-row .slick-row.odd:hover {
   background-color: #effaff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003223}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003208}}
 .selectable-row .slick-row.even.highlightRow,
 .selectable-row .slick-row.highlightRow,
 .selectable-row .slick-row.odd.highlightRow {
   background-color: #effaff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003229}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003214}}
 .no-grid-header .slick-header-columns {
   height: 0px;
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003220}}
 .slick-row.ui-widget-content {
   border-bottom: 1px solid #c5c5c5;
   background-color: #fff;
@@ -10133,56 +9671,56 @@ input[type="checkbox"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003225}}
 .slick-row.ui-widget-content.even {
   background-color: #f6f6f6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003228}}
 .slick-row.ui-widget-content.disabledRow {
   background-color: #f0f0f0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003231}}
 .slick-row.ui-widget-content.courseRow {
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003234}}
 .slick-row.ui-widget-content.expanded {
   background-color: #edf8ff;
   font-weight: bold;
   color: #757676;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003239}}
 .slick-row.ui-widget-content.courseHeaderRow {
   background-color: #f5fdfe;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003241}}
 .slick-row.ui-widget-content.courseHeaderRow > .slick-cell {
   font-weight: bold;
   color: #333333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003248}}
 .slick-viewport {
   overflow: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003253}}
 .certficate-container {
   width: 36px;
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003258}}
 .grade-passed {
   color: green;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003262}}
 .grade-failed {
   color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003266}}
 .group-name-cell-wrapper {
   overflow: hidden;
   margin-bottom: 5px;
@@ -10190,7 +9728,7 @@ input[type="checkbox"] {
   text-overflow: clip !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003273}}
 .inline-group-name {
   white-space: nowrap;
   overflow: hidden;
@@ -10202,14 +9740,14 @@ input[type="checkbox"] {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003299}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003284}}
 .inline-count {
   position: relative;
   right: 0;
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003290}}
 .slick-cell-checkboxsel {
   text-overflow: clip;
 }
@@ -10345,544 +9883,6 @@ input[type="checkbox"] {
   max-height: 120px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\000032}}
-i[class^="icon-"] {
-  font-size: 14px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\000036}}
-.btn i {
-  vertical-align: middle;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000310}}
-.link, .email {
-  padding-bottom: 8px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000314}}
-.link.disabled, .email.disabled {
-  border: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000318}}
-.link {
-  list-style-image: url('/Admin/images/link-icon-blue.png?1382083662');
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000322}}
-.link.disabled {
-  list-style-image: url('/Admin/images/link-icon-grey.png?1382083662');
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000326}}
-.email {
-  list-style-image: url('/Admin/images/mail-icon-blue.png?1382083662');
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000330}}
-.email.disabled {
-  list-style-image: url('/Admin/images/mail-icon-grey.png?1382083662');
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000334}}
-.link > a, .email > a {
-  display: inline-block;
-  line-height: 22px;
-  margin-left: 6px;
-  vertical-align: top;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000341}}
-.yam {
-  list-style-image: url('/Admin/images/icon-yammer.png');
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000345}}
-.dividerLine {
-  background: url('/Admin/images/page_HDivider.png?1363687988') no-repeat;
-  height: 5px;
-  width: 250px;
-  padding: 19px 0;
-  background-position: center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000353}}
-.dividerLine.tight {
-  padding: 16px 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000357}}
-.yammer {
-  background: url('/Admin/images/yammer-icon-blue.png') no-repeat scroll center;
-  height: 38px;
-  width: 38px;
-  display: inline-block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000364}}
-.yammer[disabled] {
-  background: url('/Admin/images/yammer-icon-grey.png') no-repeat scroll center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000368}}
-.linkedIn {
-  background: url('/Admin/images/linkedin-icon-blue.png?1382083662') no-repeat scroll center;
-  height: 38px;
-  width: 38px;
-  display: inline-block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000375}}
-.linkedIn[disabled] {
-  background: url('/Admin/images/linkedin-icon-grey.png?1382083662') no-repeat scroll center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000379}}
-.facebook {
-  background: url('/Admin/images/facebook-icon-blue.png?1382083662') no-repeat scroll center;
-  height: 38px;
-  width: 38px;
-  display: inline-block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000386}}
-.facebook[disabled] {
-  background: url('/Admin/images/facebook-icon-grey.png?1382083662') no-repeat scroll center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000390}}
-.twitter {
-  background: url('/Admin/images/twitter-icon-blue.png?1382083662') no-repeat scroll center;
-  height: 38px;
-  width: 38px;
-  display: inline-block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\0000397}}
-.twitter[disabled] {
-  background: url('/Admin/images/twitter-icon-grey.png?1382083662') no-repeat scroll center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003101}}
-.certificate-settings {
-  display: inline-block;
-  margin-top: 30px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003106}}
-.certificate-settings div {
-  margin-bottom: 11px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003110}}
-.series-passing-score {
-  width: 25px;
-  position: relative;
-  top: 3px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003114}}
-.series-passing-score[disabled] {
-  cursor: inherit;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003119}}
-.series-deadline-value {
-  width: 18px;
-  height: 18px !important;
-  top: 3px;
-  margin-bottom: 0 !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003123}}
-.series-deadline-value[disabled] {
-  cursor: inherit;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003129}}
-.series-deadline-dropdown {
-  top: -1px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003133}}
-.deadline-help-text-before {
-  margin-bottom: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003137}}
-.deadline-help-text-after {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003145}}
-.section {
-  min-height: 20px;
-  padding: 0px;
-  margin-bottom: 0px;
-  background-color: white;
-  border: 1px solid #ededed;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-color: #d0d0d0;
-  margin-bottom: 10px;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_mixin\.scss}line{font-family:\000039}}
-.section blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003152}}
-.section-content {
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border-top: 1px solid #c5c5c5;
-  padding: 15px 10px 10px 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003158}}
-.section-content .footer-static {
-  margin-bottom: 60px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003163}}
-.section-grid {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border-top: 1px solid #c5c5c5;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKvX7/+zwjjgziioqKMYAEYB8RmROaABAAQjg/F3d+4VAAAAABJRU5ErkJggg==) repeat;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003168}}
-.section-grid .footer-static {
-  margin-bottom: 60px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003173}}
-.section-header, .section-header-row {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #f4f4f4;
-  line-height: 26px;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 5px 15px;
-  min-height: 40px;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003182}}
-.section-header h5, .section-header-row h5 {
-  font-weight: bold;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003186}}
-.section-header .btn, .section-header-row .btn {
-  font-weight: normal;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003191}}
-.section-header-reset {
-  font-size: 12px;
-  font-weight: normal;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003196}}
-.section-header, .section-row {
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
-  -webkit-border-top-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  border-top-left-radius: 4px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003200}}
-.section-header-row {
-  border-top: 1px solid #c5c5c5;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003204}}
-.section-actions-right {
-  position: absolute;
-  right: 10px;
-  top: 7px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003210}}
-.section-actions-search {
-  position: absolute;
-  left: 10px;
-  right: 300px;
-  max-width: 500px;
-  top: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003218}}
-.section-separator {
-  display: inline-block;
-  position: relative;
-  width: 21px;
-  height: 26px;
-  vertical-align: top;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003224}}
-.section-separator:after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 10px;
-  width: 1px;
-  height: 40px;
-  background-color: #c5c5c5;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003235}}
-.btn-group > .section-separator {
-  width: 11px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003239}}
-.sub-section {
-  border-top: 1px solid gainsboro;
-  padding: 15px 10px 10px 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003244}}
-.section-dark {
-  background-color: #e9e9e9;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003248}}
-.section-small {
-  min-height: 26px;
-  font-size: 12px;
-  line-height: 18px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003252}}
-.section-small label {
-  margin-bottom: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003257}}
-.section-footer {
-  background-color: #ececec;
-  padding: 5px 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-bottom-left-radius: 4px;
-  border-top: 1px solid #c5c5c5;
-  line-height: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003265}}
-.section-footer label {
-  line-height: 22px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003269}}
-.section-footer.footer-fixed-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  min-height: 40px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003277}}
-.section-footer.footer-static {
-  margin-top: -60px;
-  height: 40px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003283}}
-.edit-emails, .edit-emails:hover {
-  color: grey;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003289}}
-.email-type {
-  line-height: 30px;
-  border-bottom: 1px solid gainsboro;
-  padding-left: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003295}}
-.email-type-last {
-  line-height: 30px;
-  padding-left: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003300}}
-.minimum-series {
-  vertical-align: middle;
-  display: block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003305}}
-.checkbox-multiline {
-  position: relative;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003309}}
-.checkbox-multiline > input {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003315}}
-.checkbox-multiline > span {
-  display: inline-block;
-  margin-left: 18px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003320}}
-.self-register-description {
-  font-size: 11px !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003324}}
-.certificateSmall {
-  width: 90px;
-  float: left;
-  margin-left: 38px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003330}}
-.certificateVerySmall {
-  width: 65px;
-  float: left;
-  margin-left: 38px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003336}}
-.sc-custom-certificate-item {
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  border: 4px;
-  border-style: solid;
-  border-color: #FFF;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003345}}
-.sc-custom-certificate-item-selected {
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  border: 4px;
-  border-style: solid;
-  border-color: #ffa307;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003354}}
-.small-certificate-item {
-  border: 4px;
-  border-style: solid;
-  border-color: #ffffff;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003360}}
-.small-certificate-item-selected {
-  border: 4px;
-  border-style: solid;
-  border-color: #ffa307;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003366}}
-.certificate-image-container {
-  height: 200px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003370}}
-.certificateLarge {
-  width: 300px;
-  float: left;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003375}}
-div.row-fluid [class*="span"].center-in-span {
-  float: none;
-  margin: 0 auto;
-  display: block;
-  height: auto;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003383}}
-.user-sidebar-section .course-row, .user-sidebar-section .series-row {
-  white-space: nowrap;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003387}}
-.icon-calendar.missed {
-  position: relative;
-  color: lightgray;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003392}}
-.icon-calendar.missed:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -3px;
-  right: -3px;
-  border-bottom: 1px solid red;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003401}}
-.deadline-length-row {
-  line-height: 37px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003405}}
-.section-emails {
-  border-top: 1px solid #c5c5c5;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003409}}
-.social-network-icons > a {
-  margin-right: 20px;
-  margin-top: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003414}}
-.social-network-icons > a[disabled] {
-  cursor: default;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003418}}
-.access-options {
-  margin-top: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003422}}
-.access-options span {
-  color: #8e8e8e;
-  float: right;
-  font-style: italic;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003428}}
-.require-engagement-description {
-  margin-left: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_customize\.scss}line{font-family:\00003432}}
-.customize-email-preview {
-  padding: 20px;
-}
-
 @-webkit-keyframes opacity {
   /* line 2, _loading.scss */
   0% {
@@ -10935,120 +9935,6 @@ div.row-fluid [class*="span"].center-in-span {
   -moz-animation-delay: 300ms;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\000031}}
-#accordion1 .accordion-group {
-  background-color: #f5fcff;
-  margin: 0px;
-  border: none;
-  border-bottom-left-radius: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\000039}}
-.accordion {
-  margin-bottom: 0px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000313}}
-#accordion1 .accordion-inner {
-  padding: 20px 30px 0 30px;
-  border-top: 1px solid gainsboro;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000315}}
-#accordion1 .accordion-inner form {
-  margin: 0 0 0px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000321}}
-.accordion-heading {
-  border-top: 1px solid gainsboro;
-  font-weight: bold;
-  text-align: center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000327}}
-.accordion-heading a {
-  color: #484848;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000329}}
-.accordion-heading a:hover {
-  color: #0078cd;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000334}}
-.accordion-body {
-  background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000340}}
-.modal[id*="previewEmail"] {
-  width: 700px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000342}}
-.modal[id*="previewEmail"] .modal-body {
-  padding: 0;
-  max-height: 500px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000348}}
-.overlay {
-  background-color: rgba(1, 1, 1, 0);
-  width: 684px;
-  height: 100%;
-  max-height: 500px;
-  position: absolute;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000356}}
-#series-email-banner {
-  line-height: 32px;
-  background-color: #fafafa;
-  width: 96.6%;
-  height: 36px;
-  position: absolute;
-  top: 120px;
-  left: 0;
-  padding-top: 5px;
-  padding-left: 48px;
-  border-bottom: 1px solid #dddddd;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000367}}
-#series-email-banner a {
-  color: #e48384;
-  font-size: 18px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000373}}
-#series-remind-info {
-  border-bottom: 1px solid #dddddd;
-  padding: 6px 0;
-  margin-bottom: 8px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000379}}
-.section-header {
-  text-align: center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000383}}
-.accordion-section-indicator {
-  display: inline-block;
-  width: 13px;
-  height: 5px;
-  margin-left: 4px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000390}}
-.accordion-section-indicator-desc {
-  background: url(../images/sort-desc.gif);
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_emails\.scss}line{font-family:\0000394}}
-.accordion-section-indicator-asc {
-  background: url(../images/sort-asc.gif);
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_headers\.scss}line{font-family:\000036}}
 .app-header {
   background-color: #fff;
@@ -11066,7 +9952,7 @@ div.row-fluid [class*="span"].center-in-span {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_headers\.scss}line{font-family:\0000321}}
-.main-page-header, .home-page-header, .series-page-header, .catalog-page-header {
+.main-page-header, .home-page-header, .series-page-header {
   background-color: #88bfdf;
   font-weight: bold;
   text-align: center;
@@ -11131,7 +10017,7 @@ div.row-fluid [class*="span"].center-in-span {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_headers\.scss}line{font-family:\0000382}}
 .down-arrow {
-  background: url('/Admin/images/dropdown_arrow.png?1363687988') no-repeat;
+  background: url('/Admin/images/dropdown_arrow.png?1415901523') no-repeat;
   height: 8px;
   width: 10px;
   display: inline-block;
@@ -11193,839 +10079,6 @@ div.row-fluid [class*="span"].center-in-span {
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_headers\.scss}line{font-family:\00003129}}
 .account-status-warning-message > img {
   padding-bottom: 7px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\000031}}
-.feedback-footer, .feedback-container {
-  z-index: 200;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\000035}}
-.feedback-container {
-  background: #e2e2e2;
-  border-top: 1px solid lightgrey;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000313}}
-.feedback-component {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding-left: 55px;
-  background: url("/Admin/images/feedback_icon.png") no-repeat;
-  background-position: 30px 0;
-  min-width: 540px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000322}}
-.feedback-text-box {
-  vertical-align: top !important;
-  height: 30px;
-  outline-style: none !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000328}}
-.sticky-footer-wrapper {
-  position: relative;
-  min-height: 100%;
-  min-width: 970px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000334}}
-.sticky-footer-app {
-  min-height: 700px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000338}}
-.feedback-footer, .feedback-push {
-  height: 74px;
-  clear: both;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000343}}
-.feedback-footer {
-  width: 100%;
-  margin-top: -74px;
-  position: relative;
-  z-index: 10;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000350}}
-.feedback-text-input-indicator-off {
-  display: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000354}}
-.feedback-text-input-indicator-near, .feedback-text-input-indicator-at, .feedback-text-input-indicator-over {
-  box-sizing: border-box;
-  color: #474747;
-  float: right;
-  height: 30px;
-  line-height: 30px;
-  min-height: 30px;
-  position: relative;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000364}}
-.feedback-text-input-indicator-at, .feedback-text-input-indicator-over {
-  color: red !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000369}}
-.feedback-header {
-  font-weight: bold;
-  margin-left: 1px;
-  margin-bottom: 5px;
-  margin-top: -1px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_feedback\.scss}line{font-family:\0000376}}
-.sendFeedbackButton {
-  width: 150px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\000033}}
-.user-sidebar, .user-sidebar-collapsed {
-  padding: 9px 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\000037}}
-.row-fluid > .user-sidebar {
-  position: relative;
-  top: 0;
-  left: auto;
-  width: 350px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000314}}
-.row-fluid > .user-sidebar-collapsed {
-  width: 10px;
-  position: absolute;
-  top: auto;
-  left: auto;
-  right: 1px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000323}}
-.user-content-fluid-fixed {
-  margin-left: auto !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000325}}
-.user-content-fluid-fixed > div {
-  position: relative;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000330}}
-.no-users-message {
-  font-size: 18px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 100%;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000338}}
-.show-sidebar {
-  margin-right: 370px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000342}}
-#users-grid {
-  margin-bottom: 33px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000345}}
-#users-grid .slick-row.archivedUserRow {
-  background-color: #f4f4f4;
-  color: #666666;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000350}}
-#users-grid .slick-row.archivedUserRow:hover {
-  background-color: #D6EBF6;
-  color: #474747;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000357}}
-.users-grid-footer {
-  height: 17px;
-  border-top: 1px solid #c5c5c5;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #ececec;
-  padding: 8px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-bottom-left-radius: 4px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000367}}
-.users-grid-footer > label > input {
-  margin: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000372}}
-.make-course-required-checkbox {
-  margin-right: 12px;
-  padding-top: 2px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users\.scss}line{font-family:\0000377}}
-.add-users-or-line {
-  line-height: 15px;
-  display: table-cell;
-  padding-bottom: 8px;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\000033}}
-.user-sidebar-border {
-  min-height: 20px;
-  padding: 0 0 0 0;
-  margin-bottom: 0;
-  background-color: white;
-  border: 1px solid #ededed;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-color: #cccccc;
-  height: 100%;
-  left: 10px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  position: absolute;
-  top: 0;
-  width: 340px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_mixin\.scss}line{font-family:\000039}}
-.user-sidebar-border blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000316}}
-.user-sidebar-button-tab {
-  background-position: left center;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  z-index: 200;
-  left: -5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000326}}
-.user-sidebar-close-tab {
-  height: 84px;
-  margin-top: -48px;
-  width: 16px;
-  background: url("/Admin/images/info_tab.png") no-repeat;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000335}}
-.user-sidebar-open-tab {
-  height: 84px;
-  margin-top: -48px;
-  width: 16px;
-  background: url("/Admin/images/info_tab_collapsed.png") no-repeat;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000345}}
-.user-sidebar-button-panel {
-  min-height: 25px;
-  background-color: #f4f4f4;
-  padding: 7px 10px;
-  text-align: right;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000351}}
-.user-sidebar-button-panel .header-text {
-  padding-top: 5px;
-  float: left;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000357}}
-.user-sidebar-section {
-  background: white;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000362}}
-.user-sidebar-header, .user-sidebar-header-buttons {
-  background: #EBEBEB;
-  font-weight: bold;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000367}}
-.user-sidebar-section .title {
-  background: #dcdcdc;
-  font-size: 14px;
-  height: 28px;
-  line-height: 28px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000374}}
-.user-sidebar-header, .user-sidebar-header-buttons {
-  padding: 5px 10px;
-  border-bottom: solid 1px #cccccc;
-  border-top: solid 1px #cccccc;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000379}}
-.user-sidebar-header .user-sidebar-header-button, .user-sidebar-header-buttons .user-sidebar-header-button {
-  font-size: 12px;
-  height: 28px;
-  margin-top: -4px;
-  -webkit-border-top-left-radius: 7px;
-  -moz-border-radius-topleft: 7px;
-  border-top-left-radius: 7px;
-  -webkit-border-top-right-radius: 7px;
-  -moz-border-radius-topright: 7px;
-  border-top-right-radius: 7px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000388}}
-.user-sidebar-header-buttons {
-  padding: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000392}}
-.user-sidebar-header-buttons > .btn-group {
-  margin-left: 0;
-  margin-right: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\0000396}}
-.user-sidebar-header-buttons > .btn-group .btn {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background: #f4f4f4;
-  border: none;
-  width: 50%;
-  font-weight: bold;
-  color: #999999;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003108}}
-.user-sidebar-header-buttons > .btn-group .btn:hover, .user-sidebar-header-buttons > .btn-group .btn:focus {
-  background: #EBEBEB;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003113}}
-.user-sidebar-header-buttons > .btn-group .btn.active, .user-sidebar-header-buttons > .btn-group .btn:active {
-  color: #333333;
-  background: #effaff;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003118}}
-.user-sidebar-header-buttons > .btn-group .btn:first-child {
-  border-right: solid 1px #cccccc;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003122}}
-.user-sidebar-header-buttons > .btn-group .btn:last-child {
-  border-left: solid 1px #cccccc;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003129}}
-.user-sidebar-fields {
-  padding: 10px 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003133}}
-.user-sidebar-field-value, .user-sidebar-field-header {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 186px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003142}}
-.user-sidebar-field-header {
-  font-weight: bold;
-  white-space: nowrap;
-  width: 100px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003149}}
-.tag-names {
-  padding: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003153}}
-.tag-row {
-  display: inline-block;
-  margin-right: 10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 142px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003161}}
-.tag-row .tag-name {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 95px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003168}}
-.tag-row .tag-count {
-  vertical-align: top;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003173}}
-.empty-section-text {
-  padding: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003178}}
-.edit-custom-field-button {
-  padding: 0;
-  background: url('/Admin/images/certificate_icon.png') no-repeat;
-  width: 15px;
-  height: 22px;
-  position: absolute;
-  margin-left: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003189}}
-.user-search-dropdown {
-  background: white;
-  border: black solid 1px;
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003196}}
-.user-search-dropdown .no-results {
-  padding: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003200}}
-.user-search-dropdown .result {
-  border-bottom: black solid 1px;
-  cursor: pointer;
-  padding: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003206}}
-.user-search-dropdown .result:last-child {
-  border-bottom: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003210}}
-.user-search-dropdown .result:hover {
-  background: #D6EBF6;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003214}}
-.user-search-dropdown .result-type {
-  font-style: italic;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003218}}
-.user-search-dropdown .result.selected {
-  background-color: #3875d7;
-  color: #ffffff;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003224}}
-.group-field {
-  min-height: 20px;
-  padding: 5px;
-  margin-bottom: 4px;
-  background-color: white;
-  border: 1px solid #ededed;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  line-height: 30px;
-  padding-left: 10px;
-  border: 1px solid #93cdee;
-  background-color: #d6ebf6;
-  color: #0078cd;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_mixin\.scss}line{font-family:\000039}}
-.group-field blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003232}}
-.group-field .icon-handle {
-  display: inline-block;
-  width: 11px;
-  height: 14px;
-  margin-right: 5px;
-  background: url('/Admin/images/handle-blue.png?1363687988') no-repeat;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003239}}
-.group-field .icon-pencil {
-  margin: 10px 3px 5px 2px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003244}}
-.multi-edit-custom-fields-list, .multi-edit-groups-list {
-  margin: 0;
-  list-style: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003248}}
-.multi-edit-custom-fields-list .custom-field-item, .multi-edit-custom-fields-list .group-item, .multi-edit-groups-list .custom-field-item, .multi-edit-groups-list .group-item {
-  background: #e4e4e4;
-  border: 1px solid #aaaaaa;
-  border-radius: 18px;
-  margin-bottom: 5px;
-  padding: 5px 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003255}}
-.multi-edit-custom-fields-list .custom-field-item .value-name, .multi-edit-custom-fields-list .group-item .value-name, .multi-edit-groups-list .custom-field-item .value-name, .multi-edit-groups-list .group-item .value-name {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 110px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003263}}
-.multi-edit-custom-fields-list .custom-field-item .number-of-users, .multi-edit-custom-fields-list .group-item .number-of-users, .multi-edit-groups-list .custom-field-item .number-of-users, .multi-edit-groups-list .group-item .number-of-users {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 45px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003270}}
-.multi-edit-custom-fields-list .custom-field-item .apply-to-all, .multi-edit-custom-fields-list .group-item .apply-to-all, .multi-edit-groups-list .custom-field-item .apply-to-all, .multi-edit-groups-list .group-item .apply-to-all {
-  display: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003274}}
-.multi-edit-custom-fields-list .custom-field-item .icon-remove, .multi-edit-custom-fields-list .group-item .icon-remove, .multi-edit-groups-list .custom-field-item .icon-remove, .multi-edit-groups-list .group-item .icon-remove {
-  font-size: 20px;
-  margin-top: -3px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003282}}
-.custom-field-item:hover .apply-to-all, .group-item:hover .apply-to-all {
-  display: inline-block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003287}}
-.btn-apply-to-all {
-  display: inline-block;
-  vertical-align: top;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003292}}
-#inputCustomFieldsMultiple {
-  display: inline-block;
-  width: 195px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003297}}
-#inputCustomFieldsMultiple.indicator-visible {
-  padding-right: 60px;
-  width: 135px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003302}}
-.permissions-row {
-  vertical-align: middle;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003305}}
-.permissions-row .permissions-group-name {
-  max-width: 230px;
-  display: inline-block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003310}}
-.permissions-row .permissions-user-count {
-  display: inline-block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar\.scss}line{font-family:\00003316}}
-.permissions-row:hover .permissions-group-name {
-  text-decoration: underline;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\000034}}
-#coursesAccordion,
-#seriesAccordion,
-#customFieldsAccordion {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\000038}}
-#coursesAccordion .accordion-group,
-#seriesAccordion .accordion-group,
-#customFieldsAccordion .accordion-group {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  border: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000311}}
-#coursesAccordion .accordion-group:first-child .accordion-heading,
-#seriesAccordion .accordion-group:first-child .accordion-heading,
-#customFieldsAccordion .accordion-group:first-child .accordion-heading {
-  border-top: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000314}}
-#coursesAccordion .accordion-group:first-child .accordion-heading a,
-#seriesAccordion .accordion-group:first-child .accordion-heading a,
-#customFieldsAccordion .accordion-group:first-child .accordion-heading a {
-  border-top: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000319}}
-#coursesAccordion .accordion-body,
-#seriesAccordion .accordion-body,
-#customFieldsAccordion .accordion-body {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000323}}
-#coursesAccordion .accordion-heading .accordion-toggle,
-#seriesAccordion .accordion-heading .accordion-toggle,
-#customFieldsAccordion .accordion-heading .accordion-toggle {
-  display: block;
-  padding: 5px 15px;
-  border-top: none;
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000331}}
-#coursesAccordion .accordion-toggle, #coursesAccordion .accordion-toggle:hover,
-#seriesAccordion .accordion-toggle,
-#seriesAccordion .accordion-toggle:hover,
-#customFieldsAccordion .accordion-toggle,
-#customFieldsAccordion .accordion-toggle:hover {
-  background: #f4f4f4;
-  border-bottom: solid 1px #cccccc;
-  color: #696969;
-  font-weight: bold;
-  text-decoration: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000340}}
-#coursesAccordion .accordion-toggle:before,
-#seriesAccordion .accordion-toggle:before,
-#customFieldsAccordion .accordion-toggle:before {
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: repeat;
-  content: "\f0d7";
-  display: inline-block;
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  height: auto;
-  line-height: normal;
-  margin-right: 5px;
-  margin-top: 0;
-  speak: none;
-  text-decoration: inherit;
-  vertical-align: baseline;
-  width: auto;
-  -webkit-font-smoothing: antialiased;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000360}}
-#coursesAccordion .accordion-toggle.collapsed:before,
-#seriesAccordion .accordion-toggle.collapsed:before,
-#customFieldsAccordion .accordion-toggle.collapsed:before {
-  content: "\f0da";
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000364}}
-#coursesAccordion .accordion-body,
-#seriesAccordion .accordion-body,
-#customFieldsAccordion .accordion-body {
-  margin: 0;
-  background: #FAFAFA;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000369}}
-#coursesAccordion .course-row, #coursesAccordion .series-row, #coursesAccordion .custom-field-row,
-#seriesAccordion .course-row,
-#seriesAccordion .series-row,
-#seriesAccordion .custom-field-row,
-#customFieldsAccordion .course-row,
-#customFieldsAccordion .series-row,
-#customFieldsAccordion .custom-field-row {
-  background: white;
-  border-bottom: solid 1px #e7e7e7;
-  padding: 5px 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000374}}
-#coursesAccordion .course-row .passed, #coursesAccordion .series-row .passed, #coursesAccordion .custom-field-row .passed,
-#seriesAccordion .course-row .passed,
-#seriesAccordion .series-row .passed,
-#seriesAccordion .custom-field-row .passed,
-#customFieldsAccordion .course-row .passed,
-#customFieldsAccordion .series-row .passed,
-#customFieldsAccordion .custom-field-row .passed {
-  color: green;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000378}}
-#coursesAccordion .course-row .failed, #coursesAccordion .series-row .failed, #coursesAccordion .custom-field-row .failed,
-#seriesAccordion .course-row .failed,
-#seriesAccordion .series-row .failed,
-#seriesAccordion .custom-field-row .failed,
-#customFieldsAccordion .course-row .failed,
-#customFieldsAccordion .series-row .failed,
-#customFieldsAccordion .custom-field-row .failed {
-  color: red;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000383}}
-#coursesAccordion .custom-fields-accordion-heading,
-#seriesAccordion .custom-fields-accordion-heading,
-#customFieldsAccordion .custom-fields-accordion-heading {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000385}}
-#coursesAccordion .custom-fields-accordion-heading .icon-pencil,
-#seriesAccordion .custom-fields-accordion-heading .icon-pencil,
-#customFieldsAccordion .custom-fields-accordion-heading .icon-pencil {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  margin-top: -7px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\0000393}}
-#coursesAccordion .custom-field-value,
-#seriesAccordion .custom-field-value,
-#customFieldsAccordion .custom-field-value {
-  display: inline-block;
-  max-width: 255px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\00003100}}
-#coursesAccordion .custom-field-count,
-#seriesAccordion .custom-field-count,
-#customFieldsAccordion .custom-field-count {
-  vertical-align: top;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\00003104}}
-#coursesAccordion .truncated-text,
-#seriesAccordion .truncated-text,
-#customFieldsAccordion .truncated-text {
-  text-align: center;
-  font-style: italic;
-  color: #5894B7;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\00003110}}
-#coursesAccordion .course-row:last-child,
-#seriesAccordion .course-row:last-child,
-#customFieldsAccordion .course-row:last-child {
-  border-bottom: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\00003114}}
-#coursesAccordion .course-name, #coursesAccordion .series-name,
-#seriesAccordion .course-name,
-#seriesAccordion .series-name,
-#customFieldsAccordion .course-name,
-#customFieldsAccordion .series-name {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 207px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_users_sidebar_accordion\.scss}line{font-family:\00003121}}
-#coursesAccordion .course-progress, #coursesAccordion .series-progress,
-#seriesAccordion .course-progress,
-#seriesAccordion .series-progress,
-#customFieldsAccordion .course-progress,
-#customFieldsAccordion .series-progress {
-  display: inline-block;
-  text-align: right;
-  width: 58px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\000031}}
-.yammerButton, .yammerButton:hover, .yammerButton:focus {
-  background: url('/Admin/images/yammer_login.png') no-repeat;
-  background-position: 0 0;
-  width: 202px;
-  height: 44px;
-  -moz-transition: none;
-  -webkit-transition: none;
-  -o-transition: color 0 ease-in;
-  transition: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\0000312}}
-.yammerButton:focus {
-  outline: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\0000316}}
-.yammerButton:hover {
-  background-position: 0px -43px;
-  -moz-transition: none;
-  -webkit-transition: none;
-  -o-transition: color 0 ease-in;
-  transition: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\0000324}}
-#yammer-users-container {
-  padding: 0 10px 45px 0px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\0000327}}
-#yammer-users-container .yammer-users-slick-container-footer {
-  line-height: 45px;
-  vertical-align: middle;
-  padding-top: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\0000334}}
-.cell-trainee-image {
-  margin-top: -6px;
-  width: 24px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\0000339}}
-.yammerLoading > * {
-  visibility: hidden;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\0000343}}
-.yammerLoading {
-  position: relative;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_yammer\.scss}line{font-family:\0000347}}
-.yammerLoading:before {
-  content: "";
-  position: absolute;
-  background: url(/Yammer/images/ajax-loader-transp.gif) no-repeat bottom left;
-  width: 16px;
-  height: 16px;
-  margin-left: -8px;
-  margin-right: -8px;
-  left: 50%;
-  top: 50%;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_mf_text_length\.scss}line{font-family:\000031}}
-.mf-text-length-off {
-  display: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_mf_text_length\.scss}line{font-family:\000035}}
-.mf-text-length-near, .mf-text-length-over, .mf-text-length-at {
-  display: block;
-  z-index: 2;
-  color: #474747;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 5px 5px 0 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_mf_text_length\.scss}line{font-family:\0000315}}
-.mf-text-length-over, .mf-text-length-at {
-  color: red !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_ie\.scss}line{font-family:\000032}}
@@ -12143,28 +10196,6 @@ div.row-fluid [class*="span"].center-in-span {
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_alerts\.scss}line{font-family:\000035}}
 .alert-in-box {
   margin: 0 10px 10px 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_trainees\.scss}line{font-family:\000031}}
-.series-trainees-grid-footer {
-  line-height: 25px;
-  border-top: 1px solid #cccccc;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_trainees\.scss}line{font-family:\000036}}
-.number-of-trainees {
-  padding-left: 10px;
-  padding-top: 2px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_trainees\.scss}line{font-family:\0000311}}
-.grid-with-footer {
-  margin-bottom: 30px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_series_trainees\.scss}line{font-family:\0000315}}
-.action-button-bar > * {
-  margin-left: 5px;
 }
 
 /**
@@ -12331,1063 +10362,4 @@ select.select2 {
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_select2_bootstrap\.scss}line{font-family:\00003133}}
 .select2-container .select2-choice abbr {
   top: 6px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\000031}}
-.free-content-sidebar-templates {
-  min-height: 25px;
-  background-color: #f4f4f4;
-  padding-top: 15px;
-  padding-right: 5px;
-  padding-left: 10px;
-  padding-bottom: 7px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\000039}}
-.free-content-sidebar-templates h4 {
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000315}}
-.free-content-sidebar-templates .template-container {
-  text-align: center;
-  padding-bottom: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000319}}
-.free-content-sidebar-templates .template-container a {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000322}}
-.free-content-sidebar-templates .template-container a i {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  width: 30px;
-  height: 30px;
-  display: block;
-  border-radius: 50%;
-  border: 2px solid white;
-  -webkit-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 1px 2px rgba(50, 50, 50, 0.75);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000336}}
-.free-content-sidebar-templates .template-container a i.blue {
-  background: #74b0ed;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNzRiMGVkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMyNzFhOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-  background: -moz-linear-gradient(-45deg, #74b0ed 0%, #3271a9 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #74b0ed), color-stop(100%, #3271a9));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #74b0ed 0%, #3271a9 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #74b0ed 0%, #3271a9 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #74b0ed 0%, #3271a9 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #74b0ed 0%, #3271a9 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#74b0ed', endColorstr='#3271a9',GradientType=1 );
-  /* IE6-8 fallback on horizontal gradient */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000349}}
-.free-content-sidebar-templates .template-container a i.blue:hover {
-  background: none;
-  background: #74b0ed;
-  filter: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000355}}
-.free-content-sidebar-templates .template-container a i.green {
-  background: #71e468;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNzFlNDY4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMwOWI0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-  background: -moz-linear-gradient(-45deg, #71e468 0%, #309b44 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #71e468), color-stop(100%, #309b44));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #71e468 0%, #309b44 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #71e468 0%, #309b44 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #71e468 0%, #309b44 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #71e468 0%, #309b44 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#71e468', endColorstr='#309b44',GradientType=1 );
-  /* IE6-8 fallback on horizontal gradient */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000369}}
-.free-content-sidebar-templates .template-container a i.green:hover {
-  background: none;
-  background: #71e468;
-  filter: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000375}}
-.free-content-sidebar-templates .template-container a i.charcoal {
-  background: #989898;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOTg5ODk4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzUxNTE1MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-  background: -moz-linear-gradient(-45deg, #989898 0%, #515151 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #989898), color-stop(100%, #515151));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #989898 0%, #515151 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #989898 0%, #515151 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #989898 0%, #515151 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #989898 0%, #515151 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#989898', endColorstr='#515151',GradientType=1 );
-  /* IE6-8 fallback on horizontal gradient */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000389}}
-.free-content-sidebar-templates .template-container a i.charcoal:hover {
-  background: none;
-  background: #989898;
-  filter: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\0000395}}
-.free-content-sidebar-templates .template-container a i.gray {
-  background: #dcdcdc;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZGNkY2RjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzkxOTE5MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-  background: -moz-linear-gradient(-45deg, gainsboro 0%, #919191 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, gainsboro), color-stop(100%, #919191));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, gainsboro 0%, #919191 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, gainsboro 0%, #919191 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, gainsboro 0%, #919191 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #dcdcdc 0%, #919191 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dcdcdc', endColorstr='#919191',GradientType=1 );
-  /* IE6-8 fallback on horizontal gradient */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003109}}
-.free-content-sidebar-templates .template-container a i.gray:hover {
-  background: none;
-  background: #dcdcdc;
-  filter: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003115}}
-.free-content-sidebar-templates .template-container a i.red {
-  background: #f4575b;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjZjQ1NzViIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2EyMDgwYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-  background: -moz-linear-gradient(-45deg, #f4575b 1%, #a2080b 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(1%, #f4575b), color-stop(100%, #a2080b));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #f4575b 1%, #a2080b 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #f4575b 1%, #a2080b 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #f4575b 1%, #a2080b 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #f4575b 1%, #a2080b 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4575b', endColorstr='#a2080b',GradientType=1 );
-  /* IE6-8 fallback on horizontal gradient */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003129}}
-.free-content-sidebar-templates .template-container a i.red:hover {
-  background: none;
-  background: #f4575b;
-  filter: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003135}}
-.free-content-sidebar-templates .template-container a i.orange {
-  background: #ebaa58;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjZWJhYTU4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4NzQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-  background: -moz-linear-gradient(-45deg, #ebaa58 2%, #d87400 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(2%, #ebaa58), color-stop(100%, #d87400));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #ebaa58 2%, #d87400 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #ebaa58 2%, #d87400 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #ebaa58 2%, #d87400 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #ebaa58 2%, #d87400 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebaa58', endColorstr='#d87400',GradientType=1 );
-  /* IE6-8 fallback on horizontal gradient */
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003148}}
-.free-content-sidebar-templates .template-container a i.orange:hover {
-  background: none;
-  background: #ebaa58;
-  filter: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003154}}
-.free-content-sidebar-templates .template-container a span {
-  color: #00AEEF;
-  font-size: 11px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003161}}
-.free-content-sidebar-templates .template-container a:hover i {
-  box-shadow: 0px 0px 3px 3px #9ef5ee;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003168}}
-.free-content-sidebar-courses {
-  background: #fff;
-  border-top: solid 1px #cccccc;
-  padding-top: 20px;
-  padding-right: 5px;
-  padding-left: 10px;
-  padding-bottom: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003176}}
-.free-content-sidebar-courses h4 {
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003182}}
-.free-content-sidebar-courses ul.free-course-list {
-  width: 100%;
-  margin: 0;
-  list-style: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003187}}
-.free-content-sidebar-courses ul.free-course-list li.course-row {
-  position: relative;
-  margin-top: 20px;
-  min-height: 100px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003192}}
-.free-content-sidebar-courses ul.free-course-list li.course-row .preview-placeholder {
-  background: url('/Admin/images/free-content/preview_image.png') no-repeat;
-  width: 144px;
-  height: 100px;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003202}}
-.free-content-sidebar-courses ul.free-course-list li.course-row .info-placeholder {
-  display: block;
-  padding-left: 160px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003206}}
-.free-content-sidebar-courses ul.free-course-list li.course-row .info-placeholder h4 {
-  font-weight: bold;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_freecontent_sidebar\.scss}line{font-family:\00003210}}
-.free-content-sidebar-courses ul.free-course-list li.course-row .info-placeholder p {
-  font-size: 12px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\000031}}
-.form-information {
-  padding-bottom: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\000033}}
-.form-information .editable-data-container > div {
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\000036}}
-.form-information .editable-data-container > div input[type="text"] {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-right: 55px;
-  height: 38px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000312}}
-.form-information .editable-data-container > div textarea {
-  height: 70px;
-  padding-right: 75px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000317}}
-.form-information > .form-section {
-  border-top: 1px solid #dddddd;
-  margin-top: 20px;
-  padding-top: 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000321}}
-.form-information > .form-section p {
-  margin-bottom: 0;
-  min-height: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000327}}
-.form-information .editable-container .editable-data-container:first-child {
-  padding-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000330}}
-.form-information .editable-container .editable-data-container:last-child {
-  padding-right: 10px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000336}}
-.catalog-form {
-  margin-bottom: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000340}}
-.catalog-page-header {
-  background-color: #88bfdf !important;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 30px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000348}}
-.section-sub-header {
-  font-weight: bold;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000352}}
-.catalog-item-thumbnail {
-  width: 95px;
-  border-radius: 3px;
-  margin-top: -4px;
-  border: 1px solid #cccccc;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000359}}
-.add-content-button {
-  margin-top: 2px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000363}}
-.add-content-catalog-search {
-  position: absolute;
-  left: 10px;
-  right: 300px;
-  max-width: 500px;
-  top: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000371}}
-.slick-cell-checkboxsel-custom {
-  padding-top: 32px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000375}}
-.catalog-add-item-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-left: 5px;
-  font-weight: bold;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000382}}
-.share-links {
-  height: 40px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000386}}
-.share-links-icons {
-  float: left;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000390}}
-.share-links-text {
-  float: left;
-  padding-top: 12px;
-  margin-right: 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\0000396}}
-.share-links span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003101}}
-.catalog-publish-options {
-  margin-left: 18px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003105}}
-#publishCatalogCbx {
-  margin-top: 9px;
-  margin-bottom: 7px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003110}}
-.section-sub-header {
-  margin-top: 0px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003115}}
-.catalog-content-grid {
-  box-sizing: border-box;
-  border-top: 1px solid #c5c5c5;
-  padding: 11px 10px 0 10px;
-  overflow-y: auto;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003122}}
-.catalog-content-list {
-  list-style: none;
-  top: 20px;
-  left: 51px;
-  right: 0px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003129}}
-.catalog-remove-signs {
-  list-style: none;
-  float: left;
-  margin: 0;
-  margin-top: 2px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003136}}
-.catalog-remove {
-  padding-top: 35px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003140}}
-.catalog-remove-item {
-  line-height: 36px;
-  cursor: pointer;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003145}}
-.catalog-content-item-text > i {
-  background: url("/Admin/images/handle-blue.png") no-repeat;
-  padding-right: 20px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003151}}
-.catalog-content-item, .catalog-content-item-under,
-.catalog-content-item-under {
-  height: 35px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003155}}
-.catalog-content-item, .catalog-content-item-under {
-  border: 1px solid #bcdcef;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  background-color: #d6ebf6;
-  height: 30px;
-  margin: 4px 0 0 0;
-  position: relative;
-  cursor: url(../images/openhand.cur), move;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003165}}
-.catalog-content-item.ui-sortable-helper, .ui-sortable-helper.catalog-content-item-under {
-  -webkit-box-shadow: -2px 3px 6px 0px dimgrey;
-  -moz-box-shadow: -2px 3px 6px 0px dimgrey;
-  box-shadow: -2px 3px 6px 0px dimgrey;
-  cursor: url(../images/closedhand.cur), pointer !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003167}}
-.catalog-content-item.ui-sortable-helper .sq-grip, .ui-sortable-helper.catalog-content-item-under .sq-grip {
-  display: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003173}}
-.catalog-content-item-under {
-  background-color: #cccccc;
-  color: #8e8e8e;
-  border: 1px solid #8e8e8e;
-  cursor: url(../images/closedhand.cur), move !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003181}}
-.catalog-content-item-text {
-  color: #0078cd;
-  line-height: 30px;
-  text-align: left;
-  padding-left: 10px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003191}}
-.catalog-content-item-type {
-  color: #0078cd;
-  line-height: 30px;
-  text-align: left;
-  padding-right: 10px;
-  float: right;
-  width: 50px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003200}}
-.catalog-content-item-grip {
-  display: block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003204}}
-.catalog-content-item-grip {
-  position: absolute;
-  top: 14px;
-  right: 10px;
-  top: 5px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003211}}
-.catalog-content-item-grip hr {
-  margin: 3px;
-  width: 33px;
-  height: 3px;
-  border: 1px solid #dedede;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background: #FFFFFF;
-  -webkit-box-shadow: inset 0 1px 2px #b5b5b5;
-  -moz-box-shadow: inset 0 1px 2px #b5b5b5;
-  box-shadow: inset 0 1px 2px #b5b5b5;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003223}}
-.catalog-access-options {
-  margin: 15px 0 0 15px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003227}}
-.catalog-access-options > label > input[type="radio"] {
-  margin: -2px 5px 0 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003231}}
-.catalog-access-options span {
-  color: #8e8e8e;
-  font-style: italic;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003237}}
-.catalog-share-links {
-  line-height: 30px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003241}}
-.catalog-share-links > i {
-  padding-right: 25px;
-  height: 18px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003248}}
-.share-catalog-icon {
-  background: url("/Admin/images/link-icon-blue.png") no-repeat;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003252}}
-.mail-catalog-icon {
-  margin-left: 40px;
-  background: url("/Admin/images/mail-icon-blue.png") no-repeat;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003257}}
-.share-catalog-icon.disabled {
-  background: url("/Admin/images/link-icon-grey.png") no-repeat;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003261}}
-.mail-catalog-icon.disabled {
-  background: url("/Admin/images/mail-icon-grey.png") no-repeat;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003265}}
-.catalog-name {
-  line-height: 30px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003269}}
-.add-content-arrow {
-  height: 100%;
-  background: url("/Admin/images/add_trainees_arrow.png") no-repeat;
-  margin: 0px;
-  width: 114px;
-  height: 113px;
-  position: absolute;
-  right: 36px;
-  top: 32px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003280}}
-.no-content-in-catalog {
-  background-color: white;
-  border: 3px solid #bfbfbf;
-  border-radius: 10px;
-  height: 120px;
-  width: 380px;
-  margin: 0px auto;
-  margin-top: 80px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003290}}
-.no-content-in-catalog-message {
-  line-height: 25px;
-  color: #378ad3;
-  font-size: 24px;
-  text-align: left;
-  float: left;
-  margin-top: 46px;
-  margin-left: 40px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003300}}
-.modal-header .copy-paste-url {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_catalog_page\.scss}line{font-family:\00003304}}
-.catalog-header-action-buttons {
-  float: right;
-  width: 120px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_group\.scss}line{font-family:\000033}}
-.create-new-group-user-list .group-item .value-name {
-  width: 85%;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_group\.scss}line{font-family:\000039}}
-.edit-group-name {
-  position: relative;
-  width: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_group\.scss}line{font-family:\0000313}}
-.edit-group-name input {
-  width: 82%;
-  padding-right: 50px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_group\.scss}line{font-family:\0000318}}
-.edit-group-name .mf-text-length-at, .edit-group-name .mf-text-length-near, .edit-group-name .mf-text-length-over, .edit-group-name .mf-text-length-at {
-  font-size: 12px;
-  font-weight: normal;
-  margin-top: 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_add_new_user\.scss}line{font-family:\000032}}
-.add-new-user .well {
-  border: 1px solid #efefef !important;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  background: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_add_new_user\.scss}line{font-family:\0000310}}
-.add-new-user .well p {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_add_new_user\.scss}line{font-family:\0000316}}
-.add-new-user .well p small {
-  padding-left: 5px;
-  display: inline;
-  font-weight: normal;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_add_new_user\.scss}line{font-family:\0000322}}
-.add-new-user .well .btn-space {
-  margin-top: 8px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_add_new_user\.scss}line{font-family:\0000326}}
-.add-new-user .role-selection {
-  margin-top: 16px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_add_new_user\.scss}line{font-family:\0000330}}
-.add-new-user .select2-search-field {
-  width: 50%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_add_new_user\.scss}line{font-family:\0000334}}
-.add-new-user .ng-dirty .select2-search-field {
-  width: auto;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\000033}}
-.custom-certificate .cc-select2-dropdown {
-  min-width: 130px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\000037}}
-.custom-certificate .cc-page-header {
-  background-color: #88BFDF;
-  height: 30px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 0 10px 0;
-  padding: 7px 0 7px 0;
-  font-size: 14px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000316}}
-.custom-certificate .cc-page-header .cc-header-action-buttons {
-  float: right;
-  width: 190px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000321}}
-.custom-certificate .cc-page-header .cc-header-title {
-  line-height: 30px;
-  padding-left: 190px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000329}}
-.custom-certificate .cc-container {
-  padding: 10px;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000334}}
-.custom-certificate .cc-download-template {
-  display: inline-block;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000339}}
-.custom-certificate .cc-download-template a {
-  font-weight: normal;
-  font-size: 12px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000345}}
-.custom-certificate .cc-section-actions-search {
-  max-width: 300px;
-  min-width: 230px;
-  display: inline-block;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000351}}
-.custom-certificate .cc-section-actions-search .select2-container {
-  height: 28px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000355}}
-.custom-certificate .cc-section-actions-search .iconSearch {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  display: block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000362}}
-.custom-certificate .cc-layout {
-  border: 1px solid #d0d0d0;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-  background: #f2f2f2 url("/Admin/images/certificate_tile.png") repeat;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000374}}
-.custom-certificate .cc-inner-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000380}}
-.custom-certificate .cc-upload {
-  width: 185px;
-  display: inline-block;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000386}}
-.custom-certificate .cc-upload-button-container {
-  width: 185px;
-  height: 30px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000390}}
-.custom-certificate .cc-upload-button-container.hideUpload {
-  visibility: hidden;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\0000395}}
-.custom-certificate .cc-upload-button-container .swfupload {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003101}}
-.custom-certificate .cc-upload-progress-container {
-  width: 185px;
-  height: 16px;
-  display: inline;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003107}}
-.custom-certificate .cc-upload-progress-container .cc-upload-progress {
-  height: 25px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003111}}
-.custom-certificate .cc-upload-progress-container .bar {
-  width: 90%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003116}}
-.custom-certificate .cc-upload-progress-container .progress {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  right: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003123}}
-.custom-certificate .cc-upload-progress-container .progress-text {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003131}}
-.custom-certificate .ccFieldWarning {
-  border: 2px solid yellow;
-  border-radius: 4px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003136}}
-.custom-certificate .cc-central-field-container {
-  position: absolute;
-  top: 20px;
-  bottom: 120px;
-  width: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003142}}
-.custom-certificate .cc-central-field-container .cc-central-field-inner-container {
-  width: 360px;
-  height: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 4px;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003151}}
-.custom-certificate .cc-central-field-container .cc-central-field-opacity-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  border-radius: 4px;
-  background-color: #FFFFFF;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003163}}
-.custom-certificate .cc-central-field-container .cc-field-box {
-  height: 15%;
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003169}}
-.custom-certificate .cc-central-field-container .cc-field-box .cc-field-select-box {
-  margin-top: -15px;
-  top: 50%;
-  left: 50%;
-  margin-left: -122px;
-  position: absolute;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003180}}
-.custom-certificate .cc-central-field-container .cc-field-input-box {
-  margin-top: -15px;
-  top: 50%;
-  position: absolute;
-  width: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003186}}
-.custom-certificate .cc-central-field-container .cc-field-input-box .cc-select2-arrow {
-  display: inline-block;
-  width: 18px;
-  position: absolute;
-  right: 58px;
-  top: 1px;
-  bottom: 1px;
-  border-left: 1px solid #aaaaaa;
-  border-radius: 0 4px 4px 0;
-  background-clip: padding-box;
-  background: #CCC;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cccccc), color-stop(0.6, #eeeeee));
-  background-image: -webkit-linear-gradient(center bottom, #cccccc 0%, #eeeeee 60%);
-  background-image: -moz-linear-gradient(center bottom, #cccccc 0%, #eeeeee 60%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0);
-  background-image: linear-gradient(top, #cccccc 0%, #eeeeee 60%);
-  cursor: pointer;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003204}}
-.custom-certificate .cc-central-field-container .cc-field-input-box .cc-select2-arrow b {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("/Admin/scripts/vendor/select2/select2.png") no-repeat 0 1px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003213}}
-.custom-certificate .cc-central-field-container .select2-container .select2-choice {
-  height: 29px;
-  line-height: 30px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003218}}
-.custom-certificate .cc-central-field-container .cc-field-select {
-  width: 245px;
-  text-align: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003223}}
-.custom-certificate .cc-central-field-container .cc-field-input {
-  text-align: left;
-  margin: 0;
-  width: 217px;
-  padding-right: 20px;
-  height: 24px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003232}}
-.custom-certificate .cc-bottom-field-container {
-  position: absolute;
-  height: 80px;
-  left: 10px;
-  right: 10px;
-  bottom: 20px;
-  border-radius: 4px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003243}}
-.custom-certificate .cc-bottom-field-container .cc-bottom-field-container-opacity {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  background-color: #FFFFFF;
-  border-radius: 4px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003255}}
-.custom-certificate .cc-bottom-field-container .select2-container .select2-choice {
-  height: 29px;
-  line-height: 30px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003260}}
-.custom-certificate .cc-bottom-field-container .cc-field-select {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  display: block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003268}}
-.custom-certificate .cc-bottom-field-container .cc-field-input {
-  text-align: left;
-  margin: 0;
-  width: 100%;
-  padding-right: 20px;
-  height: 21px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003276}}
-.custom-certificate .cc-bottom-field-container .cc-field-box {
-  height: 100%;
-  width: 20%;
-  float: left;
-  position: relative;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003282}}
-.custom-certificate .cc-bottom-field-container .cc-field-box .cc-field-select-box {
-  margin-top: -15px;
-  top: 50%;
-  width: 100%;
-  position: absolute;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003289}}
-.custom-certificate .cc-bottom-field-container .cc-field-box .cc-field-input-box {
-  margin-top: -15px;
-  top: 50%;
-  position: absolute;
-  width: 100%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003295}}
-.custom-certificate .cc-bottom-field-container .cc-field-box .cc-field-input-box .cc-field-input-container {
-  width: 90%;
-  display: block;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003303}}
-.custom-certificate .cc-bottom-field-container .cc-field-box .cc-field-input-box .cc-select2-arrow {
-  display: inline-block;
-  width: 18px;
-  position: absolute;
-  right: 1px;
-  top: 1px;
-  bottom: 1px;
-  border-left: 1px solid #aaaaaa;
-  border-radius: 0 4px 4px 0;
-  background-clip: padding-box;
-  background: #CCC;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cccccc), color-stop(0.6, #eeeeee));
-  background-image: -webkit-linear-gradient(center bottom, #cccccc 0%, #eeeeee 60%);
-  background-image: -moz-linear-gradient(center bottom, #cccccc 0%, #eeeeee 60%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0);
-  background-image: linear-gradient(top, #cccccc 0%, #eeeeee 60%);
-  cursor: pointer;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_custom_certificate\.scss}line{font-family:\00003321}}
-.custom-certificate .cc-bottom-field-container .cc-field-box .cc-field-input-box .cc-select2-arrow b {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("/Admin/scripts/vendor/select2/select2.png") no-repeat 0 1px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\000032}}
-#shopify-course-content-page .slick-row .r1 {
-  padding-top: 32px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\000036}}
-#shopify-course-content-page .slick-row .selected {
-  visibility: visible;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\0000310}}
-#shopify-course-content-page .slick-row .invalid input[type="text"] {
-  border: 1px solid red !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\0000314}}
-#shopify-course-content-page .slick-header-column .slick-column-name input[type="checkbox"] {
-  display: none !important;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\0000320}}
-#shopify-content-page .grid-canvas .slick-cell.active, #shopify-course-content-page .grid-canvas .slick-cell.active {
-  background: none;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\0000323}}
-#shopify-content-page .slick-cell.editable, #shopify-course-content-page .slick-cell.editable {
-  background: none;
-  border-style: none;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\0000328}}
-.shopify-slick-formatter {
-  display: inline;
-  width: auto;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\0000333}}
-.del.shopify-slick-formatter {
-  display: block;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\0000337}}
-.no-content-in-shopify-message {
-  line-height: 25px;
-  color: #378ad3;
-  font-size: 24px;
-  text-align: center;
-  float: left;
-  margin-top: 45px;
-  margin-left: 70px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_shopify\.scss}line{font-family:\0000347}}
-.redPrice {
-  color: red;
 }
