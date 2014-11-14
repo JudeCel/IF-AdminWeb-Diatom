@@ -1,0 +1,22 @@
+<div ng-controller="DeleteSessionCtrl">
+    <div class="modal-header modal-warn">
+        <button ng-hide="modal.status" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3><i class="icon-warning-sign"></i> Confirm delete Session?</h3>
+    </div>
+    <div class="modal-body">
+        <div ng-switch on="modal.status">
+            <div ng-switch-when="saving">
+                <p id="loading">Deleting Session<span>.</span><span>.</span><span>.</span></p>
+            </div>
+            <div ng-switch-default>
+                <p>Deleting Session will delete all participants progress. You cannot undo this action.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div ng-hide="modal.status">
+            <button type="button" class="btn btn-general" ng-click="dismiss()">Cancel</button>
+            <button class="btn btn-primary" ng-click="dropSession()">Drop</button>
+        </div>
+    </div>
+</div>
