@@ -11,9 +11,18 @@
         <!--</div>-->
     <!--</div>-->
 
-	<div class="home-page-header">
-		<a href="#/ManageProfile">Manage Profile</a> |
-		<a href="#/ManageSessions">Manage Sessions</a> |
-		<a href="#/ManageResources">Manage Resources</a>
+	<div class="row-fluid">
+		<div class="series-page-header">
+			<div class="row-fluid">
+				<div class="tabbable">
+					<ul class="nav nav-tabs" ng-model="currentTab">
+						<li ng-repeat="tab in tabs" ng-class="{active:tab.selected}">
+							<a ng-href="#/{{tab.name}}" id={{tab.title}}>{{tab.title}}</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+

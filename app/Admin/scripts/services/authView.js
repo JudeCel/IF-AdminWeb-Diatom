@@ -2,6 +2,10 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 	function (Auth, mtypes, accountFeatures, $rootScope) {
 
 		var tabs = {
+			manageProfileTab: {name: 'ManageProfile', title: 'Manage Profile', contentSrc: 'pages/manageProfile/manageProfile.html', selected: false},
+			manageSessionsTab: {name: 'ManageSessions', title: 'Manage Sessions', contentSrc: 'pages/manageSessions/manageSessions.html', selected: false},
+			manageResourcesTab: {name: 'ManageResources', title: 'Manage Resources', contentSrc: 'pages/manageResources/manageResources.html', selected: false},
+
 			reviewAndAddFeaturesTab: {name: 'reviewAndAddFeatures', title: 'Review and Add Features', contentSrc: 'pages/manageProfile/reviewAndAddFeatures.html', selected: false},
 			changeContactDetailsTab: {name: 'changeContactDetails', title: 'Change Contact Details', contentSrc: 'pages/manageProfile/changeContactDetails.html', selected: false},
 			changePaymentDetailsTab: {name: 'changePaymentDetails', title: 'Change Payment Details', contentSrc: 'pages/manageProfile/changePaymentDetails.html', selected: false},
@@ -53,6 +57,12 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 		}
 
 		return {
+			getHeaderTabs: function() {
+				if (isAccountManager())
+					return [tabs.manageProfileTab, tabs.manageSessionsTab, tabs.manageResourcesTab];
+				else
+					return [tabs.manageSessionsTab];
+			},
 			getManageProfileTabs: function () {
 				return [tabs.reviewAndAddFeaturesTab, tabs.changeContactDetailsTab, tabs.changePaymentDetailsTab, tabs.organizeAccountManagersTab, tabs.changeYourPasswordTab];
 			},
