@@ -34,17 +34,9 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 			customizeManagerTab: {name: 'customize', title: 'Customize', contentSrc: 'pages/series/seriesCustomizeManager.html', selected: false}
 		};
 
-		function isAdministrator() {
+		function isAccountManager() {
 			return true;
 			//return Auth.userRole() == mtypes.userPermissions.administrator;
-		}
-
-		function isAdmin() {
-			return false;
-		}
-
-		function isManager() {
-			return false;
 		}
 
 		function getAdvancedTrialDaysLeft() {
@@ -68,19 +60,10 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 				return [tabs.sbStep1, tabs.sbStep2, tabs.sbStep3, tabs.sbStep4, tabs.sbStep5];
 			},
 			getManageResourcesTabs: function () {
-				if (isAdministrator())
-					return [tabs.galleryTab, tabs.contactListsTab, tabs.topicsTab, tabs.emailTemplatesTab, tabs.coloursGalleryTab];
-				if (isAdmin())
-					return [tabs.manageTab, tabs.customizeTab, tabs.traineesTab];
-				if (isManager()) {
-					return [tabs.customizeManagerTab, tabs.traineesTab];
-				}
-				return [];
+				return [tabs.galleryTab, tabs.contactListsTab, tabs.topicsTab, tabs.emailTemplatesTab, tabs.coloursGalleryTab];
 			},
 
-			isAdministrator: isAdministrator,
-			isAdmin: isAdmin,
-			isManager: isManager,
+			isAdministrator: isAccountManager,
 
 			isTrial: function () {
 				return true;
@@ -121,21 +104,6 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 				}
 
 				return [];
-			},
-
-			getTierDescription: function () {
-				if (accountFeatures.pricingType == mtypes.pricingType.trial)
-					return 'Trial';
-				if (accountFeatures.pricingMaxTrainees <= 50)
-					return 'Basic';
-				if (accountFeatures.pricingMaxTrainees <= 500)
-					return 'Advanced';
-				if (accountFeatures.pricingMaxTrainees <= 1000)
-					return 'Pro';
-				if (accountFeatures.pricingMaxTrainees > 1000)
-					return 'Enterprise';
-
-				return '';
 			},
 
 			getTrialDaysLeft: function () {
