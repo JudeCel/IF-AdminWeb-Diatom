@@ -20,15 +20,19 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 			}
 
 			if (tabName == 'gallery') {
-				galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
+				successCb(['passThrough']);
+				//galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'contactLists') {
-				contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
+				successCb(['passThrough']);
+				//contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'topics') {
 				topicsResource.topicsSetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'emailTemplates') {
-				emailTemplatesResource.emailsSetup(successCb, errorHandler.defaultServerErrorHandler());
+				successCb(['passThrough']);
+				//emailTemplatesResource.emailsSetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'coloursGallery') {
-				coloursGalleryResource.coloursSetup(successCb, errorHandler.defaultServerErrorHandler());
+				successCb(['passThrough']);
+				//coloursGalleryResource.coloursSetup(successCb, errorHandler.defaultServerErrorHandler());
 			}
 			else {
 				successCb(['passThrough']);
