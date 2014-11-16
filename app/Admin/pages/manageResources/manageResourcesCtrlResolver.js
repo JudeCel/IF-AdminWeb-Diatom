@@ -5,7 +5,7 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 		return function () {
 			var deferred = $q.defer();
 			var pageName = $route.current.params.pageName || $route.current.pageName;
-			//var tabName = $route.current.params.tabName;
+			var tabName = $route.current.params.tabName;
 
 			var successCb = function (result) {
 				Auth.getRolePromise().then(function() {
@@ -19,15 +19,15 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 				return deferred.promise;
 			}
 
-			if (pageName == 'gallery') {
+			if (tabName == 'gallery') {
 				galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
-			} else if (pageName == 'contactLists') {
+			} else if (tabName == 'contactLists') {
 				contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
-			} else if (pageName == 'topics') {
+			} else if (tabName == 'topics') {
 				topicsResource.topicsSetup(successCb, errorHandler.defaultServerErrorHandler());
-			} else if (pageName == 'emailTemplates') {
+			} else if (tabName == 'emailTemplates') {
 				emailTemplatesResource.emailsSetup(successCb, errorHandler.defaultServerErrorHandler());
-			} else if (pageName == 'coloursGallery') {
+			} else if (tabName == 'coloursGallery') {
 				coloursGalleryResource.coloursSetup(successCb, errorHandler.defaultServerErrorHandler());
 			}
 			else {
