@@ -9,8 +9,8 @@ angular.module('adminWebApp.resources')
 			return topicsResource.query(resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		};
 
-		topicsResource.prototype.getSessionsForTopic = function getSessionsForTopic(resultCb, errorCb) {
-			return topicsSessionResource.query(resultCb, errorHandler.defaultServerErrorHandler(errorCb));
+		topicsResource.prototype.getSessionsForTopic = function getSessionsForTopic(topicId, resultCb, errorCb) {
+			return topicsSessionResource.query({topicId: topicId}, resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		};
 
 		return new topicsResource;
