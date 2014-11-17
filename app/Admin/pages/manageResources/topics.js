@@ -3,8 +3,6 @@ angular.module('adminWebApp.controllers').controller('TopicsCtrl', ['$scope', '$
 		'$location', 'tabUtil', 'refreshSession', '$window', 'gridFormatters', 'topicsResource',
 		function ($scope, $rootScope, $routeParams, authView, $location, tabUtil, refreshSession, $window, gridFormatters, topicsResource) {
 
-			var a = $scope.resolvedData;
-
 			function getGridColumns() {
 				return [
 					{id: "name", name: "Name", field: "name", width: 330, cssClass: "cell-title", headerCssClass: "header-column-first", formatter: gridFormatters.traineeNameFormatter, sortable: true}

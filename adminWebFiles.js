@@ -5,10 +5,6 @@ var files = {
 		'app/Admin/scripts/gaConstants.js',
 		'app/Admin/scripts/main.js',
 
-		'app/Admin/pages/home/home.js',
-		'app/Admin/pages/home/homeList.js',
-		'app/Admin/pages/home/homeResource.js',
-		'app/Admin/pages/home/homeCtrlResolver.js',
 		'app/Admin/pages/manageProfile/manageProfileCtrlResolver.js',
 		'app/Admin/pages/manageProfile/manageProfile.js',
 
@@ -27,6 +23,7 @@ var files = {
 		'app/Admin/pages/manageResources/topics.js',
 		'app/Admin/pages/manageResources/coloursGallery.js',
 		'app/Admin/pages/manageResources/emailTemplates.js',
+
 		'app/Admin/pages/footer/footer.js',
 		'app/Admin/pages/header/header.js',
 		'app/Admin/pages/title/title.js',

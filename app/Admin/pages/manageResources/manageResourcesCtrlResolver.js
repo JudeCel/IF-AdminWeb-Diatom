@@ -4,7 +4,6 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 
 		return function () {
 			var deferred = $q.defer();
-			var pageName = $route.current.params.pageName || $route.current.pageName;
 			var tabName = $route.current.params.tabName;
 
 			var successCb = function (result) {
@@ -20,8 +19,7 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 			}
 
 			if (tabName == 'gallery') {
-				successCb(['passThrough']);
-				//galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
+				galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'contactLists') {
 				successCb(['passThrough']);
 				//contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());

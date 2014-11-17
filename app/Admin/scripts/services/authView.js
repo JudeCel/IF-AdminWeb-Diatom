@@ -12,7 +12,7 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 			organizeAccountManagersTab: {name: 'organizeAccountManagers', title: 'Organize Account Managers', contentSrc: 'pages/manageProfile/organizeAccountManagers.html', selected: false},
 			changeYourPasswordTab: {name: 'changePassword', title: 'Change Password', contentSrc: 'pages/manageProfile/changeYourPassword.html', selected: false},
 
-			galleryTab: {name: 'gallery', title: 'Gallery', contentSrc: 'pages/manageResources/gallery.html', selected: false},
+			galleryTab: {name: 'gallery', title: 'Gallery', contentSrc: 'pages/manageResources/gallery1.html', selected: false},
 			contactListsTab: {name: 'contactLists', title: 'Contact Lists', contentSrc: 'pages/manageResources/contactLists.html', selected: false},
 			topicsTab: {name: 'topics', title: 'Topics', contentSrc: 'pages/manageResources/topics.html', selected: false},
 			emailTemplatesTab: {name: 'emailTemplates', title: 'Email Templates', contentSrc: 'pages/manageResources/emailTemplates.html', selected: false},
@@ -22,20 +22,20 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 			sbStep2: {name: 'step2', title: 'Facilitator and Topics', contentSrc: 'pages/manageSessions/facilitatorAndTopics.html', selected: false},
 			sbStep3: {name: 'step3', title: 'Manage Session Emails', contentSrc: 'pages/manageSessions/sessionEmails.html', selected: false},
 			sbStep4: {name: 'step4', title: 'Manage Participants', contentSrc: 'pages/manageSessions/manageParticipants.html', selected: false},
-			sbStep5: {name: 'step5', title: 'Manage Observers', contentSrc: 'pages/manageSessions/manageObservers.html', selected: false},
+			sbStep5: {name: 'step5', title: 'Manage Observers', contentSrc: 'pages/manageSessions/manageObservers.html', selected: false}
 
-			traineesTab: {name: 'trainees', title: 'Trainees', contentSrc: 'pages/series/seriesTrainees.html', selected: false,
-				subSelection: [
-					{name: 'addExistingTrainees', contentSrc: 'pages/users/inviteTrainees.html'},
-					{name: 'addNewUser', contentSrc: 'pages/users/addNewUser.html'},
-					{name: 'addYammerUsers', contentSrc: 'pages/yammer/yammerTrainees.html'},
-					{name: 'importXls', contentSrc: 'pages/users/xls/xls.html'}
-				]},
-			customizeTab: {name: 'customize', title: 'Customize', contentSrc: 'pages/series/seriesCustomize.html', selected: false,
-				subSelection: [
-					{name: 'emails', contentSrc: 'pages/series/seriesEmails.html'}
-				]},
-			customizeManagerTab: {name: 'customize', title: 'Customize', contentSrc: 'pages/series/seriesCustomizeManager.html', selected: false}
+//			traineesTab: {name: 'trainees', title: 'Trainees', contentSrc: 'pages/series/seriesTrainees.html', selected: false,
+//				subSelection: [
+//					{name: 'addExistingTrainees', contentSrc: 'pages/users/inviteTrainees.html'},
+//					{name: 'addNewUser', contentSrc: 'pages/users/addNewUser.html'},
+//					{name: 'addYammerUsers', contentSrc: 'pages/yammer/yammerTrainees.html'},
+//					{name: 'importXls', contentSrc: 'pages/users/xls/xls.html'}
+//				]},
+//			customizeTab: {name: 'customize', title: 'Customize', contentSrc: 'pages/series/seriesCustomize.html', selected: false,
+//				subSelection: [
+//					{name: 'emails', contentSrc: 'pages/series/seriesEmails.html'}
+//				]},
+//			customizeManagerTab: {name: 'customize', title: 'Customize', contentSrc: 'pages/series/seriesCustomizeManager.html', selected: false}
 		};
 
 		function isAccountManager() {
