@@ -10,6 +10,8 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 		}
 
 		var gridCommands = $scope.gridCommands = {};
+		var resourcesToDrop = [];
+		var viewData = [];
 
 		$scope.gridInfo = {
 			options: {editable: false,
@@ -21,14 +23,14 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 				multiColumnSort: true
 			},
 			columns: getGridColumns(),
-//				onRowsChanged: onRowsChanged,
-//				onRowCountChanged: onRowCountChanged,
-//				onSelectedRowsChanged: onSelectedRowsChanged,
-			includeSelectCheckbox: false,
+			onRowsChanged: onRowsChanged,
+//			onRowCountChanged: onRowCountChanged,
+			onSelectedRowsChanged: onSelectedRowsChanged,
+			includeSelectCheckbox: true,
 			onClick: onRowClick,
 //			rowMetadataProvider: rowMetadataProvider,
 			filterFn: filterer,
-//				checkboxSelectionFormatter: checkboxSelectionFormatter,
+//			checkboxSelectionFormatter: checkboxSelectionFormatter,
 			data: []
 		};
 
@@ -46,6 +48,13 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 //					return showDropConfirmation(item);
 //				}
 		};
+
+		function onRowsChanged(args, items) {
+			viewData = _.filter(items, function (item) {
+				return !item._parent;
+			});
+			updateDropBtnState();
+		}
 
 		function updateFilter() {
 			$scope.filterData = {
@@ -85,10 +94,14 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 			$scope.$broadcast('deleteResourceEvent', item);
 		}
 
-		$scope.$on('deleteResourceConfirmEvent', function (event, trainee, cb) {
+		$scope.$on('deleteResourceConfirmEvent', function (event, resource, cb) {
 			event.stopPropagation();
-			doDrop(_.isEmpty(trainee) ? traineesToDrop : trainee, cb);
+			doDrop(_.isEmpty(resource) ? resourcesToDrop : resource, cb);
 		});
+
+		$scope.broadcastResourcesToDrop = function () {
+			$scope.$broadcast('deleteResourceEvent');
+		};
 
 		function doDrop(resources, cb) {
 			var ids = _.pluck(resources, 'id');
@@ -104,7 +117,30 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 			galleryResource.gallerySetup(function (result) {
 				$scope.gridData = result;
 			});
+		};
+
+		var selectedIds = [];
+
+		function onSelectedRowsChanged(args, value) {
+			selectedIds = value;
+			$scope.selectedRowsCount = selectedIds.length;
+			updateDropBtnState();
 		}
+
+		function updateDropBtnState() {
+			$scope.bulkDropEnabled = false;
+			resourcesToDrop = [];
+
+			_.each(viewData, function (resource) {
+				//if (resource.canBeDropped && selectedIds.indexOf(resource.id) != -1) {
+				if (selectedIds.indexOf(resource.id) != -1) {
+					$scope.bulkDropEnabled = true;
+					resourcesToDrop.push(resource);
+				}
+			});
+
+			$scope.resourcesToDropCnt = resourcesToDrop.length;
+		};
 
 //			refreshSession.refresh();
 	}]);

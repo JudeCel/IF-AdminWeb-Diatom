@@ -18,7 +18,7 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 				return deferred.promise;
 			}
 
-			if (tabName == 'gallery') {
+			if (tabName == 'gallery' || !tabName) {
 				galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'contactLists') {
 				successCb(['passThrough']);

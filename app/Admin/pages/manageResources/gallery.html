@@ -11,6 +11,18 @@
 			<button type="button" class="pill" value="documents" id="button-documents">Documents</button>
 		</div>
 	</div>
+	<div>
+		<button class="btn btn-info pull-right" bs-modal="'pages/modals/deleteResource.html'"
+		        ng-click="broadcastResourcesToDrop()"
+		        ng-disabled="!bulkDropEnabled || !resourcesToDropCnt" type="button"
+		        id="button-drop-trainees">Delete
+		</button>
+		<button class="btn btn-info pull-right" bs-modal="'pages/modals/downloadResource.html'"
+		        ng-click="broadcastResourcesToDownload()"
+		        ng-disabled="!bulkDownloadEnabled || !resourcesToDownloadCnt" type="button"
+		        id="button-download-trainees">Download
+		</button>
+	</div>
 	<div class="row-fluid">
 		<div id="trainees-container" class="section">
 			<div class="section-grid">

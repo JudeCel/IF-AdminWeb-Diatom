@@ -9,14 +9,14 @@ angular.module('adminWebApp.modals')
 
 	$scope.dropSession = function() {
 		$scope.modal.status = 'saving';
-		$scope.$emit('deleteResourceConfirmEvent', $scope.modal.data, function() {
+		$scope.$emit('downloadResourceConfirmEvent', $scope.modal.data, function() {
 			$scope.dismiss();
 			$timeout(function() {$scope.modal.status = ''}, 500);
 		});
 	};
 
-	$scope.$on('deleteResourceEvent', function(event, resource) {
-		if(!resource) return;
+	$scope.$on('downloadResourceEvent', function(event, resource) {
+		if(!session) return;
 		$scope.modal.content = 1;
 		$scope.modal.data = resource;
 		$scope.show();
