@@ -1,0 +1,24 @@
+<div ng-controller="GalleryCtrl" class="trainees-page">
+
+	<div>
+		<!-- Filter group -->
+		<div class="btn-group shifted" data-toggle="buttons-radio" ng-model="resourceTypeCriteria" bs-buttons-radio>
+			<button type="button" class="pill" value="all" id="button-all">All</button>
+			<button type="button" class="pill" value="images" id="button-invited">Images</button>
+			<button type="button" class="pill" value="brandLogos" id="button-in-progress">Brand Logos</button>
+			<button type="button" class="pill" value="video" id="button-missed-deadline">Video</button>
+			<button type="button" class="pill" value="audio" id="button-audio">Audio</button>
+			<button type="button" class="pill" value="documents" id="button-documents">Documents</button>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div id="trainees-container" class="section">
+			<div class="section-grid">
+				<div class="footer-static" mf-full-height=".mf-full-height-limit">
+					<div id="topicsGrid" mf-grid="gridInfo" grid-data="gridData" grid-filter-data="filterData" grid-commands="gridCommands">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

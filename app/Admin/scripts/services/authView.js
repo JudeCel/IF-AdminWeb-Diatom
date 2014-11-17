@@ -12,7 +12,7 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 			organizeAccountManagersTab: {name: 'organizeAccountManagers', title: 'Organize Account Managers', contentSrc: 'pages/manageProfile/organizeAccountManagers.html', selected: false},
 			changeYourPasswordTab: {name: 'changePassword', title: 'Change Password', contentSrc: 'pages/manageProfile/changeYourPassword.html', selected: false},
 
-			galleryTab: {name: 'gallery', title: 'Gallery', contentSrc: 'pages/manageResources/gallery1.html', selected: false},
+			galleryTab: {name: 'gallery', title: 'Gallery', contentSrc: 'pages/manageResources/gallery.html', selected: false},
 			contactListsTab: {name: 'contactLists', title: 'Contact Lists', contentSrc: 'pages/manageResources/contactLists.html', selected: false},
 			topicsTab: {name: 'topics', title: 'Topics', contentSrc: 'pages/manageResources/topics.html', selected: false},
 			emailTemplatesTab: {name: 'emailTemplates', title: 'Email Templates', contentSrc: 'pages/manageResources/emailTemplates.html', selected: false},

@@ -1,6 +1,6 @@
 
 angular.module('adminWebApp.resources').factory('EmailTemplatesCtrlResolver',
-	function ($q, $route, homeResource, Validation, errorHandler, refreshSession, Auth) {
+	function ($q, $route, Validation, errorHandler, refreshSession, Auth) {
 
 		return function () {
 			var deferred = $q.defer();
@@ -20,8 +20,9 @@ angular.module('adminWebApp.resources').factory('EmailTemplatesCtrlResolver',
 
 			if (!pageName || pageName == 'gallery') {
 				refreshSession.refresh(null, function() {
-					homeResource.load(successCb, errorHandler.defaultServerErrorHandler());
+					//homeResource.load(successCb, errorHandler.defaultServerErrorHandler());
 				});
+				successCb();
 			}
 
 			return deferred.promise;

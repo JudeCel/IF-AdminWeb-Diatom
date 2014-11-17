@@ -24,5 +24,12 @@ angular.module('adminWebApp.consts').constant('mtypes', {
 		blue: 102000100,
 		green: 102000200,
 		orange: 102000300
+	},
+	resourceType: {
+		image: 103000100,
+		brandLogo: 103000200,
+		video: 103000300,
+		audio: 103000400,
+		document: 103000500
 	}}
 );
