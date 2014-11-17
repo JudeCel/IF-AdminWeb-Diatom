@@ -36,25 +36,16 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 	function traineeNameFormatter(row, cell, value, columnDef, item) {
 		if (item.metaType) return value;
 
-		var reinviteButtonClass = "btn btn-mini btn-info action action-reinvite";
-		var remindButtonClass = "btn btn-mini btn-info action action-remind";
+		var editButtonClass = "btn btn-mini btn-info action action-remind";     // change to Edit class (add it)
 		var dropButtonClass = "btn btn-mini btn-info action action-delete";
-		var remindText = "Remind";
-		var reinviteText = "Reset";
-		var remindDisabled = '';
+		var editDisabled = '';
 		var dropDisabled = '';
-		var reinviteDisabled = '';
 
-		if (!item.canBeReinvited) {
-			reinviteDisabled += ' disabled';
-		}
-
-		if (!item.canBeDropped && !dropDisabled)
-			dropDisabled = " disabled";
+//		if (!item.canBeDropped && !dropDisabled)
+//			dropDisabled = " disabled";
 
 		var tempResult = '<button' + dropDisabled + ' class="' + dropButtonClass + '">Drop</button>' +
-			'<button' + remindDisabled + ' class="' + remindButtonClass + '">' + remindText + '</button>' +
-			'<button' + reinviteDisabled + ' class="' + reinviteButtonClass + '">' + reinviteText + '</button>';
+			'<button' + editDisabled + ' class="' + editButtonClass + '">Edit</button>';
 
 		return '<span></span><div>' + value + '</div>' + tempResult;
 	}

@@ -4,8 +4,7 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 
 		return function () {
 			var deferred = $q.defer();
-			var pageName = $route.current.params.pageName || $route.current.pageName;
-			//var tabName = $route.current.params.tabName;
+			var tabName = $route.current.params.tabName;
 
 			var successCb = function (result) {
 				Auth.getRolePromise().then(function() {
@@ -19,16 +18,19 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 				return deferred.promise;
 			}
 
-			if (pageName == 'gallery') {
+			if (tabName == 'gallery') {
 				galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
-			} else if (pageName == 'contactLists') {
-				contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
-			} else if (pageName == 'topics') {
+			} else if (tabName == 'contactLists') {
+				successCb(['passThrough']);
+				//contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
+			} else if (tabName == 'topics') {
 				topicsResource.topicsSetup(successCb, errorHandler.defaultServerErrorHandler());
-			} else if (pageName == 'emailTemplates') {
-				emailTemplatesResource.emailsSetup(successCb, errorHandler.defaultServerErrorHandler());
-			} else if (pageName == 'coloursGallery') {
-				coloursGalleryResource.coloursSetup(successCb, errorHandler.defaultServerErrorHandler());
+			} else if (tabName == 'emailTemplates') {
+				successCb(['passThrough']);
+				//emailTemplatesResource.emailsSetup(successCb, errorHandler.defaultServerErrorHandler());
+			} else if (tabName == 'coloursGallery') {
+				successCb(['passThrough']);
+				//coloursGalleryResource.coloursSetup(successCb, errorHandler.defaultServerErrorHandler());
 			}
 			else {
 				successCb(['passThrough']);

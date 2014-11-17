@@ -36,18 +36,10 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 		return ret;
 	}
 
-	var homeCtrlResolver = newResolver('HomeCtrlResolver');
 	var manageProfileCtrlResolver = newResolver('ManageProfileCtrlResolver');
 	var manageResourcesCtrlResolver = newResolver('ManageResourcesCtrlResolver');
 	var manageSessionsCtrlResolver = newResolver('ManageSessionsCtrlResolver');
 	var sessionBuilderCtrlResolver = newResolver('SessionBuilderCtrlResolver');
-
-	var galleryCtrlResolver = newResolver('GalleryCtrlResolver');
-	var contactListsCtrlResolver = newResolver('ContactListsCtrlResolver');
-	var topicsCtrlResolver = newResolver('TopicsCtrlResolver');
-	var emailTemplatesCtrlResolver = newResolver('EmailTemplatesCtrlResolver');
-	var coloursGalleryCtrlResolver = newResolver('ColoursGalleryCtrlResolver');
-
 
 	// check to see if user is logged in
 	//if (!ifConfig.sessionId) return;
@@ -57,14 +49,17 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 //	}
 
 	$routeProvider
+<<<<<<< HEAD
 		.when('/Home', {templateUrl: 'pages/home/home.html', controller: 'HomeCtrl', pageName: 'home', resolve: {resolveData: homeCtrlResolver}})
 
 	  .when('/Login', {templateUrl: 'pages/login/login.html', controller: 'LoginCtrl', pageName: 'login'})
 	  .when('/SingUp', {templateUrl: 'pages/singUp/singUp.html', controller: 'SingUpCtrl', pageName: 'singUp'})
 
+=======
+>>>>>>> 0f1cfcee343287a9d790723ca31819caa89179ce
 		// First Tab
 		.when('/ManageProfile', {templateUrl: 'pages/manageProfile/manageProfile.html', controller: 'ManageProfileCtrl', pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})
-		.when('/ManageProfile/:tabName', {templateUrl: 'pages/ManageProfile/manageProfile.html', controller: 'ManageProfileCtrl', reloadOnSearch: false, pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})
+		.when('/ManageProfile/:tabName', {templateUrl: 'pages/manageProfile/manageProfile.html', controller: 'ManageProfileCtrl', reloadOnSearch: false, pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})
 
 		// Second Tab
 		.when('/ManageSessions', {templateUrl: 'pages/manageSessions/manageSessions.html', controller: 'ManageSessionsCtrl', pageName: 'manageSessions', resolve: {resolveData: manageSessionsCtrlResolver}})

@@ -2,12 +2,12 @@
 angular.module('adminWebApp.resources')
 	.factory('galleryResource', function ($resource, errorHandler) {
 
-		var galleryRes = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/gallery');
+		var galleryResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/gallery');
 
-		galleryRes.prototype.load = function load(resultCb, errorCb) {
-			return galleryRes.get(resultCb, errorHandler.defaultServerErrorHandler(errorCb));
+		galleryResource.prototype.gallerySetup = function gallerySetup(resultCb, errorCb) {
+			return galleryResource.query(resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		};
 
-		return new galleryRes;
+		return new galleryResource;
 	}
 );

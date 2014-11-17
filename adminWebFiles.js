@@ -5,6 +5,7 @@ var files = {
 		'app/Admin/scripts/gaConstants.js',
 		'app/Admin/scripts/main.js',
 
+<<<<<<< HEAD
 		'app/Admin/pages/login/login.js',
 		'app/Admin/pages/singUp/singUp.js',
 
@@ -12,6 +13,8 @@ var files = {
 		'app/Admin/pages/home/homeList.js',
 		'app/Admin/pages/home/homeResource.js',
 		'app/Admin/pages/home/homeCtrlResolver.js',
+=======
+>>>>>>> 0f1cfcee343287a9d790723ca31819caa89179ce
 		'app/Admin/pages/manageProfile/manageProfileCtrlResolver.js',
 		'app/Admin/pages/manageProfile/manageProfile.js',
 
@@ -30,6 +33,7 @@ var files = {
 		'app/Admin/pages/manageResources/topics.js',
 		'app/Admin/pages/manageResources/coloursGallery.js',
 		'app/Admin/pages/manageResources/emailTemplates.js',
+
 		'app/Admin/pages/footer/footer.js',
 		'app/Admin/pages/header/header.js',
 		'app/Admin/pages/title/title.js',

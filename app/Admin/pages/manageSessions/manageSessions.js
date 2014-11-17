@@ -66,9 +66,40 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 				}
 			]
 
-			function onRowClick(item, targetClasses, target) {
-				// TBD
+			function doEdit(sessions, cb) {
+				// TBD: redirect to /SessionBuilder/:sessionId/step1
 			}
+
+			function doDrop(session, cb) {
+				manageSessionsResource.dropSession($scope.sessionId, function (result) {
+					(cb || angular.noop)();
+					//refreshData();
+				}, function (error) {
+					(cb || angular.noop)();
+				});
+			}
+
+			function onRowClick(item, targetClasses, target) {
+				if (target.type == "checkbox") return;
+
+				if (targetClasses.indexOf('action-edit') !== -1) {
+					return doEdit(item);
+				}
+
+				if (targetClasses.indexOf('action-delete') !== -1) {
+					//if (!item.canBeDropped) return;
+					return showDropConfirmation(item);
+				}
+			}
+
+			function showDropConfirmation(item) {
+				$scope.$broadcast('deleteSessionEvent', item);
+			}
+
+			$scope.$on('deleteSessionConfirmEvent', function (event, session, cb) {
+				event.stopPropagation();
+				doDrop(session, cb);
+			});
 
 			function onRowsChanged(args, items) {
 				// TBD

@@ -20,15 +20,15 @@ angular.module('adminWebApp.resources').factory('SessionBuilderCtrlResolver',
 			}
 
 			if (pageName == 'step1') {
-				galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
+				//galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (pageName == 'step2') {
-				contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
+				//contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (pageName == 'step3') {
-				topicsResource.topicsSetup(successCb, errorHandler.defaultServerErrorHandler());
+				//topicsResource.topicsSetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (pageName == 'step4') {
-				emailTemplatesResource.emailsSetup(successCb, errorHandler.defaultServerErrorHandler());
+				//emailTemplatesResource.emailsSetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (pageName == 'step5') {
-				coloursGalleryResource.coloursSetup(successCb, errorHandler.defaultServerErrorHandler());
+				//coloursGalleryResource.coloursSetup(successCb, errorHandler.defaultServerErrorHandler());
 			}
 			else {
 				successCb(['passThrough']);
