@@ -8,6 +8,10 @@ angular.module('adminWebApp.resources')
 			return galleryResource.query(resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		};
 
+		galleryResource.prototype.deleteResource = function deleteResource(ids, resultCb, errorCb) {
+			return galleryResource.save(ids, resultCb, errorHandler.defaultServerErrorHandler(errorCb));
+		};
+
 		return new galleryResource;
 	}
 );

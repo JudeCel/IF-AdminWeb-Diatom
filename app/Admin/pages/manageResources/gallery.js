@@ -11,8 +11,6 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 
 		var gridCommands = $scope.gridCommands = {};
 
-		var coursesCount = 3;
-
 		$scope.gridInfo = {
 			options: {editable: false,
 				enableCellNavigation: false,
@@ -40,9 +38,9 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 			// why is this here?
 			if (item.metaType) return;
 
-//				if (targetClasses.indexOf('action-edit') !== -1) {
-//					return doEdit(item);
-//				}
+			if (targetClasses.indexOf('action-delete') !== -1) {
+				return showDropConfirmation(item);
+			}
 //
 //				if (targetClasses.indexOf('action-delete') !== -1) {
 //					return showDropConfirmation(item);
@@ -81,6 +79,31 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 				return args.resourceTypeCriteria === 'document';
 
 			return false;
+		};
+
+		function showDropConfirmation(item) {
+			$scope.$broadcast('deleteResourceEvent', item);
+		}
+
+		$scope.$on('deleteResourceConfirmEvent', function (event, trainee, cb) {
+			event.stopPropagation();
+			doDrop(_.isEmpty(trainee) ? traineesToDrop : trainee, cb);
+		});
+
+		function doDrop(resources, cb) {
+			var ids = _.pluck(resources, 'id');
+			galleryResource.deleteResource(ids, function (result) {
+				(cb || angular.noop)();
+				refreshData();
+			}, function (error) {
+				(cb || angular.noop)();
+			});
+		};
+
+		function refreshData() {
+			galleryResource.gallerySetup(function (result) {
+				$scope.gridData = result;
+			});
 		}
 
 //			refreshSession.refresh();
