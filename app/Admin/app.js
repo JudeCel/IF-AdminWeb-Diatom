@@ -49,9 +49,9 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 //	}
 
 	$routeProvider
-		//Login and SingUp
+		//Login and SignUp
 		.when('/Login', {templateUrl: 'pages/login/login.html', controller: 'LoginCtrl', pageName: 'login'})
-		.when('/SingUp', {templateUrl: 'pages/singUp/singUp.html', controller: 'SingUpCtrl', pageName: 'SingUp'})
+		.when('/SignUp', {templateUrl: 'pages/signUp/signUp.html', controller: 'SignUpCtrl', pageName: 'SignUp'})
 
 		// First Tab
 		.when('/ManageProfile', {templateUrl: 'pages/manageProfile/manageProfile.html', controller: 'ManageProfileCtrl', pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})

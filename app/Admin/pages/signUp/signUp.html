@@ -1,11 +1,11 @@
-<div id="singup-page" class="pagePadding" style="width: 300px; margin: 100px auto">
+<div id="signUp-page" class="pagePadding" style="width: 300px; margin: 100px auto">
 
 
 <h1>Sing Up</h1> 
 
 <div ng-show="error" class="alert alert-danger">{{message}}</div>
 
-<form name="form" ng-submit="singUp()" role="form">
+<form name="form" ng-submit="signUp()" role="form">
     <div class="form-group">
         <label for="firstname">First Name</label>
         <input type="text" name="firstname" id="firstname" class="form-control" ng-model="firstname" required />
@@ -38,7 +38,7 @@
 
     </div>
     <div class="form-actions">
-        <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary">SingUp>></button>
+        <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary">signUp>></button>
 
         <div class="text-center">
             <br />
