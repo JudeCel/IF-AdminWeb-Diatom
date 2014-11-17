@@ -4,7 +4,8 @@ angular.module('adminWebApp.resources').factory('ManageProfileCtrlResolver',
 
 		return function () {
 			var deferred = $q.defer();
-			var pageName = $route.current.params.pageName || $route.current.pageName;
+			//var pageName = $route.current.params.pageName || $route.current.pageName;
+			var tabName = $route.current.params.tabName;
 
 			var successCb = function (result) {
 				Auth.getRolePromise().then(function() {
@@ -18,9 +19,18 @@ angular.module('adminWebApp.resources').factory('ManageProfileCtrlResolver',
 				return deferred.promise;
 			}
 
-			if (!pageName || pageName == 'manageProfile') {
-
-				successCb();
+			if (tabName == 'reviewAndAddFeatures' || !tabName) {
+				successCb(['passThrough']);
+			} else if (tabName == 'changeContactDetails') {
+				successCb(['passThrough']);
+			} else if (tabName == 'changePaymentDetails') {
+				successCb(['passThrough']);
+			} else if (tabName == 'organizeAccountManagers') {
+				successCb(['passThrough']);
+			} else if (tabName == 'changePasswords') {
+				successCb(['passThrough']);
+			}	else {
+				successCb(['passThrough']);
 			}
 
 			return deferred.promise;

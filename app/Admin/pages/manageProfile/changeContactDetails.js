@@ -7,5 +7,9 @@ angular.module('adminWebApp.controllers').controller('ChangeContactDetailsCtrl',
 
 			$scope.resolvedData = resolveData;
 
+      $scope.saveContact = function (contact) {
+        $scope.loading = true;
+      }
+
 			refreshSession.refresh();
 }]);
