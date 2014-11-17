@@ -5,16 +5,6 @@ var files = {
 		'app/Admin/scripts/gaConstants.js',
 		'app/Admin/scripts/main.js',
 
-<<<<<<< HEAD
-		'app/Admin/pages/login/login.js',
-		'app/Admin/pages/singUp/singUp.js',
-
-		'app/Admin/pages/home/home.js',
-		'app/Admin/pages/home/homeList.js',
-		'app/Admin/pages/home/homeResource.js',
-		'app/Admin/pages/home/homeCtrlResolver.js',
-=======
->>>>>>> 0f1cfcee343287a9d790723ca31819caa89179ce
 		'app/Admin/pages/manageProfile/manageProfileCtrlResolver.js',
 		'app/Admin/pages/manageProfile/manageProfile.js',
 
