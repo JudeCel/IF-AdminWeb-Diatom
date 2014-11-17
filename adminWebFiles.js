@@ -5,6 +5,9 @@ var files = {
 		'app/Admin/scripts/gaConstants.js',
 		'app/Admin/scripts/main.js',
 
+		'app/Admin/pages/login/login.js',
+		'app/Admin/pages/singUp/singUp.js',
+
 		'app/Admin/pages/home/home.js',
 		'app/Admin/pages/home/homeList.js',
 		'app/Admin/pages/home/homeResource.js',

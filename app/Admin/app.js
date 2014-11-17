@@ -59,6 +59,9 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 	$routeProvider
 		.when('/Home', {templateUrl: 'pages/home/home.html', controller: 'HomeCtrl', pageName: 'home', resolve: {resolveData: homeCtrlResolver}})
 
+	  .when('/Login', {templateUrl: 'pages/login/login.html', controller: 'LoginCtrl', pageName: 'login'})
+	  .when('/SingUp', {templateUrl: 'pages/singUp/singUp.html', controller: 'SingUpCtrl', pageName: 'singUp'})
+
 		// First Tab
 		.when('/ManageProfile', {templateUrl: 'pages/manageProfile/manageProfile.html', controller: 'ManageProfileCtrl', pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})
 		.when('/ManageProfile/:tabName', {templateUrl: 'pages/ManageProfile/manageProfile.html', controller: 'ManageProfileCtrl', reloadOnSearch: false, pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})
