@@ -1,5 +1,5 @@
 angular.module('adminWebApp.modals')
-	.controller('DeleteResourceCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
+	.controller('DownloadResourceCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
 
 	$scope.modal = {
 		content: 0,
@@ -16,7 +16,7 @@ angular.module('adminWebApp.modals')
 	};
 
 	$scope.$on('downloadResourceEvent', function(event, resource) {
-		if(!session) return;
+		if(!resource) return;
 		$scope.modal.content = 1;
 		$scope.modal.data = resource;
 		$scope.show();

@@ -5,12 +5,13 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 
 		function getGridColumns() {
 			return [
-				{id: "name", name: "Name", field: "name", width: 330, cssClass: "cell-title", headerCssClass: "header-column-first", formatter: gridFormatters.traineeNameFormatter, sortable: true}
+				{id: "name", name: "Name", field: "name", width: 330, cssClass: "cell-title", headerCssClass: "header-column-first", formatter: gridFormatters.resourceNameFormatter, sortable: true}
 			];
 		}
 
 		var gridCommands = $scope.gridCommands = {};
 		var resourcesToDrop = [];
+		var resourcesToDownload = [];
 		var viewData = [];
 
 		$scope.gridInfo = {
@@ -37,16 +38,15 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 		$scope.gridData = $scope.resolvedData;
 
 		function onRowClick(item, targetClasses, target) {
-			// why is this here?
 			if (item.metaType) return;
 
 			if (targetClasses.indexOf('action-delete') !== -1) {
 				return showDropConfirmation(item);
 			}
-//
-//				if (targetClasses.indexOf('action-delete') !== -1) {
-//					return showDropConfirmation(item);
-//				}
+
+			if (targetClasses.indexOf('action-download') !== -1) {
+				return showDownloadConfirmation(item);
+			}
 		};
 
 		function onRowsChanged(args, items) {
@@ -54,6 +54,7 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 				return !item._parent;
 			});
 			updateDropBtnState();
+			updateDownloadBtnState();
 		}
 
 		function updateFilter() {
@@ -92,11 +93,20 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 
 		function showDropConfirmation(item) {
 			$scope.$broadcast('deleteResourceEvent', item);
-		}
+		};
+
+		function showDownloadConfirmation(item) {
+			$scope.$broadcast('downloadResourceEvent', item);
+		};
 
 		$scope.$on('deleteResourceConfirmEvent', function (event, resource, cb) {
 			event.stopPropagation();
 			doDrop(_.isEmpty(resource) ? resourcesToDrop : resource, cb);
+		});
+
+		$scope.$on('downloadResourceConfirmEvent', function (event, resource, cb) {
+			event.stopPropagation();
+			doDownload(_.isEmpty(resource) ? resourcesToDownload : resource, cb);
 		});
 
 		$scope.broadcastResourcesToDrop = function () {
@@ -113,6 +123,11 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 			});
 		};
 
+		function doDownload(resources, cb) {
+			var ids = _.pluck(resources, 'id');
+			// TBD mass download
+		};
+
 		function refreshData() {
 			galleryResource.gallerySetup(function (result) {
 				$scope.gridData = result;
@@ -125,7 +140,22 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 			selectedIds = value;
 			$scope.selectedRowsCount = selectedIds.length;
 			updateDropBtnState();
-		}
+			updateDownloadBtnState();
+		};
+
+		function updateDownloadBtnState() {
+			$scope.bulkDownloadEnabled = false;
+			resourcesToDownload = [];
+
+			_.each(viewData, function (resource) {
+				if (selectedIds.indexOf(resource.id) != -1) {
+					$scope.bulkDownloadEnabled = true;
+					resourcesToDownload.push(resource);
+				}
+			});
+
+			$scope.resourcesToDownloadCnt = resourcesToDownload.length;
+		};
 
 		function updateDropBtnState() {
 			$scope.bulkDropEnabled = false;

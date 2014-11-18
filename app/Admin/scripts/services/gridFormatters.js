@@ -33,6 +33,23 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		return dateFormatterBasic(d);
 	}
 
+	function resourceNameFormatter(row, cell, value, columnDef, item) {
+		if (item.metaType) return value;
+
+		var downloadButtonClass = "btn btn-mini btn-info action action-download";     // change to Download class (add it)
+		var deleteButtonClass = "btn btn-mini btn-info action action-delete";
+		var downloadDisabled = '';
+		var deleteDisabled = '';
+
+//		if (!item.canBeDropped && !dropDisabled)
+//			dropDisabled = " disabled";
+
+		var tempResult = '<button' + deleteDisabled + ' class="' + deleteButtonClass + '">Drop</button>' +
+			'<button' + downloadDisabled + ' class="' + downloadButtonClass + '">Download</button>';
+
+		return '<span></span><div>' + value + '</div>' + tempResult;
+	}
+
 	function traineeNameFormatter(row, cell, value, columnDef, item) {
 		if (item.metaType) return value;
 
@@ -93,6 +110,7 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		mtypeLabels: mtypeLabels,
 		checkboxFormatter: checkboxFormatter,
 		checkboxInviteFormatter: checkboxInviteFormatter,
-		traineeImageFormatter: traineeImageFormatter
+		traineeImageFormatter: traineeImageFormatter,
+		resourceNameFormatter: resourceNameFormatter
 	};
 });
