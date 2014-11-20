@@ -10,6 +10,8 @@ var files = {
 
 		'app/Admin/pages/manageProfile/manageProfileCtrlResolver.js',
 		'app/Admin/pages/manageProfile/manageProfile.js',
+		'app/Admin/pages/manageProfile/changeContactDetails.js',
+		'app/Admin/pages/manageProfile/changeContactDetailsResource.js',
 
 		'app/Admin/pages/manageSessions/manageSessionsCtrlResolver.js',
 		'app/Admin/pages/manageSessions/manageSessions.js',
