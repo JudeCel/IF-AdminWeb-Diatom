@@ -52,6 +52,15 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 				});
 			}
 
+			function doCopy(session, cb) {
+				manageSessionsResource.copySession($scope.sessionId, function (result) {
+					(cb || angular.noop)();
+					//refreshData();
+				}, function (error) {
+					(cb || angular.noop)();
+				});
+			}
+
 			function onRowClick(item, targetClasses, target) {
 				//if (target.type == "checkbox") return;
 
@@ -81,6 +90,12 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 				event.stopPropagation();
 				doDrop(session, cb);
 			});
+
+			$scope.$on('copySessionConfirmEvent', function (event, session, cb) {
+				event.stopPropagation();
+				doCopy(session, cb);
+			});
+
 
 			function onRowsChanged(args, items) {
 				// TBD

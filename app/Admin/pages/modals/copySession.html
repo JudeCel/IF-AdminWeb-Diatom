@@ -1,0 +1,28 @@
+<div ng-controller="CopySessionCtrl">
+    <div class="modal-header modal-warn">
+        <button ng-hide="modal.status" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3><i class="icon-warning-sign"></i>Confirm copy Session?</h3>
+    </div>
+    <div class="modal-body">
+        <div ng-switch on="modal.status">
+            <div ng-switch-when="saving">
+                <p id="loading">Copying Session<span>.</span><span>.</span><span>.</span></p>
+            </div>
+            <div ng-switch-default>
+                <p>Are you shure you want to copy <b>{NAME}</b> session ?</p>
+                <p>The following stuff will be copied:</p>
+                <ul>
+                <li>session topic names and their order;</li>
+                <li>billboard text;</li>
+                <li>-completed email templates;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div ng-hide="modal.status">
+            <button type="button" class="btn btn-general" ng-click="dismiss()">Cancel</button>
+            <button class="btn btn-primary" ng-click="dcopySession()">Yes</button>
+        </div>
+    </div>
+</div>
