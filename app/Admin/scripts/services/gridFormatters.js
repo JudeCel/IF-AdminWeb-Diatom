@@ -50,22 +50,26 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		return '<span></span><div>' + value + '</div>' + tempResult;
 	}
 
-	function traineeNameFormatter(row, cell, value, columnDef, item) {
+function traineeNameFormatter(row, cell, value, columnDef, item) {
 		if (item.metaType) return value;
 
+		var copyButtonClass = "btn btn-mini btn-info action action-copy";  
 		var editButtonClass = "btn btn-mini btn-info action action-remind";     // change to Edit class (add it)
 		var dropButtonClass = "btn btn-mini btn-info action action-delete";
+		var copyDisabled = '';
 		var editDisabled = '';
 		var dropDisabled = '';
 
 //		if (!item.canBeDropped && !dropDisabled)
 //			dropDisabled = " disabled";
 
-		var tempResult = '<button' + dropDisabled + ' class="' + dropButtonClass + '">Drop</button>' +
+		var tempResult = '<button' + copyDisabled + ' class="' + copyButtonClass + '">Copy</button>' +
+		  '<button' + dropDisabled + ' class="' + dropButtonClass + '">Drop</button>' +
 			'<button' + editDisabled + ' class="' + editButtonClass + '">Edit</button>';
 
 		return '<span></span><div>' + value + '</div>' + tempResult;
 	}
+
 
 	function traineeEmailFormatter(row, cell, value, columnDef, item) {
 		if (!item.metaType) item.metaType = '';
@@ -99,6 +103,10 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		return result + '></input>';
 	}
 
+	var gotoChatFormatter = function ( row, cell, value, columnDef, item) {
+    return '<a href="http://localhost:7777/?id=55&sid=' + item['id'] + '">&#9654;</a>';
+  };
+
 	return {
 		dateFormatterBasic: dateFormatterBasic,
 		mtypeFormatter: mtypeFormatter,
@@ -111,6 +119,7 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		checkboxFormatter: checkboxFormatter,
 		checkboxInviteFormatter: checkboxInviteFormatter,
 		traineeImageFormatter: traineeImageFormatter,
-		resourceNameFormatter: resourceNameFormatter
+		resourceNameFormatter: resourceNameFormatter,
+		gotoChatFormatter: gotoChatFormatter
 	};
 });

@@ -9610,6 +9610,13 @@ input[type="checkbox"] {
   margin-top: 6px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003167}}
+.btn.action-copy {
+  position: absolute;
+  right: 125px;
+  margin-top: 6px;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003173}}
 .btn.action-reinvite {
   position: absolute;

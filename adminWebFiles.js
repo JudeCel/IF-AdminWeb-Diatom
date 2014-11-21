@@ -15,6 +15,7 @@ var files = {
 
 		'app/Admin/pages/manageSessions/manageSessionsCtrlResolver.js',
 		'app/Admin/pages/manageSessions/manageSessions.js',
+		'app/Admin/pages/manageSessions/manageSessionsResource.js',
 		'app/Admin/pages/manageSessions/editChatSession.js',
 		'app/Admin/pages/manageSessions/manageParticipants.js',
 		'app/Admin/pages/manageSessions/manageObservers.js',
