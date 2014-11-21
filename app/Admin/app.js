@@ -72,7 +72,7 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 		ifConfig.sessionId = $cookies.sess0;
 
 		//$httpProvider.defaults.headers.common['x-mf-sess'] = ifConfig.sessionId;
-		$http.defaults.headers.common['x-mf-sess'] = ifConfig.sessionId;
+		$http.defaults.headers.common['x-if-sess'] = ifConfig.sessionId;
 
 //	if (!ifConfig || ifConfig.sessionId <= 0) {
 //		var sessId = urlHelper.getUrlVars()["sessionID"];
