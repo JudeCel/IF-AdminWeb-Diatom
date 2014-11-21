@@ -2,11 +2,11 @@
 angular.module('adminWebApp.resources')
 	.factory('accountService', ['$resource', 'errorHandler', function ($resource, errorHandler) {
 
-	var sessionResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/session');
+	var accountResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/account');
 
 	return {
 		getAccountInfo: function(options, resultCb, errorCb) {
-			return sessionResource.get(options, resultCb, errorHandler.defaultServerErrorHandler(errorCb));
+			return accountResource.get(options, resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		},
 		accountInfo: null
 	};

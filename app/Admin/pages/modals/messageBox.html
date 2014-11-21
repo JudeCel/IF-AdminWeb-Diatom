@@ -1,0 +1,9 @@
+<div class="modal ng-scope">
+    <div class="modal-header"><h1>{{ setup.title }}</h1></div>
+    <div class="modal-body"><p ng-bind-html='setup.message'></p></div>
+    <div class="modal-footer">    <!-- ngRepeat: btn in buttons -->
+        <button ng-repeat="btn in setup.buttons" ng-click="close(btn.result)" class="btn" id="{{btn.label}}"
+                ng-class="btn.cssClass">{{ btn.label }}
+        </button>
+    </div>
+</div>

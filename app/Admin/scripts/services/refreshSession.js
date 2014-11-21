@@ -9,8 +9,8 @@ angular.module('adminWebApp.services').factory('refreshSession',
 					ignoreInactiveAccount: false
 				};
 				accountService.getAccountInfo(options, function (res) {
-					$rootScope.adminFirstName = res.firstName;
-					$rootScope.adminLastName = res.lastName;
+					$rootScope.adminFirstName = res.name_first;
+					$rootScope.adminLastName = res.name_last;
 					$rootScope.adminEmail = res.email;
 					$rootScope.accountId = res.accountId;
 					$rootScope.userId = res.userId;

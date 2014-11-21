@@ -7,9 +7,11 @@ angular.module('adminWebApp.modals', []);
 angular.module('adminWebApp.popovers', ['adminWebApp.resources']);
 angular.module('adminWebApp.main', ['adminWebApp.services']);
 angular.module('adminWebApp.controllers', ['adminWebApp.resources', 'adminWebApp.services']);
+angular.module('adminWebApp', ['ngCookies']);
 
 angular.module('adminWebApp', [
 	'ngRoute',
+	'ngCookies',
 	'$strap',
 	'ui',
 	'ui.bootstrap',
@@ -65,12 +67,13 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 		.when('/ManageResources', {templateUrl: 'pages/manageResources/manageResources.html', controller: 'ManageResourcesCtrl', pageName: 'manageResources', resolve: {resolveData: manageResourcesCtrlResolver}})
 		.when('/ManageResources/:tabName', {templateUrl: 'pages/manageResources/manageResources.html', controller: 'ManageResourcesCtrl', reloadOnSearch: false, pageName: 'manageResources', resolve: {resolveData: manageResourcesCtrlResolver}})
 }])
-	.run(['$rootScope', 'refreshSession', 'Auth', 'accountFeatures', '$window', function ($rootScope, refreshSession, Auth, accountFeatures, $window) {
-	//$rootScope.sessionId = ifConfig.sessionId;
+	.run(['$rootScope', 'refreshSession', 'Auth', 'accountFeatures', '$window', '$cookies', '$http', function ($rootScope, refreshSession, Auth, accountFeatures, $window, $cookies, $http) {
+		$rootScope.sessionId = $cookies.sess0;
+		ifConfig.sessionId = $cookies.sess0;
 
-//	.run(['urlHelper', '$rootScope', 'refreshSession', 'Auth', 'accountFeatures', '$window', function (urlHelper, $rootScope, refreshSession, Auth, accountFeatures, $window) {
-//	$rootScope.sessionId = ifConfig.sessionId;
-//
+		//$httpProvider.defaults.headers.common['x-mf-sess'] = ifConfig.sessionId;
+		$http.defaults.headers.common['x-mf-sess'] = ifConfig.sessionId;
+
 //	if (!ifConfig || ifConfig.sessionId <= 0) {
 //		var sessId = urlHelper.getUrlVars()["sessionID"];
 //		if (sessId && !$window.document.cookie) {
