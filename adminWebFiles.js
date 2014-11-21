@@ -6,6 +6,7 @@ var files = {
 		'app/Admin/scripts/main.js',
 
 		'app/Admin/pages/login/login.js',
+		'app/Admin/pages/logout/logout.js',
 		'app/Admin/pages/signUp/signUp.js',
 
 		'app/Admin/pages/manageProfile/manageProfileCtrlResolver.js',

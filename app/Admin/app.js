@@ -27,7 +27,7 @@ angular.module('adminWebApp', [
 
 //angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$httpProvider', 'mtypes', function ($routeProvider, $locationProvider, $httpProvider, mtypes) {
 angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
-	//$httpProvider.defaults.headers.common['x-mf-sess'] = ifConfig.sessionId;
+	//$httpProvider.defaults.headers.common['x-if-sess'] = ifConfig.sessionId;
 	//$httpProvider.defaults.headers['delete'] = {'Content-Type': 'application/json'};
 
 	function newResolver(name) {
@@ -53,6 +53,7 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 	$routeProvider
 		//Login and SignUp
 		.when('/Login', {templateUrl: 'pages/login/login.html', controller: 'LoginCtrl', pageName: 'login'})
+		.when('/Logout', {template: "", controller: 'LogoutCtrl'})
 		.when('/SignUp', {templateUrl: 'pages/signUp/signUp.html', controller: 'SignUpCtrl', pageName: 'SignUp'})
 
 		// First Tab
@@ -67,23 +68,34 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 		.when('/ManageResources', {templateUrl: 'pages/manageResources/manageResources.html', controller: 'ManageResourcesCtrl', pageName: 'manageResources', resolve: {resolveData: manageResourcesCtrlResolver}})
 		.when('/ManageResources/:tabName', {templateUrl: 'pages/manageResources/manageResources.html', controller: 'ManageResourcesCtrl', reloadOnSearch: false, pageName: 'manageResources', resolve: {resolveData: manageResourcesCtrlResolver}})
 }])
-	.run(['$rootScope', 'refreshSession', 'Auth', 'accountFeatures', '$window', '$cookies', '$http', function ($rootScope, refreshSession, Auth, accountFeatures, $window, $cookies, $http) {
-		$rootScope.sessionId = $cookies.sess0;
-		ifConfig.sessionId = $cookies.sess0;
+	.run(['$rootScope', 'refreshSession', 'Auth', 'accountFeatures', '$window', '$cookies', '$http', 'urlHelper', '$cookieStore', function ($rootScope, refreshSession, Auth, accountFeatures, $window, $cookies, $http, urlHelper, $cookieStore) {
+		var sessId = urlHelper.getUrlVars()["sessId"];
+		var sessCookie = $cookies.sess0;
 
-		//$httpProvider.defaults.headers.common['x-mf-sess'] = ifConfig.sessionId;
-		$http.defaults.headers.common['x-if-sess'] = ifConfig.sessionId;
+		if (sessId)
+			setCookie(sessId);
+		else if (sessCookie)
+			setCookie(sessCookie);
 
-//	if (!ifConfig || ifConfig.sessionId <= 0) {
-//		var sessId = urlHelper.getUrlVars()["sessionID"];
-//		if (sessId && !$window.document.cookie) {
-//			$window.location = '/Default.aspx?sessionID=' + sessId;
-//		} else {
-//			$window.location = '/Default.aspx';
-//		}
+		function setCookie(value) {
+			$cookies.sess0 = value;
+
+			$rootScope.sessionId = value;
+			ifConfig.sessionId = value;
+
+			$http.defaults.headers.common['x-if-sess'] = value;
+		}
+
+//		if (!ifConfig || ifConfig.sessionId <= 0) {
+//			var sessId = urlHelper.getUrlVars()["sessionID"];
+//			if (sessId && !$window.document.cookie) {
+//				$window.location = '/Default.aspx?sessionID=' + sessId;
+//			} else {
+//				$window.location = 'http://localhost:6500/register';
+//			}
 //
-//		return;
-//	}
+//			return;
+//		}
 
 	refreshSession.refresh({
 		ignoreInactiveAccount: true

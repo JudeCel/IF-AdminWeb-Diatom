@@ -17,7 +17,8 @@ angular.module('adminWebApp.resources').factory('errorHandler', function ($locat
 					$location.path('/Manage_Account');		// Show expired trial popup in Flex
 					return;
 				} else {
-					$window.location.href = $location.protocol() + '://' + $location.host() + '/logout.aspx';
+					//$window.location.href = $location.protocol() + '://' + $location.host() + '/logout.aspx';
+					$window.location.href = "http://localhost:6600/register";
 					return;
 				}
 			}
