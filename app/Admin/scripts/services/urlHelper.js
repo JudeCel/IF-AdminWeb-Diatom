@@ -1,7 +1,5 @@
 
-angular.module('adminWebApp.services').factory('urlHelper', ['$window', function($window) {
-
-
+angular.module('adminWebApp.services').factory('urlHelper', ['$window', '$location', function($window, $location) {
 	function getUrlParam(name) {
 		var results = new RegExp('[\\?&amp;]' + name + '=([^&amp;#]*)').exec($window.location.href);
 		if (results && results.length > 1) {
@@ -24,8 +22,13 @@ angular.module('adminWebApp.services').factory('urlHelper', ['$window', function
 		return vars;
 	}
 
+	function getPublicWebLoginUrl() {
+		return "http://" + $location.host() + ":" + ifConfig.publicWebAppPort +  "/login";
+	}
+
 	return {
 		getUrlParam: getUrlParam,
-		getUrlVars: getUrlVars
+		getUrlVars: getUrlVars,
+		getPublicWebLoginUrl: getPublicWebLoginUrl
 	};
 }]);
