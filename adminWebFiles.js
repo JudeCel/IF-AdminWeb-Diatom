@@ -39,6 +39,7 @@ var files = {
 
 		'app/Admin/scripts/services/accountFeatures.js',
 		'app/Admin/scripts/services/accountService.js',
+		'app/Admin/scripts/services/logoutService.js',
 
 		'app/Admin/scripts/services/authProvider.js',
 		'app/Admin/scripts/services/authView.js',
