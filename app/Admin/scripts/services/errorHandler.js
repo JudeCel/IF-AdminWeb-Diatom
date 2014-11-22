@@ -18,7 +18,7 @@ angular.module('adminWebApp.resources').factory('errorHandler', function ($locat
 					return;
 				} else {
 					//$window.location.href = $location.protocol() + '://' + $location.host() + '/logout.aspx';
-					$window.location.href = "http://localhost:6600/register";
+					$window.location.href = "http://localhost:6600/login";
 					return;
 				}
 			}
