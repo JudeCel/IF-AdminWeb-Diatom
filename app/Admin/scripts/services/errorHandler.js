@@ -14,11 +14,10 @@ angular.module('adminWebApp.resources').factory('errorHandler', function ($locat
 				return;
 			} else if (e && e.status == 401 && e.data) {
 				if (e.data.accountInactive) {
-					$location.path('/Manage_Account');		// Show expired trial popup in Flex
+					$location.path('/Manage_Account');		// Show expired trial popup
 					return;
 				} else {
-					//$window.location.href = $location.protocol() + '://' + $location.host() + '/logout.aspx';
-					$window.location.href = "http://localhost:6600/login";
+					$window.location.href = $location.protocol() + '://' + $location.host() + ":" + ifConfig.publicWebAppPort + "/login";
 					return;
 				}
 			}
