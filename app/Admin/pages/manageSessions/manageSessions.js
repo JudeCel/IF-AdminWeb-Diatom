@@ -1,7 +1,7 @@
 
 angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$scope', '$rootScope', '$routeParams', 'authView',
-		'$location', 'tabUtil', 'resolveData', 'refreshSession', '$window', 'gridFormatters',
-		function ($scope, $rootScope, $routeParams, authView, $location, tabUtil, resolveData, refreshSession, $window, gridFormatters) {
+		'$location', 'tabUtil', 'resolveData', 'refreshSession', '$window', 'gridFormatters', 'manageSessionsResource',
+		function ($scope, $rootScope, $routeParams, authView, $location, tabUtil, resolveData, refreshSession, $window, gridFormatters, manageSessionsResource) {
 
 			$window.document.title = "Manage Sessions | Insider Focus";
 
@@ -44,7 +44,7 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 			}
 
 			function doDrop(session, cb) {
-				manageSessionsResource.dropSession($scope.sessionId, function (result) {
+				manageSessionsResource.dropSession(session.id, function (result) {
 					(cb || angular.noop)();
 					//refreshData();
 				}, function (error) {
@@ -53,7 +53,7 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 			}
 
 			function doCopy(session, cb) {
-				manageSessionsResource.copySession($scope.sessionId, function (result) {
+				manageSessionsResource.copySession(session.id, function (result) {
 					(cb || angular.noop)();
 					//refreshData();
 				}, function (error) {

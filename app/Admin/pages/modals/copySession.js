@@ -18,6 +18,7 @@ angular.module('adminWebApp.modals')
 	$scope.$on('copySessionEvent', function(event, session) {
 		if(!session) return;
 		$scope.modal.content = 1;
+		$scope.sessionName = session.name;
 		$scope.modal.data = session;
 		$scope.show();
 	});

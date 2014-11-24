@@ -9,12 +9,12 @@
                 <p id="loading">Copying Session<span>.</span><span>.</span><span>.</span></p>
             </div>
             <div ng-switch-default>
-                <p>Are you shure you want to copy <b>{NAME}</b> session ?</p>
+                <p>Are you shure you want to copy <b>{{sessionName}}</b> session ?</p>
                 <p>The following stuff will be copied:</p>
                 <ul>
                 <li>session topic names and their order;</li>
                 <li>billboard text;</li>
-                <li>-completed email templates;</li>
+                <li>completed email templates;</li>
                 </ul>
             </div>
         </div>
@@ -22,7 +22,7 @@
     <div class="modal-footer">
         <div ng-hide="modal.status">
             <button type="button" class="btn btn-general" ng-click="dismiss()">Cancel</button>
-            <button class="btn btn-primary" ng-click="dcopySession()">Yes</button>
+            <button class="btn btn-primary" ng-click="copySession()">Yes</button>
         </div>
     </div>
 </div>
