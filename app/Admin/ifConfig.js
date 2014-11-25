@@ -6,7 +6,8 @@ var ifConfig = {
 	AppName: 'insiderFocusApp',
 	BackgroundColor: '#D8EFF8',
 	domainName: 'insiderFocus.com',
-	publicWebAppPort: 6600
+	publicWebAppPort: 6600,
+	apiPort: 7777
 };
 
 if (typeof window === 'undefined')

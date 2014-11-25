@@ -26,9 +26,14 @@ angular.module('adminWebApp.services').factory('urlHelper', ['$window', '$locati
 		return "http://" + $location.host() + ":" + ifConfig.publicWebAppPort +  "/login";
 	}
 
+	function getApiUrl() {
+		return "http://" + $location.host() + ":" + ifConfig.apiPort;
+	}
+
 	return {
 		getUrlParam: getUrlParam,
 		getUrlVars: getUrlVars,
-		getPublicWebLoginUrl: getPublicWebLoginUrl
+		getPublicWebLoginUrl: getPublicWebLoginUrl,
+		getApiUrl: getApiUrl
 	};
 }]);

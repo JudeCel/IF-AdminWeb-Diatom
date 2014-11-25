@@ -1,5 +1,5 @@
 
-angular.module('adminWebApp.services').factory('gridFormatters', function ($filter, mtypes, dateHelper) {
+angular.module('adminWebApp.services').factory('gridFormatters', function ($filter, mtypes, dateHelper, urlHelper) {
 	var mtypeLabels = {};
 	mtypeLabels[mtypes.sessionStatus.pending] = "Pending";
 	mtypeLabels[mtypes.sessionStatus.open] = "Open";
@@ -103,7 +103,7 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 	}
 
 	var gotoChatFormatter = function ( row, cell, value, columnDef, item) {
-	    return '<a href="http://localhost:7777/?id=55&sid=' + item['id'] + '">&#9654;</a>';
+	    return '<a href="' + urlHelper.getApiUrl() + '/?id=55&sid=' + item['id'] + '">&#9654;</a>';     //TODO: no need to pass userId here [TM]
     };
 
 	function sessionStatusFormatter(row, cell, value, columnDef, item) {
