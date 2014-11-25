@@ -1,12 +1,12 @@
 
 angular.module('adminWebApp.services').factory('gridFormatters', function ($filter, mtypes, dateHelper) {
 	var mtypeLabels = {};
+	mtypeLabels[mtypes.sessionStatus.pending] = "Pending";
+	mtypeLabels[mtypes.sessionStatus.open] = "Open";
+	mtypeLabels[mtypes.sessionStatus.closed] = "Closed";
 
-	function mtypeFormatter(row, cell, value, columnDef, item) {
-		var suffix = '';
-		if (value == mtypes.courseStateStatus.invited && item.addedAfterCompletion)
-			suffix = ' (after completion)';
-		return mtypeLabels[value] + suffix;
+	function mtypeFormatter(value) {
+		return mtypeLabels[value];
 	}
 
 	function dateFormatterBasic(value) {
@@ -50,10 +50,10 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		return '<span></span><div>' + value + '</div>' + tempResult;
 	}
 
-function traineeNameFormatter(row, cell, value, columnDef, item) {
+	function traineeNameFormatter(row, cell, value, columnDef, item) {
 		if (item.metaType) return value;
 
-		var copyButtonClass = "btn btn-mini btn-info action action-copy";  
+		var copyButtonClass = "btn btn-mini btn-info action action-copy";
 		var editButtonClass = "btn btn-mini btn-info action action-remind";     // change to Edit class (add it)
 		var dropButtonClass = "btn btn-mini btn-info action action-delete";
 		var copyDisabled = '';
@@ -64,12 +64,11 @@ function traineeNameFormatter(row, cell, value, columnDef, item) {
 //			dropDisabled = " disabled";
 
 		var tempResult = '<button' + copyDisabled + ' class="' + copyButtonClass + '">Copy</button>' +
-		  '<button' + dropDisabled + ' class="' + dropButtonClass + '">Drop</button>' +
+			'<button' + dropDisabled + ' class="' + dropButtonClass + '">Drop</button>' +
 			'<button' + editDisabled + ' class="' + editButtonClass + '">Edit</button>';
 
 		return '<span></span><div>' + value + '</div>' + tempResult;
 	}
-
 
 	function traineeEmailFormatter(row, cell, value, columnDef, item) {
 		if (!item.metaType) item.metaType = '';
@@ -104,8 +103,12 @@ function traineeNameFormatter(row, cell, value, columnDef, item) {
 	}
 
 	var gotoChatFormatter = function ( row, cell, value, columnDef, item) {
-    return '<a href="http://localhost:7777/?id=55&sid=' + item['id'] + '">&#9654;</a>';
-  };
+	    return '<a href="http://localhost:7777/?id=55&sid=' + item['id'] + '">&#9654;</a>';
+    };
+
+	function sessionStatusFormatter(row, cell, value, columnDef, item) {
+		return mtypeFormatter(value);
+	}
 
 	return {
 		dateFormatterBasic: dateFormatterBasic,
@@ -120,6 +123,7 @@ function traineeNameFormatter(row, cell, value, columnDef, item) {
 		checkboxInviteFormatter: checkboxInviteFormatter,
 		traineeImageFormatter: traineeImageFormatter,
 		resourceNameFormatter: resourceNameFormatter,
-		gotoChatFormatter: gotoChatFormatter
+		gotoChatFormatter: gotoChatFormatter,
+		sessionStatusFormatter: sessionStatusFormatter
 	};
 });

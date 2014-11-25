@@ -22,7 +22,6 @@ angular.module('adminWebApp.resources').factory('ManageProfileCtrlResolver',
 				successCb(['passThrough']);
 			} else if (tabName == 'changeContactDetails') {
 				changeContactDetailsResource.getUser(successCb, errorHandler.defaultServerErrorHandler());
-			
 			} else if (tabName == 'changePaymentDetails') {
 				successCb(['passThrough']);
 			} else if (tabName == 'organizeAccountManagers') {

@@ -31,5 +31,10 @@ angular.module('adminWebApp.consts').constant('mtypes', {
 		video: 103000300,
 		audio: 103000400,
 		document: 103000500
-	}}
-);
+	},
+	sessionStatus: {
+		pending: 0,
+		open: 166000100,
+		closed: 166000200
+	}
+});

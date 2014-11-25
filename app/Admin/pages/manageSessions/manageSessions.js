@@ -4,16 +4,15 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 		function ($scope, $rootScope, $routeParams, authView, $location, tabUtil, resolveData, refreshSession, $window, gridFormatters, manageSessionsResource) {
 
 			$window.document.title = "Manage Sessions | Insider Focus";
-
 			$scope.gridData = resolveData;
 
 			function getGridColumns() {
 				return [
-					{id: "name", name: "Name", field: "name", width: 150, headerCssClass: "header-column-first", formatter: gridFormatters.traineeNameFormatter, sortable: true},
-					{id: "facilitator", name: "Facilitator", field: "facilitator", width: 130, headerCssClass: "header-column", formatter: gridFormatters.traineeNameFormatter, sortable: true},
-					{id: "start_time", name: "Start Date", field: "start_time", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", formatter: gridFormatters.traineeNameFormatter, sortable: true},
-					{id: "end_time", name: "End Date", field: "end_time", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", formatter: gridFormatters.traineeNameFormatter, sortable: true},
-					{id: "status_id", name: "Status", field: "status_id", minWidth: 280, maxWidth: 280, cssClass: "cell-title", headerCssClass: "header-column", formatter: gridFormatters.traineeNameFormatter, sortable: true},
+					{id: "name", name: "Name", field: "name", width: 150, headerCssClass: "header-column-first", sortable: true},
+					{id: "facilitator", name: "Facilitator", field: "facilitator", width: 130, headerCssClass: "header-column", sortable: true},
+					{id: "start_time", name: "Start Date", field: "start_time", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", sortable: true},
+					{id: "end_time", name: "End Date", field: "end_time", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", sortable: true},
+					{id: "status_id", name: "Status", field: "status_id", minWidth: 280, maxWidth: 280, cssClass: "cell-title", headerCssClass: "header-column", formatter: gridFormatters.sessionStatusFormatter, sortable: true},
 					{id: "goto", name: "Chat", minWidth: 80, maxWidth: 80, headerCssClass: "header-column", formatter: gridFormatters.gotoChatFormatter, sortable: false}
 				];
 			}
