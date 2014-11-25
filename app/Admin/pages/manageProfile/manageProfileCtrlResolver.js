@@ -1,6 +1,6 @@
 
 angular.module('adminWebApp.resources').factory('ManageProfileCtrlResolver',
-	function ($q, $route, changeContactDetailsResource, Validation, errorHandler, refreshSession, Auth) {
+	function ($q, $route, changeContactDetailsResource, Validation, errorHandler, refreshSession, Auth, $rootScope) {
 
 		return function () {
 			var deferred = $q.defer();
@@ -21,8 +21,7 @@ angular.module('adminWebApp.resources').factory('ManageProfileCtrlResolver',
 			if (tabName == 'reviewAndAddFeatures' || !tabName) {
 				successCb(['passThrough']);
 			} else if (tabName == 'changeContactDetails') {
-				//{TODO} 55 change to -> curren user ID !!!
-				changeContactDetailsResource.getUser(55, successCb, errorHandler.defaultServerErrorHandler());
+				changeContactDetailsResource.getUser($rootScope.userId, successCb, errorHandler.defaultServerErrorHandler());
 			
 			} else if (tabName == 'changePaymentDetails') {
 				successCb(['passThrough']);
