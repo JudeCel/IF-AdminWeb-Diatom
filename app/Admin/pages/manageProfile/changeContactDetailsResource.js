@@ -4,8 +4,8 @@ angular.module('adminWebApp.resources')
     var changeContactDetailsResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/userProfile');
     var countriesResource  = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/countryLookup');
 
-    changeContactDetailsResource.prototype.getUser = function getUser(userId, resultCb, errorCb) {
-      return changeContactDetailsResource.get({user_id:userId}, resultCb, errorHandler.defaultServerErrorHandler(errorCb));
+    changeContactDetailsResource.prototype.getUser = function getUser(resultCb, errorCb) {
+      return changeContactDetailsResource.get(resultCb, errorHandler.defaultServerErrorHandler(errorCb));
     };
 
     changeContactDetailsResource.prototype.saveUser = function saveUser(data, resultCb, errorCb) {

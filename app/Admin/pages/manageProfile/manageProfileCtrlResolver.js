@@ -21,7 +21,7 @@ angular.module('adminWebApp.resources').factory('ManageProfileCtrlResolver',
 			if (tabName == 'reviewAndAddFeatures' || !tabName) {
 				successCb(['passThrough']);
 			} else if (tabName == 'changeContactDetails') {
-				changeContactDetailsResource.getUser($rootScope.userId, successCb, errorHandler.defaultServerErrorHandler());
+				changeContactDetailsResource.getUser(successCb, errorHandler.defaultServerErrorHandler());
 			
 			} else if (tabName == 'changePaymentDetails') {
 				successCb(['passThrough']);
