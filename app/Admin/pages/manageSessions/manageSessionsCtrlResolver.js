@@ -21,7 +21,7 @@ angular.module('adminWebApp.resources').factory('ManageSessionsCtrlResolver',
 			if (!pageName || pageName == 'manageSessions') {
 				//refreshSession.refresh(null, function() {
 					
-					manageSessionsResource.getSessionDataForGrid(successCb, errorHandler.defaultServerErrorHandler());			
+					manageSessionsResource.getSessions(successCb, errorHandler.defaultServerErrorHandler());
 			//	});
 			//	successCb();
 			}

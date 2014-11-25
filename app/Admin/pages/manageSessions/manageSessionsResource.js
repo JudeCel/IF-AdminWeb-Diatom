@@ -4,9 +4,9 @@ angular.module('adminWebApp.resources')
 
 		var dropSessionResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/dropSession');
 		var copySessionResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/copySession');
-		var manageSessionsResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/getSessionDataForGrid');
+		var manageSessionsResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/getSessions');
 
-		manageSessionsResource.prototype.getSessionDataForGrid = function getSessionDataForGrid (resultCb, errorCb) {
+		manageSessionsResource.prototype.getSessions = function getSessions (resultCb, errorCb) {
 			return manageSessionsResource.query( resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		};
 
