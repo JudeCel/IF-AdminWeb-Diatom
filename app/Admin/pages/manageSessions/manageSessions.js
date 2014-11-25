@@ -8,7 +8,7 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 
 			function getGridColumns() {
 				return [
-					{id: "name", name: "Name", field: "name", width: 150, headerCssClass: "header-column-first", formatter: gridFormatters.sessionNameFormatter, sortable: true},
+					{id: "name", name: "Name", field: "name", width: 150, headerCssClass: "header-column-first", cssClass: "cell-title", formatter: gridFormatters.sessionNameFormatter, sortable: true},
 					{id: "facilitator", name: "Facilitator", field: "facilitator", width: 130, headerCssClass: "header-column", sortable: true},
 					{id: "start_time", name: "Start Date", field: "start_time", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", sortable: true},
 					{id: "end_time", name: "End Date", field: "end_time", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", sortable: true},
