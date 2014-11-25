@@ -45,7 +45,7 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 			function doDrop(session, cb) {
 				manageSessionsResource.dropSession(session.id, function (result) {
 					(cb || angular.noop)();
-					//refreshData();
+					 refreshData();
 				}, function (error) {
 					(cb || angular.noop)();
 				});
@@ -54,11 +54,17 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 			function doCopy(session, cb) {
 				manageSessionsResource.copySession(session.id, function (result) {
 					(cb || angular.noop)();
-					//refreshData();
+					 refreshData();
 				}, function (error) {
 					(cb || angular.noop)();
 				});
 			}
+
+      function refreshData() {
+        manageSessionsResource.getSessions(function (result) {
+          $scope.gridData = result;
+        });
+      };
 
 			function onRowClick(item, targetClasses, target) {
 				//if (target.type == "checkbox") return;
