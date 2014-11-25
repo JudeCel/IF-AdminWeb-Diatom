@@ -38,8 +38,8 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 				data: []
 			};
 
-			function doEdit(sessions, cb) {
-				// TBD: redirect to /SessionBuilder/:sessionId/step1
+			function doEdit(session, cb) {
+				$location.path('/SessionBuilder/' + session.id);
 			}
 
 			function doDrop(session, cb) {
