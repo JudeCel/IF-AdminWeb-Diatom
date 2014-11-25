@@ -122,5 +122,11 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 				// TBD
 			//}
 
+			$scope.buildSession = function() {
+				manageSessionsResource.createSession(function(session)	{
+					$location.path('/SessionBuilder/' + session.id);
+				});
+			}
+
 			refreshSession.refresh();
 }]);

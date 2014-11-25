@@ -62,6 +62,7 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 
 		// Second Tab
 		.when('/ManageSessions', {templateUrl: 'pages/manageSessions/manageSessions.html', controller: 'ManageSessionsCtrl', pageName: 'manageSessions', resolve: {resolveData: manageSessionsCtrlResolver}})
+		.when('/SessionBuilder/:sessionId', {templateUrl: 'pages/manageSessions/sessionBuilder.html', controller: 'SessionBuilderCtrl', pageName: 'sessionBuilder', resolve: {resolveData: sessionBuilderCtrlResolver}})
 		.when('/SessionBuilder/:sessionId/:tabName', {templateUrl: 'pages/manageSessions/sessionBuilder.html', controller: 'SessionBuilderCtrl', pageName: 'sessionBuilder', resolve: {resolveData: sessionBuilderCtrlResolver}})
 
 		// Third Tab
@@ -80,8 +81,8 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 		function setCookie(value) {
 			$cookies.sess0 = value;
 
-			$rootScope.sessionId = value;
-			ifConfig.sessionId = value;
+			$rootScope.sessId = value;
+			ifConfig.sessId = value;
 
 			$http.defaults.headers.common['x-if-sess'] = value;
 		}

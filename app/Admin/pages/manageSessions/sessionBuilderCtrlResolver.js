@@ -19,7 +19,7 @@ angular.module('adminWebApp.resources').factory('SessionBuilderCtrlResolver',
 				return deferred.promise;
 			}
 
-			if (pageName == 'step1') {
+			if (!pageName || pageName == 'step1') {
 				//galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (pageName == 'step2') {
 				//contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());

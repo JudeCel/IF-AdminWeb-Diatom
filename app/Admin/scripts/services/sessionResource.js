@@ -4,7 +4,7 @@ angular.module('adminWebApp.resources')
 
 		var SessionResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/session/expire');
 
-		SessionResource.prototype.expireSession = function expireSession(sessionId, resultCb, errorCb) {
+		SessionResource.prototype.expireSession = function expireSession(sessId, resultCb, errorCb) {
 			return SessionResource.save({}, resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		};
 

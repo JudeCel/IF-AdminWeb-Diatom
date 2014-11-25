@@ -1,7 +1,7 @@
 <div>
 	<ul ng-model="currentTab">
 		<div ng-repeat="tab in tabs" ng-class="{active:tab.selected}" style="float: left; width: 200px">
-			<a ng-href="#/SessionBuilder/1/{{tab.name}}" id={{tab.title}}>{{tab.title}}</a>
+			<a ng-href="#/SessionBuilder/{{currentTab.sessionId}}/{{tab.name}}" id={{tab.title}}>{{tab.title}}</a>
 		</div>
 	</ul>
 </div>
