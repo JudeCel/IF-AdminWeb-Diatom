@@ -146,19 +146,29 @@
 	width: 50px;
 }
 
-.btn.action-remind {
+.btn.action-edit {
 	position: absolute;
 	right: 5px;
-	margin-top: 6px;
+	top: 6px;
 	&.disabled {
 		@include opacity(50);
 	}
 }
 
+.btn.action-copy {
+	position: absolute;
+	right: 120px;
+	top: 6px;
+	&.disabled {
+		@include opacity(50);
+	}
+}
+
+
 .btn.action-delete {
 	position: absolute;
 	right: 60px;
-	margin-top: 6px;
+	top: 6px;
 	&.moved {
 		right: 72px;
 	}

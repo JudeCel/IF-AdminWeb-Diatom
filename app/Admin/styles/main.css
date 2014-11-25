@@ -9581,102 +9581,107 @@ input[type="checkbox"] {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003149}}
-.btn.action-remind {
+.btn.action-edit {
   position: absolute;
   right: 5px;
-  margin-top: 6px;
+  top: 6px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003153}}
-.btn.action-remind.disabled {
+.btn.action-edit.disabled {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003158}}
+.btn.action-copy {
+  position: absolute;
+  right: 120px;
+  top: 6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003162}}
+.btn.action-copy.disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003168}}
 .btn.action-delete {
   position: absolute;
   right: 60px;
-  margin-top: 6px;
+  top: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003172}}
 .btn.action-delete.moved {
   right: 72px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003177}}
 .btn.action-download {
   position: absolute;
   right: 5px;
   margin-top: 6px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003167}}
-.btn.action-copy {
-  position: absolute;
-  right: 125px;
-  margin-top: 6px;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003183}}
 .btn.action-reinvite {
   position: absolute;
   right: 102px;
   margin-top: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003187}}
 .btn.action-reinvite.moved {
   right: 114px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003190}}
 .btn.action-reinvite.disabled {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003195}}
 .slick-row:hover .action {
   visibility: visible;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003199}}
 .inline-invite-button {
   float: right;
   margin-left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003204}}
 .inline-email {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003210}}
 .email-cell-wrapper {
   overflow: hidden;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003218}}
 .selectable-row .slick-row.even:hover,
 .selectable-row .slick-row:hover,
 .selectable-row .slick-row.odd:hover {
   background-color: #effaff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003224}}
 .selectable-row .slick-row.even.highlightRow,
 .selectable-row .slick-row.highlightRow,
 .selectable-row .slick-row.odd.highlightRow {
   background-color: #effaff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003230}}
 .no-grid-header .slick-header-columns {
   height: 0px;
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003236}}
 .slick-row.ui-widget-content {
   border-bottom: 1px solid #c5c5c5;
   background-color: #fff;
@@ -9685,56 +9690,56 @@ input[type="checkbox"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003241}}
 .slick-row.ui-widget-content.even {
   background-color: #f6f6f6;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003244}}
 .slick-row.ui-widget-content.disabledRow {
   background-color: #f0f0f0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003237}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003247}}
 .slick-row.ui-widget-content.courseRow {
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003250}}
 .slick-row.ui-widget-content.expanded {
   background-color: #edf8ff;
   font-weight: bold;
   color: #757676;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003255}}
 .slick-row.ui-widget-content.courseHeaderRow {
   background-color: #f5fdfe;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003257}}
 .slick-row.ui-widget-content.courseHeaderRow > .slick-cell {
   font-weight: bold;
   color: #333333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003264}}
 .slick-viewport {
   overflow: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003269}}
 .certficate-container {
   width: 36px;
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003274}}
 .grade-passed {
   color: green;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003278}}
 .grade-failed {
   color: red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003282}}
 .group-name-cell-wrapper {
   overflow: hidden;
   margin-bottom: 5px;
@@ -9742,7 +9747,7 @@ input[type="checkbox"] {
   text-overflow: clip !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003289}}
 .inline-group-name {
   white-space: nowrap;
   overflow: hidden;
@@ -9754,14 +9759,14 @@ input[type="checkbox"] {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003300}}
 .inline-count {
   position: relative;
   right: 0;
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/InsiderFocus\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_slickGrid\.scss}line{font-family:\00003306}}
 .slick-cell-checkboxsel {
   text-overflow: clip;
 }

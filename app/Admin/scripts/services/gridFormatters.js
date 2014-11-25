@@ -50,11 +50,11 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		return '<span></span><div>' + value + '</div>' + tempResult;
 	}
 
-	function traineeNameFormatter(row, cell, value, columnDef, item) {
+	function sessionNameFormatter(row, cell, value, columnDef, item) {
 		if (item.metaType) return value;
 
 		var copyButtonClass = "btn btn-mini btn-info action action-copy";
-		var editButtonClass = "btn btn-mini btn-info action action-remind";     // change to Edit class (add it)
+		var editButtonClass = "btn btn-mini btn-info action action-edit";     // change to Edit class (add it)
 		var dropButtonClass = "btn btn-mini btn-info action action-delete";
 		var copyDisabled = '';
 		var editDisabled = '';
@@ -114,7 +114,7 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		dateFormatterBasic: dateFormatterBasic,
 		mtypeFormatter: mtypeFormatter,
 		dateFormatter: dateFormatter,
-		traineeNameFormatter: traineeNameFormatter,
+		sessionNameFormatter: sessionNameFormatter,
 		traineeEmailFormatter: traineeEmailFormatter,
 		traineeEmailWithInviteFormatter: traineeEmailWithInviteFormatter,
 		inviteFormatter: inviteFormatter,
