@@ -13,6 +13,7 @@ angular.module('adminWebApp.controllers').controller('ManageSessionsCtrl', ['$sc
 					{id: "start_time", name: "Start Date", field: "start_time", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", sortable: true},
 					{id: "end_time", name: "End Date", field: "end_time", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", sortable: true},
 					{id: "status_id", name: "Status", field: "status_id", minWidth: 280, maxWidth: 280, cssClass: "cell-title", headerCssClass: "header-column", formatter: gridFormatters.sessionStatusFormatter, sortable: true},
+					{id: "modified", name: "Last Modified", field: "modified", width: 100, cssClass: "cell-title", headerCssClass: "header-column", sortable: true, formatter: gridFormatters.dateFormatter},
 					{id: "goto", name: "Chat", minWidth: 80, maxWidth: 80, headerCssClass: "header-column", formatter: gridFormatters.gotoChatFormatter, sortable: false}
 				];
 			}
