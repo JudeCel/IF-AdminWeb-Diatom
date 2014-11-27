@@ -1,40 +1,66 @@
 angular.module('adminWebApp.consts').constant('mtypes', {
+	sessStatus: {
+		none: 0,
+		invalid: 100000100,
+		valid: 100000200
+	},
+	sessType: {
+		none: 0,
+		standard: 101000100,
+		anonymous: 101000200
+	},
 	accountStatus: {
 		none: 0,
-		active: 127000100,
-		cancellationPending: 127000600,
-		cancelled: 127000700,
-		nonPayment: 127000200,
-		trialExpired: 127000500
+		trial: 102000100,
+		trialExpired: 102000200,
+		active: 102000300,
+		nonPayment: 102000400
 	},
-	actionType: {
-		none: 0,
-		accountDeleted: 113013900,
-		accountDisabled: 113007600,
-		accountEnabled: 113007700
-	},
-	billingIntervalType: {
-		none: 0,
-		annual: 165000200,
-		annualInvoiced: 165000300,
-		monthly: 165000100
-	},
-	brandingColorScheme: {
-		none: 0,
-		blue: 102000100,
-		green: 102000200,
-		orange: 102000300
-	},
-	resourceType: {
-		image: 103000100,
-		brandLogo: 103000200,
-		video: 103000300,
-		audio: 103000400,
-		document: 103000500
+	billingIntervalType:
+	{   none: 0,
+		monthly: 103000100,
+		annual: 103000200
 	},
 	sessionStatus: {
-		pending: 0,
-		open: 166000100,
-		closed: 166000200
+		none: 0,
+		pending: 104000100,
+		open: 104000200,
+		closed: 104000300
+	},
+	userType: {
+		none: 0,
+		accountManager: 105000100,
+		regular: 105000200
+	},
+	reportType: {
+		none: 0,
+		chat: 109000100,
+		chat_stars: 109000200,
+		whiteboard: 109000300,
+		vote: 109000400,
+		stats: 109000500
+	},
+	userRole: {
+		none: 0,
+		facilitator: 106000100,
+		observer: 106000200,
+		participant: 106000300
+	},
+	userStatus: {
+		none: 0,
+		active: 107000100,
+		inactive: 107000200
+	},
+	resourceType: {
+		none: 0,
+		image: 108000100,
+		audio: 108000200,
+		video: 108000300,
+		document: 108000400
+	},
+	topicStatus: {
+		none: 0,
+		active: 110000100,
+		inactive: 110000200
 	}
 });
