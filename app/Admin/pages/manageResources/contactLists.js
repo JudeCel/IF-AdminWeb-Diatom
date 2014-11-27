@@ -36,8 +36,8 @@ angular.module('adminWebApp.controllers').controller('ContactListsCtrl', ['$scop
 				columns: [
 					{
 						id: "name",
-						name: "Groups",
-						field: "name", width: 300, cssClass: "cell-title", formatter: gridFormatters.groupNameFormatter
+						name: "Contact Lists",
+						field: "name", width: 300, cssClass: "cell-title", formatter: gridFormatters.contactListNameFormatter
 					}
 				],
 				onClick: onGroupRowClick,
@@ -56,9 +56,7 @@ angular.module('adminWebApp.controllers').controller('ContactListsCtrl', ['$scop
 				},
 				columns: [
 					{id: "name", name: "Name", field: "name", width: 250, cssClass: "cell-title", sortable: true},
-					{id: "email", name: "Email", field: "email", width: 350, cssClass: "cell-title", sortable: true,
-						formatter: gridFormatters.traineeEmailWithInviteFormatter
-					}
+					{id: "email", name: "Email", field: "email", width: 350, cssClass: "cell-title", sortable: true}        // TODO: add formatter
 				],
 				onRowsChanged: onRowsChanged,
 				onRowCountChanged: onRowCountChanged,
@@ -147,7 +145,7 @@ angular.module('adminWebApp.controllers').controller('ContactListsCtrl', ['$scop
 				var usersInContactList = restoreSortIn(unsortedUsersFor(contactList));
 				$scope.gridData = usersInContactList;
 				viewData = $scope.userSearchCriteria ? filterViewBySearchCriteria() : $scope.gridData;
-				//preselectInvitedUsers(usersInContactList);
+				preselectInvitedUsers(usersInContactList);
 				gridCommands.cleanSelection();
 			}
 
@@ -205,7 +203,7 @@ angular.module('adminWebApp.controllers').controller('ContactListsCtrl', ['$scop
 			function onRowCountChanged(args, items) {
 				viewData = items;
 				refreshInviteButtonState();
-				$scope.userCount = viewData.length;
+				$scope.usersCount = viewData.length;
 			}
 
 			function showSpinner() {
@@ -246,30 +244,7 @@ angular.module('adminWebApp.controllers').controller('ContactListsCtrl', ['$scop
 			var inviting = false;
 
 			$scope.addAllUsers = function () {
-				var idsToInvite = _.difference(selectedIds, getInvitedUserIds());
-
-				if (idsToInvite.length == 0) return;
-				inviting = true;
-				buildInviteButtonText();
-
-				var date = new Date();
-				var dateString = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
-
-				if ($scope.seriesId) {
-					seriesUsersResource.inviteSeriesUsers($scope.seriesId, idsToInvite, dateString, function (result) {
-						refreshData(clearAfterInvite);
-					}, function (error) {
-						clearAfterInvite();
-					});
-				}
-				else {
-					var required = $scope.makeCourseRequired ? 1 : 0;
-					courseUsersResource.inviteCourseUsers($scope.courseId, idsToInvite, required, dateString, function (result) {
-						refreshData(clearAfterInvite);
-					}, function (error) {
-						clearAfterInvite();
-					});
-				}
+				// TODO
 			};
 
 			function clearAfterInvite() {
@@ -280,36 +255,15 @@ angular.module('adminWebApp.controllers').controller('ContactListsCtrl', ['$scop
 			}
 
 			function refreshData(cb) {
-				cb = cb || function () {
-				};
-
-				if ($scope.seriesId) {
-					seriesUsersResource.inviteSetup($scope.seriesId, function (result) {
-						accountUsers = result.users;
-						$scope.accountContactLists = result.contactLists;
-						$scope.accountContactLists.splice(0, 0, {id: -1, name: 'All', users: accountUsers});
-
-						restoreSelectedGroup();
-						cb();
-					});
-					return;
-				}
-
-				courseUsersResource.inviteSetup($scope.courseId, function (result) {
-					accountUsers = result.users;
-					$scope.accountContactLists = result.contactLists;
-					$scope.accountContactLists.splice(0, 0, {id: -1, name: 'All', users: accountUsers});
-
-					restoreSelectedGroup();
-					cb();
-				});
+				// TODO
 			}
 
-			function restoreSelectedGroup() {
-				var updatedSelectedGroup = $.grep($scope.accountContactLists, function (e) {
-					return e.id == selectedGroup.id
-				});
-				loadUsersForGroup(updatedSelectedGroup[0]);
+			function restoreSelectedContactList() {
+				//TODO
+//				var updatedSelectedContactList = $.grep($scope.accountContactLists, function (e) {
+//					return e.id == selectedContactList.id
+//				});
+//				loadUsersForContactList(updatedSelectedContactList[0]);
 			}
 
 

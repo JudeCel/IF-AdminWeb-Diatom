@@ -102,6 +102,15 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		return result + '></input>';
 	}
 
+	function contactListNameFormatter(row, cell, value, columnDef, item) {
+		var usersInContactList = item.userIds ? item.userIds.length : item.users.length;
+
+		var contactListName = '<div class="inline-group-name">' + value + '</div>';
+		var cnt = ' <div class="inline-count">(' + usersInContactList + ')</div>';
+
+		return '<div class="group-name-cell-wrapper">' + contactListName + cnt + '</div>';
+	}
+
 	var gotoChatFormatter = function ( row, cell, value, columnDef, item) {
 	    return '<a href="' + urlHelper.getApiUrl() + '/?id=55&sid=' + item['id'] + '">&#9654;</a>';     //TODO: no need to pass userId here [TM]
     };
@@ -124,6 +133,7 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		traineeImageFormatter: traineeImageFormatter,
 		resourceNameFormatter: resourceNameFormatter,
 		gotoChatFormatter: gotoChatFormatter,
-		sessionStatusFormatter: sessionStatusFormatter
+		sessionStatusFormatter: sessionStatusFormatter,
+		contactListNameFormatter: contactListNameFormatter
 	};
 });
