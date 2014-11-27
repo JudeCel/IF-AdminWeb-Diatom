@@ -21,8 +21,7 @@ angular.module('adminWebApp.resources').factory('ManageResourcesCtrlResolver',
 			if (tabName == 'gallery' || !tabName) {
 				galleryResource.gallerySetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'contactLists') {
-				successCb(['passThrough']);
-				//contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
+				contactListsResource.contactListsSetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'topics') {
 				topicsResource.topicsSetup(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'emailTemplates') {

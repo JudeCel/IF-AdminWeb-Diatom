@@ -4,7 +4,7 @@ angular.module('adminWebApp.resources')
 
 		var contactListsResource = $resource(ifConfig.insiderFocusApiBaseUrlSegment + '/contactLists');
 
-		contactListsResource.prototype.load = function load(resultCb, errorCb) {
+		contactListsResource.prototype.contactListsSetup = function contactListsSetup(resultCb, errorCb) {
 			return contactListsResource.get(resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		};
 
