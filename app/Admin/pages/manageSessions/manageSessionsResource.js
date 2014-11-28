@@ -16,7 +16,7 @@ angular.module('adminWebApp.resources')
 		};
 
 		manageSessionsResource.prototype.copySession = function copySession(sessionId, resultCb, errorCb) {
-			return copySessionResource.query( {sessionId: sessionId}, resultCb, errorHandler.defaultServerErrorHandler(errorCb));
+			return copySessionResource.get( {sessionId: sessionId}, resultCb, errorHandler.defaultServerErrorHandler(errorCb));
 		};
 
 		manageSessionsResource.prototype.createSession = function createSession(resultCb, errorCb) {
