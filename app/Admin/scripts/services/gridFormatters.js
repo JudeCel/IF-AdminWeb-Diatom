@@ -104,8 +104,30 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 
 	function contactListNameFormatter(row, cell, value, columnDef, item) {
 		var usersInContactList = item.userIds ? item.userIds.length : item.users.length;
+		var contactListItemClass = "inline-group-name";
+		if (item.type) {
+			switch (item.type) {
+				case mtypes.userRole.accountManager: {
+					value = "Account Managers";
+					break;
+				}
+				case mtypes.userRole.facilitator: {
+					value = "Facilitators";
+					break;
+				}
+				case mtypes.userRole.observer: {
+					value = "Observers";
+					break;
+				}
+				case mtypes.userRole.participant: {
+					value = "Participants";
+					break;
+				}
+			}
+			contactListItemClass += " bold";
+		}
 
-		var contactListName = '<div class="inline-group-name">' + value + '</div>';
+		var contactListName = '<div class="' + contactListItemClass + '">' + value + '</div>';
 		var cnt = ' <div class="inline-count">(' + usersInContactList + ')</div>';
 
 		return '<div class="group-name-cell-wrapper">' + contactListName + cnt + '</div>';
