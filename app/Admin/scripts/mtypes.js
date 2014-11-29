@@ -27,11 +27,6 @@ angular.module('adminWebApp.consts').constant('mtypes', {
 		open: 104000200,
 		closed: 104000300
 	},
-	userType: {
-		none: 0,
-		accountManager: 105000100,
-		regular: 105000200
-	},
 	reportType: {
 		none: 0,
 		chat: 109000100,
@@ -42,9 +37,10 @@ angular.module('adminWebApp.consts').constant('mtypes', {
 	},
 	userRole: {
 		none: 0,
-		facilitator: 106000100,
-		observer: 106000200,
-		participant: 106000300
+		accountManager: 106000100,
+		facilitator: 106000200,
+		observer: 106000300,
+		participant: 106000400
 	},
 	userStatus: {
 		none: 0,
