@@ -1,5 +1,5 @@
 angular.module('ui.directives')
-	.controller('uiGroupSelect2Controller', function ($rootScope, $scope, $attrs, $parse, contactListsResource) {
+	.controller('uiContactListSelect2Controller', function ($rootScope, $scope, $attrs, $parse, contactListsResource) {
 
 		$scope.createContactListText = "Create new contact list: ";
 
@@ -60,7 +60,7 @@ angular.module('ui.directives')
 			return result;
 		}
 	})
-	.directive('uiGroupSelect2', ['ui.config', '$http', function (uiConfig) {
+	.directive('uiContactListSelect2', ['ui.config', '$http', function (uiConfig) {
 		var options = {};
 		var  KEY = {
 			TAB: 9,
@@ -70,7 +70,7 @@ angular.module('ui.directives')
 		}
 		return {
 			require: '?ngModel',
-			controller: 'uiGroupSelect2Controller',
+			controller: 'uiContactListSelect2Controller',
 			compile: function (tElm, tAttrs) {
 				return function (scope, elm, attrs, controller) {
 					// instance-specific options
