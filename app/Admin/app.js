@@ -67,6 +67,7 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 
 		// Third Tab
 		.when('/ManageResources', {templateUrl: 'pages/manageResources/manageResources.html', controller: 'ManageResourcesCtrl', pageName: 'manageResources', resolve: {resolveData: manageResourcesCtrlResolver}})
+		.when('/ManageResources/addContact', {templateUrl: 'pages/manageResources/addContact.html', controller: 'AddContactCtrl', pageName: 'addContact', resolve: {resolveData: manageResourcesCtrlResolver}})
 		.when('/ManageResources/:tabName', {templateUrl: 'pages/manageResources/manageResources.html', controller: 'ManageResourcesCtrl', reloadOnSearch: false, pageName: 'manageResources', resolve: {resolveData: manageResourcesCtrlResolver}})
 }])
 	.run(['$rootScope', 'refreshSession', 'Auth', 'accountFeatures', '$window', '$cookies', '$http', 'urlHelper', '$cookieStore', function ($rootScope, refreshSession, Auth, accountFeatures, $window, $cookies, $http, urlHelper, $cookieStore) {

@@ -29,6 +29,7 @@ var files = {
 		'app/Admin/pages/manageResources/gallery.js',
 		'app/Admin/pages/manageResources/topics.js',
 		'app/Admin/pages/manageResources/coloursGallery.js',
+		'app/Admin/pages/manageResources/addContact.js',
 		'app/Admin/pages/manageResources/emailTemplates.js',
 
 		'app/Admin/pages/footer/footer.js',
@@ -52,7 +53,10 @@ var files = {
 		'app/Admin/scripts/services/gridUtils.js',
 		'app/Admin/scripts/services/refreshSession.js',
 		'app/Admin/scripts/services/userGridUtils.js',
-		'app/Admin/scripts/services/validationService.js'
+		'app/Admin/scripts/services/validationService.js',
+		'app/Admin/scripts/services/groupsService.js',
+		'app/Admin/scripts/services/contactListsCtrlResolver.js',
+		'app/Admin/scripts/directives/uiContactListSelect2.js'
 	],
 
 	'testSrc': [

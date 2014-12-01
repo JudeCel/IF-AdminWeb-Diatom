@@ -16,6 +16,14 @@
 				<div class="section-header">
 					<div mf-search-box search="traineeSearchCriteria" placeholder="Search..."></div>
 				</div>
+				<div class="btn-group pull-right">
+					<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Add Contacts
+						&nbsp;&nbsp<span class="caret black-caret"></span></button>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="{{getAddUserUrl()}}">New Manual Import</a></li>
+						<li><a href="{{getImportXlsUrl()}}">Upload Excel</a></li>
+					</ul>
+				</div>
 
 				<div class="section-grid">
 					<div mf-grid="gridInfoUsers" mf-full-height=".mf-full-height-limit"

@@ -278,6 +278,10 @@ angular.module('adminWebApp.controllers').controller('ContactListsCtrl', ['$scop
 				return checked ? "<input type='checkbox' checked='checked'>" : "<input type='checkbox'>";
 			}
 
+			$scope.getAddUserUrl = function () {
+				return '#/ManageResources/addContact';
+			};
+
 			$scope.$watch('userSearchCriteria', updateFilter);
 
 		}]);
