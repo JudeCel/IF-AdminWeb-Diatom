@@ -1,13 +1,13 @@
 
 angular.module('adminWebApp.controllers').controller('ChangeContactDetailsCtrl', ['$scope', '$rootScope', '$routeParams', 'authView',
-		'$location', 'tabUtil', 'refreshSession', '$window', 'changeContactDetailsResource',
-		function ($scope, $rootScope, $routeParams, authView, $location, tabUtil, refreshSession, $window, changeContactDetailsResource) {
+		'$location', 'tabUtil', 'refreshSession', '$window', 'usersResource',
+		function ($scope, $rootScope, $routeParams, authView, $location, tabUtil, refreshSession, $window, usersResource) {
 
 	    $window.document.title = "Change Contact Details | Insider Focus";
 
-        $scope.contact = angular.copy($scope.resolvedData); 
+        $scope.contact = angular.copy($scope.resolvedData);
 
-        changeContactDetailsResource.getCountries(function (result) {
+			usersResource.getCountries(function (result) {
             $scope.countries = angular.copy(result);
             for (var i in $scope.countries) {
                 if($scope.contact.country_id == $scope.countries[i].id){
@@ -23,7 +23,7 @@ angular.module('adminWebApp.controllers').controller('ChangeContactDetailsCtrl',
             contact.country_id = (contact.country_id)?contact.country_id.id : 0;
             $scope.contact = angular.copy(contact);
             $scope.loading = true;
-            changeContactDetailsResource.saveUser($scope.contact, function (result) {      
+	        usersResource.saveUser($scope.contact, function (result) {
                 $scope.loading = false;
                 $scope.success = true;
                 $scope.error = false;

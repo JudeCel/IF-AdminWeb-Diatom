@@ -42,6 +42,7 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 	var manageResourcesCtrlResolver = newResolver('ManageResourcesCtrlResolver');
 	var manageSessionsCtrlResolver = newResolver('ManageSessionsCtrlResolver');
 	var sessionBuilderCtrlResolver = newResolver('SessionBuilderCtrlResolver');
+	var usersCtrlResolver = newResolver('UsersCtrlResolver');
 
 	// check to see if user is logged in
 	//if (!ifConfig.sessionId) return;
@@ -67,7 +68,7 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 
 		// Third Tab
 		.when('/ManageResources', {templateUrl: 'pages/manageResources/manageResources.html', controller: 'ManageResourcesCtrl', pageName: 'manageResources', resolve: {resolveData: manageResourcesCtrlResolver}})
-		.when('/ManageResources/addContact', {templateUrl: 'pages/manageResources/addContact.html', controller: 'AddContactCtrl', pageName: 'addContact', resolve: {resolveData: manageResourcesCtrlResolver}})
+		.when('/ManageResources/addContact', {templateUrl: 'pages/manageResources/addContact.html', controller: 'AddContactCtrl', pageName: 'addContact', resolve: {resolveData: usersCtrlResolver}})
 		.when('/ManageResources/:tabName', {templateUrl: 'pages/manageResources/manageResources.html', controller: 'ManageResourcesCtrl', reloadOnSearch: false, pageName: 'manageResources', resolve: {resolveData: manageResourcesCtrlResolver}})
 }])
 	.run(['$rootScope', 'refreshSession', 'Auth', 'accountFeatures', '$window', '$cookies', '$http', 'urlHelper', '$cookieStore', function ($rootScope, refreshSession, Auth, accountFeatures, $window, $cookies, $http, urlHelper, $cookieStore) {
