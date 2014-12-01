@@ -3,52 +3,52 @@ angular.module('ui.directives')
 
 		$scope.createContactListText = "Create new contact list: ";
 
-		$scope.createNewGroup = function (groupName, cb) {
-			var newGroup = { name: groupName };
+		$scope.createNewContactList = function (contactListName, cb) {
+			var newContactList = { name: contactListName };
 
-			contactListsResource.addGroups([newGroup], function (res) {
-				var group = {
-					id: res.groups[0].id,
-					text: res.groups[0].name
+			contactListsResource.addContactLists([newContactList], function (res) {
+				var contactList = {
+					id: res.contactLists[0].id,
+					text: res.contactLists[0].name
 				};
-				$scope.$emit('newContactListCreated', { id: group.id, name: group.text });
-				$scope.allContactLists.push(group);
-				cb(group);
+				$scope.$emit('newContactListCreated', { id: contactList.id, name: contactList.text });
+				$scope.allContactLists.push(contactList);
+				cb(contactList);
 			}, function (err) {
 				cb();
 			});
 		};
 
-		$scope.groupsQuery = function (query) {
+		$scope.contactListsQuery = function (query) {
 			var data = {results: getAllResults(query.term, query.element)};
 			query.callback(data);
 		};
 
-		$scope.allGroups = $scope.$eval($attrs.mfGroups) || [];
+		$scope.allContactLists = $scope.$eval($attrs.mfContactLists) || [];
 
 
-		$scope.$watch($attrs.mfGroups, function () {
-			$scope.allContactLists = $scope.$eval($attrs.mfGroups) || [];
+		$scope.$watch($attrs.mfContactLists, function () {
+			$scope.allContactLists = $scope.$eval($attrs.mfContactLists) || [];
 		});
 
 		function getAllResults(term, elem) {
 			if (!term || term.length == 0) {
-				return $scope.allGroups;
+				return $scope.allContactLists;
 			}
 
 			var termLower = term.toLowerCase();
 
-			var result = _.filter($scope.allGroups, function (item) {
+			var result = _.filter($scope.allContactLists, function (item) {
 				return item.text.toLowerCase().indexOf(termLower) >= 0;
 			});
 
-			if (!mfConfig.useGroupRestrictions) {
-				var exists = _.find($scope.allGroups, function (item) {
+			if (!mfConfig.useContactListRestrictions) {
+				var exists = _.find($scope.allContactLists, function (item) {
 					return item.text.toLowerCase() == (term || "").toLowerCase();
 				});
 
 				if ($.trim(term || "") && !exists) {
-					var newItem = { id: -1, text: $scope.createGroupText + '"' + term + '"', value: $.trim(term)};
+					var newItem = { id: -1, text: $scope.createContactListText + '"' + term + '"', value: $.trim(term)};
 					if (elem.select2("container").hasClass('select2-drop-above')) {
 						result.splice(0, 0, newItem);
 					} else {
@@ -74,7 +74,7 @@ angular.module('ui.directives')
 			compile: function (tElm, tAttrs) {
 				return function (scope, elm, attrs, controller) {
 					// instance-specific options
-					var opts = angular.extend({}, options, scope.$eval(attrs.uiGroupSelect2));
+					var opts = angular.extend({}, options, scope.$eval(attrs.uiContactListSelect2));
 
 					var checkHighlightedValue = false;
 
@@ -119,7 +119,7 @@ angular.module('ui.directives')
 
 						if (result.id === -1) {
 							match = result.value.toUpperCase().indexOf(term.toUpperCase());
-							match += (scope.createGroupText + '"').length;
+							match += (scope.createContactListText + '"').length;
 						}
 
 						var tl = term.length;
@@ -153,12 +153,12 @@ angular.module('ui.directives')
 					};
 
 
-					opts.query = scope.groupsQuery;
+					opts.query = scope.contactListsQuery;
 
 					opts.initSelection = function (element, callback) {
 						var ids = element.val().split(',');
 
-						var data = _.filter(scope.allGroups, function (item) {
+						var data = _.filter(scope.allContactLists, function (item) {
 							return  _.contains(ids, item.id.toString());
 						});
 
@@ -190,7 +190,7 @@ angular.module('ui.directives')
 							var search = elm.select2("container").find("input.select2-input");
 							if (event.val === -1) {
 								scope.$apply(function () {
-									scope.createNewGroup(event.object.value, function (res) {
+									scope.createNewContactList(event.object.value, function (res) {
 										if (!res) {
 											return;
 										}
