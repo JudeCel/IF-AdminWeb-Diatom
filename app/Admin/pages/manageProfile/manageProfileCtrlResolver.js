@@ -21,7 +21,12 @@ angular.module('adminWebApp.resources').factory('ManageProfileCtrlResolver',
 			if (tabName == 'reviewAndAddFeatures' || !tabName) {
 				successCb(['passThrough']);
 			} else if (tabName == 'changeContactDetails') {
-				usersResource.getUser(successCb, errorHandler.defaultServerErrorHandler());
+				usersResource.getUser($rootScope.userId, successCb, errorHandler.defaultServerErrorHandler());
+      } else if (tabName == 'editAccountManager'){
+      	successCb(['passThrough']);
+        //usersResource.getUser($rootScope.userId, successCb, errorHandler.defaultServerErrorHandler());
+      } else if (tabName == 'addAccountManager') {
+        successCb(['passThrough']);
 			} else if (tabName == 'changePaymentDetails') {
 				successCb(['passThrough']);
 			} else if (tabName == 'organizeAccountManagers') {

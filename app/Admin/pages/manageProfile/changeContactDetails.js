@@ -23,18 +23,27 @@ angular.module('adminWebApp.controllers').controller('ChangeContactDetailsCtrl',
             contact.country_id = (contact.country_id)?contact.country_id.id : 0;
             $scope.contact = angular.copy(contact);
             $scope.loading = true;
-	        usersResource.saveUser($scope.contact, function (result) {
+
+            var resCb = function (data) {
                 $scope.loading = false;
                 $scope.success = true;
                 $scope.error = false;
                 $scope.message = "Successfully saved";
                 refreshSession.refresh();
-            }, function (error) {
+            }
+
+            var errCb = function (err) {
                 $scope.loading = false;
                 $scope.success = false;
                 $scope.error = true;
                 $scope.message = "Save failed";
-            });
+            }
+
+            if ($scope.contact.id) {
+                 usersResource.saveUser($scope.contact, resCb, errCb);
+            }else{
+                 usersResource.addUser($scope.contact, resCb, errCb);
+            }
         }
 
         $scope.reset = function() {

@@ -9,7 +9,12 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 			reviewAndAddFeaturesTab: {name: 'reviewAndAddFeatures', title: 'Review and Add Features', contentSrc: 'pages/manageProfile/reviewAndAddFeatures.html', selected: false},
 			changeContactDetailsTab: {name: 'changeContactDetails', title: 'Change Contact Details', contentSrc: 'pages/manageProfile/changeContactDetails.html', selected: false},
 			changePaymentDetailsTab: {name: 'changePaymentDetails', title: 'Change Payment Details', contentSrc: 'pages/manageProfile/changePaymentDetails.html', selected: false},
-			organizeAccountManagersTab: {name: 'organizeAccountManagers', title: 'Organize Account Managers', contentSrc: 'pages/manageProfile/organizeAccountManagers.html', selected: false},
+			organizeAccountManagersTab: {name: 'organizeAccountManagers', title: 'Organize Account Managers', contentSrc: 'pages/manageProfile/organizeAccountManagers.html', selected: false,
+				subSelection: [
+					{name: 'addAccountManager', contentSrc: 'pages/manageProfile/addAccountManager.html', contentSubSrc: 'pages/manageProfile/userForm.html' },
+					{name: 'editAccountManager', contentSrc: 'pages/manageProfile/editAccountManager.html'}
+				]
+			},
 			changeYourPasswordTab: {name: 'changePassword', title: 'Change Password', contentSrc: 'pages/manageProfile/changeYourPassword.html', selected: false},
 
 			galleryTab: {name: 'gallery', title: 'Gallery', contentSrc: 'pages/manageResources/gallery.html', selected: false},
