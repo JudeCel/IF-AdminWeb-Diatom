@@ -60,6 +60,7 @@ angular.module('adminWebApp').config(['$routeProvider', '$locationProvider', '$h
 		// First Tab
 		.when('/ManageProfile', {templateUrl: 'pages/manageProfile/manageProfile.html', controller: 'ManageProfileCtrl', pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})
 		.when('/ManageProfile/:tabName', {templateUrl: 'pages/manageProfile/manageProfile.html', controller: 'ManageProfileCtrl', reloadOnSearch: false, pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})
+		.when('/ManageProfile/:tabName/:userId', {templateUrl: 'pages/manageProfile/manageProfile.html', controller: 'ManageProfileCtrl', reloadOnSearch: false, pageName: 'manageProfile', resolve: {resolveData: manageProfileCtrlResolver}})
 
 		// Second Tab
 		.when('/ManageSessions', {templateUrl: 'pages/manageSessions/manageSessions.html', controller: 'ManageSessionsCtrl', pageName: 'manageSessions', resolve: {resolveData: manageSessionsCtrlResolver}})

@@ -1,20 +1,20 @@
-
 angular.module('adminWebApp.controllers').controller('OrganizeAccountManagersCtrl', ['$scope', '$rootScope', '$routeParams', 'authView',
-		'$location', 'tabUtil', 'resolveData', 'refreshSession', '$window',
-		function ($scope, $rootScope, $routeParams, authView, $location, tabUtil, resolveData, refreshSession, $window) {
+    '$location', 'tabUtil', 'refreshSession', '$window', 'gridFormatters', 'usersResource',
+    function ($scope, $rootScope, $routeParams, authView, $location, tabUtil, refreshSession, $window, gridFormatters, usersResource) {
+
+
 
 			$window.document.title = "Organize Account Managers | Insider Focus";
 
-			$scope.resolvedData = resolveData;
-      $scope.gridData = resolveData;
+      $scope.gridData = $scope.resolvedData;
 
       function getGridColumns() {
         return [
-          {id: "name_first", name: "First Name", field: "name_first", width: 150, headerCssClass: "header-column-first", cssClass: "cell-title", formatter: gridFormatters.userNameFormatter, sortable: true},
-          {id: "name_last", name: "Last Name", field: "name_last", width: 130, headerCssClass: "header-column", sortable: true},
-          {id: "email", name: "E-mail", field: "email", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", sortable: true},
-          {id: "phone", name: "Phone", field: "phone", minWidth: 180, maxWidth: 180, headerCssClass: "header-column", sortable: true},
-          {id: "mobile", name: "Email", field: "mobile", minWidth: 280, maxWidth: 280, cssClass: "cell-title", headerCssClass: "header-column",  sortable: true}
+          {id: "name_first", name: "First Name", field: "name_first", width: 100, headerCssClass: "header-column-first", cssClass: "cell-title", formatter: gridFormatters.userNameFormatter, sortable: true},
+          {id: "name_last", name: "Last Name", field: "name_last", width: 100, headerCssClass: "header-column", sortable: true},
+          {id: "email", name: "E-mail", field: "email", minWidth: 100, maxWidth: 180, headerCssClass: "header-column", sortable: true},
+          {id: "phone", name: "Phone", field: "phone", minWidth: 100, maxWidth: 180, headerCssClass: "header-column", sortable: true},
+          {id: "mobile", name: "Email", field: "mobile", minWidth: 190, maxWidth: 190, cssClass: "cell-title", headerCssClass: "header-column",  sortable: true}
         ];
       }
 
@@ -31,16 +31,16 @@ angular.module('adminWebApp.controllers').controller('OrganizeAccountManagersCtr
         onRowsChanged: onRowsChanged,
         onRowCountChanged: onRowCountChanged,
         onSelectedRowsChanged: onSelectedRowsChanged,
-        includeSelectCheckbox: false,
+        includeSelectCheckbox: true,
         onClick: onRowClick,
         rowMetadataProvider: rowMetadataProvider,
         filterFn: filterer,
-        checkboxSelectionFormatter: checkboxSelectionFormatter,
+       // checkboxSelectionFormatter: checkboxSelectionFormatter,
         data: []
       };
 
       function doEdit(user, cb) {
-        $location.path('/ManageProfile/editAccountManagers/' + user.id);
+        $location.path('/ManageProfile/editAccountManager/' + user.id);
       }
 
       function doDrop(user, cb) {
@@ -70,7 +70,7 @@ angular.module('adminWebApp.controllers').controller('OrganizeAccountManagersCtr
       function onRowClick(item, targetClasses, target) {
         if (target.type == "checkbox") return;
 
-        if (targetClasses.indexOf('action-copy') !== -1) {
+        if (targetClasses.indexOf('action-send') !== -1) {
           return showCopyConfirmation(item);
         }
 
@@ -128,6 +128,6 @@ angular.module('adminWebApp.controllers').controller('OrganizeAccountManagersCtr
       function checkboxSelectionFormatter(row, cell, value, columnDef, dataContext) {
          TBD
       }
-
+      
 			refreshSession.refresh();
 }]);

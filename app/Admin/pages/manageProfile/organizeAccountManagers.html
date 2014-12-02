@@ -1,7 +1,8 @@
-<div class="row-fluid">
+<div class="row-fluid"  ng-controller="OrganizeAccountManagersCtrl" >
 <h1>Organize Account Managers</h1>
 <p>
 <br>
+<button class="btn btn-info pull-left" ng-click="">Send Generic Email</button> 
 <a class="btn btn-info pull-right" href="#/ManageProfile/addAccountManager">Add new account manager</a>
 <br>
 </p>
@@ -13,6 +14,8 @@
       </div>
     </div>
   </div>
+  <div bs-modal="'pages/modals/deleteUser.html'"></div>
+
 </div>
 
-<div bs-modal="'pages/modals/deleteManager.html'"></div>
+

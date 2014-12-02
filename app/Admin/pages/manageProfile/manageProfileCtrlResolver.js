@@ -23,14 +23,13 @@ angular.module('adminWebApp.resources').factory('ManageProfileCtrlResolver',
 			} else if (tabName == 'changeContactDetails') {
 				usersResource.getUser($rootScope.userId, successCb, errorHandler.defaultServerErrorHandler());
       } else if (tabName == 'editAccountManager'){
-      	successCb(['passThrough']);
-        //usersResource.getUser($rootScope.userId, successCb, errorHandler.defaultServerErrorHandler());
+        usersResource.getUser($route.current.params.userId, successCb, errorHandler.defaultServerErrorHandler());
       } else if (tabName == 'addAccountManager') {
-        successCb(['passThrough']);
+        successCb({});
 			} else if (tabName == 'changePaymentDetails') {
 				successCb(['passThrough']);
 			} else if (tabName == 'organizeAccountManagers') {
-				successCb(['passThrough']);
+				usersResource.getUsers(successCb, errorHandler.defaultServerErrorHandler());
 			} else if (tabName == 'changePasswords') {
 				successCb(['passThrough']);
 			}	else {

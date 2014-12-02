@@ -70,6 +70,26 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		return '<span></span><div>' + value + '</div>' + tempResult;
 	}
 
+	function userNameFormatter(row, cell, value, columnDef, item) {
+		if (item.metaType) return value;
+
+		var sendButtonClass = "btn btn-mini btn-info action action-send";
+		var editButtonClass = "btn btn-mini btn-info action action-edit";     // change to Edit class (add it)
+		var dropButtonClass = "btn btn-mini btn-info action action-delete";
+		var sendDisabled = '';
+		var editDisabled = '';
+		var dropDisabled = '';
+
+//		if (!item.canBeDropped && !dropDisabled)
+//			dropDisabled = " disabled";
+
+		var tempResult = '<button' + sendDisabled + ' class="' + sendButtonClass + '">Send</button>' +
+			'<button' + dropDisabled + ' class="' + dropButtonClass + '">Drop</button>' +
+			'<button' + editDisabled + ' class="' + editButtonClass + '">Edit</button>';
+
+		return '<span></span><div>' + value + '</div>' + tempResult;
+	}
+
 	function traineeEmailFormatter(row, cell, value, columnDef, item) {
 		if (!item.metaType) item.metaType = '';
 		return item.metaType.indexOf('courseRow') > -1 ? courseStateStatusFormatter(row, cell, value, columnDef, item) : value;
@@ -143,11 +163,14 @@ angular.module('adminWebApp.services').factory('gridFormatters', function ($filt
 		return mtypeFormatter(value);
 	}
 
+
+
 	return {
 		dateFormatterBasic: dateFormatterBasic,
 		mtypeFormatter: mtypeFormatter,
 		dateFormatter: dateFormatter,
 		sessionNameFormatter: sessionNameFormatter,
+		userNameFormatter: userNameFormatter,
 		traineeEmailFormatter: traineeEmailFormatter,
 		traineeEmailWithInviteFormatter: traineeEmailWithInviteFormatter,
 		inviteFormatter: inviteFormatter,

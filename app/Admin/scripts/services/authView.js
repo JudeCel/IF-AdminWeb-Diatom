@@ -11,7 +11,7 @@ angular.module('adminWebApp.services').factory('authView', ['Auth', 'mtypes', 'a
 			changePaymentDetailsTab: {name: 'changePaymentDetails', title: 'Change Payment Details', contentSrc: 'pages/manageProfile/changePaymentDetails.html', selected: false},
 			organizeAccountManagersTab: {name: 'organizeAccountManagers', title: 'Organize Account Managers', contentSrc: 'pages/manageProfile/organizeAccountManagers.html', selected: false,
 				subSelection: [
-					{name: 'addAccountManager', contentSrc: 'pages/manageProfile/addAccountManager.html', contentSubSrc: 'pages/manageProfile/userForm.html' },
+					{name: 'addAccountManager', contentSrc: 'pages/manageProfile/addAccountManager.html'},
 					{name: 'editAccountManager', contentSrc: 'pages/manageProfile/editAccountManager.html'}
 				]
 			},

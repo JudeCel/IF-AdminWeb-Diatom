@@ -40,9 +40,9 @@ angular.module('adminWebApp.controllers').controller('ChangeContactDetailsCtrl',
             }
 
             if ($scope.contact.id) {
-                 usersResource.saveUser($scope.contact, resCb, errCb);
+                usersResource.saveUser($scope.contact, resCb, errCb);
             }else{
-                 usersResource.addUser($scope.contact, resCb, errCb);
+                usersResource.addUser($scope.contact, resCb, errCb);
             }
         }
 

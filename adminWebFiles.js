@@ -12,6 +12,7 @@ var files = {
 		'app/Admin/pages/manageProfile/manageProfileCtrlResolver.js',
 		'app/Admin/pages/manageProfile/manageProfile.js',
 		'app/Admin/pages/manageProfile/changeContactDetails.js',
+		'app/Admin/pages/manageProfile/organizeAccountManagers.js',
 
 		'app/Admin/pages/users/usersResource.js',
 		'app/Admin/pages/users/usersCtrlResolver.js',
