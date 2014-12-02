@@ -21,7 +21,20 @@
 		        ng-disabled="!bulkDownloadEnabled || !resourcesToDownloadCnt" type="button"
 		        id="button-download-trainees">Download
 		</button>
+		<div class="btn-group pull-right">
+			<button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Add New
+				&nbsp;&nbsp<span class="caret black-caret"></span></button>
+			<ul class="dropdown-menu pull-right">
+				<li><a ng-click='toggleModal()'>Image</a></li>
+				<li><a ng-click='toggleModal()'>Brand Logo</a></li>
+				<li><a ng-click='toggleModal()'>Video</a></li>
+				<li><a ng-click='toggleModal()'>Audio</a></li>
+				<li><a ng-click='toggleModal()'>Document</a></li>
+			</ul>
+
+		</div>
 	</div>
+
 	<div class="row-fluid">
 		<div id="trainees-container" class="section">
 			<div class="section-grid">
@@ -32,4 +45,18 @@
 			</div>
 		</div>
 	</div>
+
+	<div class='ng-modal' ng-show='modalShown' width='750px' height='90%'>
+	  <div class='ng-modal-overlay' ng-click='toggleModal()'></div>
+	  <div class='ng-modal-dialog' ng-style='dialogStyle'>
+	    <div class='ng-modal-close' ng-click='toggleModal()'>X</div>
+	    <div class='ng-modal-dialog-content' ng-transclude>
+	    	  <input type="file" id="file" name="file"/>
+				  <br>
+				  <button ng-click="add()">Upload</button>
+				  <p>{{data}}</p>
+	    </div>
+	  </div>
+	</div>
+
 </div>
