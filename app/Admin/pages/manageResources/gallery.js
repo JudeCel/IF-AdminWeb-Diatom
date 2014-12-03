@@ -117,7 +117,6 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 
 		$scope.modalShown = false;
 	  $scope.toggleModal = function() {
-	  	console.log($scope.modalShown);
 	    $scope.modalShown = !$scope.modalShown;
 	  };
 
