@@ -25,6 +25,7 @@ var files = {
 		'app/Admin/pages/manageSessions/manageObservers.js',
 		'app/Admin/pages/manageSessions/sessionEmails.js',
 		'app/Admin/pages/manageSessions/facilitatorAndTopics.js',
+		'app/Admin/pages/manageSessions/sessionResource.js',
 
 		'app/Admin/pages/manageResources/manageResourcesCtrlResolver.js',
 		'app/Admin/pages/manageResources/manageResources.js',
@@ -75,6 +76,7 @@ var files = {
 		'app/Admin/components/jquery/jquery.js',
 		'app/Admin/components/underscore/underscore.js',
 		'app/Admin/scripts/vendor/angular/angular.js',
+		'app/Admin/scripts/vendor/angular-file-upload.js',
 		'app/Admin/scripts/vendor/angular/angular-resource.js',
 		'app/Admin/scripts/vendor/angular/angular-sanitize.js',
 		'app/Admin/scripts/vendor/angular/angular-route.js',
