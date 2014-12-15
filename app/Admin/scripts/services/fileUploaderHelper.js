@@ -4,7 +4,7 @@ angular.module('adminWebApp.services').factory('fileUploaderHelper', ['FileUploa
 
         options = options || {};
 
-        options.url = options.url || urlHelper.getApiUrl('/insiderfocus-api/uploadImage');
+        options.url = options.url || ifConfig.insiderFocusApiBaseUrlSegment + ifConfig.uploadImageUrl;
         options.queueLimit = options.queueLimit || 1;
         options.headers = options.headers || {
             'x-if-sess': $rootScope.sessId,

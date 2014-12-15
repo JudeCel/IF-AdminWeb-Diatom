@@ -62,17 +62,17 @@
     mfDirectivesModules.directive('ngSessionBuilderStepsArrows', function ($rootScope) {
         return {
             restrict: 'A',
-            template: '<a class="prev_link" href="{{link_prev}}">Prev Step</a><a class="next_link" href="{{link_next}}">Next Step</a>',
+            template: '<a class="prev_link" ng-click="changeStep()" href="{{linkPrev}}">Prev Step</a><a class="next_link" ng-click="changeStep()" href="{{linkNext}}">Next Step</a>',
             link: function (scope, element, attrs) {
-                var prev_link = element.find('.prev_link'),
-                    next_link = element.find('.next_link');
+                var prevLink = element.find('.prev_link'),
+                    nextLink = element.find('.next_link');
                 if ($rootScope.page.name === 'step1') {
-                    prev_link.hide();
+                    prevLink.hide();
                 } else if ($rootScope.page.name === 'step5') {
-                    next_link.hide();
+                    nextLink.hide();
                 } else {
-                    prev_link.show();
-                    next_link.show();
+                    prevLink.show();
+                    nextLink.show();
                 }
 
                 function checkSelected(arr) {
@@ -83,9 +83,13 @@
                     }
                 }
 
+                scope.changeStep = function() {
+                    $rootScope.$broadcast('changedStep');
+                };
+
                 var step = checkSelected(scope.tabs);
-                scope.link_prev = '#/SessionBuilder/' + scope.currentTab.sessionId +'/step' + step;
-                scope.link_next = '#/SessionBuilder/' + scope.currentTab.sessionId +'/step' + (step + 2);
+                scope.linkPrev = '#/SessionBuilder/' + scope.currentTab.sessionId +'/step' + step;
+                scope.linkNext = '#/SessionBuilder/' + scope.currentTab.sessionId +'/step' + (step + 2);
             }
         }
     });

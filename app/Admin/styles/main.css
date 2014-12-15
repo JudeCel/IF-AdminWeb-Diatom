@@ -10249,6 +10249,11 @@ input[type="checkbox"] {
   margin: 0 10px 10px 10px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_alerts\.scss}line{font-family:\0000310}}
+.error input {
+  border-color: #9d261d;
+}
+
 /**
  * Select2 Bootstrap CSS 1.0
  * Compatible with select2 3.3.2 and bootstrap 2.3.1

@@ -3,31 +3,59 @@ angular
     .module('adminWebApp.controllers')
 
     .controller('EditChatSessionCtrl', ['$q', '$scope', '$rootScope', '$routeParams', 'authView', '$location', 'tabUtil',
-        'refreshSession', '$window', '$filter', 'urlHelper', 'chatSessionResource','errorHandler', 'dateHelper','fileUploaderHelper', 'FileUploader',
+        'refreshSession', '$window', '$filter', 'urlHelper', 'chatSessionResource','errorHandler', 'dateHelper',
+        'fileUploaderHelper',
         function ($q, $scope, $rootScope, $routeParams, authView, $location, tabUtil,
-                  refreshSession, $window, $filter, urlHelper, chatSessionResource, errorHandler, dateHelper, fileUploaderHelper, FileUploader) {
+                  refreshSession, $window, $filter, urlHelper, chatSessionResource, errorHandler, dateHelper,
+                  fileUploaderHelper) {
 
-            var session = $scope.session = {
+            $scope.chatSession = {
                 id: $routeParams.sessionId,
                 session_logo: '',// FIXME: Need to add new field in session table for logo src path (mir4a at 10:01, 12/12/14)
-                start_date_filtered: dateHelper.dateFilter($scope.resolvedData.start_time),
-                start_time_filtered: dateHelper.timeFilter($scope.resolvedData.start_time) || '00:00',
-                end_date_filtered: dateHelper.dateFilter($scope.resolvedData.end_time),
-                end_time_filtered: dateHelper.timeFilter($scope.resolvedData.end_time) || '00:00'
+                name: $scope.resolvedData.name,
+                start_time: dateHelper.dateFilter($scope.resolvedData.start_time),
+                start_time_hours: dateHelper.timeFilter($scope.resolvedData.start_time) || '00:00',
+                end_time: dateHelper.dateFilter($scope.resolvedData.end_time),
+                end_time_hours: dateHelper.timeFilter($scope.resolvedData.end_time) || '00:00',
+                step: $rootScope.page.name
             };
-            angular.extend($scope.session, $scope.resolvedData);
+
             $scope.uploader = fileUploaderHelper.init();
-
             $scope.uploader.onSuccessItem = function(fileItem, response, status, headers) {
-                session.session_logo = fileItem.file.name;
+                $scope.chatSession.sessionLogo = fileItem.file.name;
             };
 
-            $scope.stepChange = function (event) {
-                $scope.resolvedData.start_time = joinDateTime($scope.start_date, $scope.start_time);
-                $scope.resolvedData.end_time = joinDateTime($scope.end_date, $scope.end_time);
+            $scope.error = false;
+            $scope.message = "";
+            $scope.save = function () {
 
-                chatSessionResource.updateSessionFirstStep($scope.session, angular.noop, errorHandler.defaultServerErrorHandler());
+                $scope.chatSession.start_time = dateHelper.joinDateTime($scope.chatSession.start_time, $scope.chatSession.start_time_hours);
+                $scope.chatSession.end_time = dateHelper.joinDateTime($scope.chatSession.end_time, $scope.chatSession.end_time_hours);
+
+                $scope.loading = true;
+
+                var resCb = function (data) {
+                    $scope.loading = false;
+                    $scope.success = true;
+                    $scope.error = false;
+                    $scope.message = "Successfully saved";
+                    refreshSession.refresh();
+                };
+
+                var errCb = function (err) {
+                    $scope.loading = false;
+                    $scope.success = false;
+                    $scope.error = true;
+                    $scope.message = "Save failed";
+                };
+
+                chatSessionResource.updateSessionFirstStep($scope.chatSession, resCb, errCb);
+
+
             };
+
+
+            $rootScope.$on('changedStep', $scope.save);
 
             refreshSession.refresh();
 
