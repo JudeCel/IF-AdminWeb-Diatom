@@ -53,6 +53,7 @@ var files = {
 		'app/Admin/scripts/services/errorHandler.js',
 
 		'app/Admin/scripts/services/gridFormatters.js',
+		'app/Admin/scripts/services/fileUploaderHelper.js',
 		'app/Admin/scripts/services/navigationHelper.js',
 		'app/Admin/scripts/services/gridUtils.js',
 		'app/Admin/scripts/services/refreshSession.js',

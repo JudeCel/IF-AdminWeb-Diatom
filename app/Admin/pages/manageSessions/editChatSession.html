@@ -3,7 +3,7 @@
         <div class="span4">
             <div class="controls">
                 <label for="session_name">Name Your Chat Session</label>
-                <input type="text" id="session_name" ng-model="resolvedData.name"/>
+                <input type="text" id="session_name" ng-model="session.name"/>
             </div>
             <fieldset>
                 <div class="controls">
@@ -13,19 +13,28 @@
                     <div class="input-inline">
                         <label for="session_start_date">Start:</label>
                         <input type="text" datepicker ng-required="true" class="input-small" id="session_start_date"
-                               ng-model="start_date"/>
-                        <i class="icon-calendar"></i>
+                               ng-model="session.start_date_filtered"/>
+                        <label for="session_start_date">
+                            <i class="icon-calendar"></i>
+                        </label>
+
                         /
-                        <input type="time" ng-model="start_time" class="input-small"/>
-                        <i class="icon-time"></i>
+                        <input type="time" class="input-small" id="session_start_time" ng-model="session.start_time_filtered"/>
+                        <label for="session_start_time">
+                            <i class="icon-time"></i>
+                        </label>
                     </div>
                     <div class="input-inline">
                         <label for="session_end_date">End:</label>
-                        <input type="text" datepicker class="input-small" id="session_end_date" ng-model="end_date"/>
-                        <i class="icon-calendar"></i>
+                        <input type="text" datepicker class="input-small" id="session_end_date" ng-model="session.end_date_filtered"/>
+                        <label for="session_end_date">
+                            <i class="icon-calendar"></i>
+                        </label>
                         /
-                        <input type="time" class="input-small" ng-model="end_time"/>
-                        <i class="icon-time"></i>
+                        <input type="time" class="input-small" id="session_end_time" ng-model="session.end_time_filtered"/>
+                        <label for="session_end_time">
+                            <i class="icon-time"></i>
+                        </label>
                     </div>
                 </div>
             </fieldset>
@@ -68,8 +77,5 @@
         </div>
     </div>
 
-    <div class="step_arrow_navigation">
-        <a class="prev_link" href="{{link_next}}">Prev Step</a>
-        <a class="next_link" href="{{link_next}}" ng-click="stepChange($event)">Next Step</a>
-    </div>
+    <div class="step_arrow_navigation" ng-session-builder-steps-arrows></div>
 </div>

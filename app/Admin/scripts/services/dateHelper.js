@@ -1,6 +1,6 @@
 
 
-angular.module('adminWebApp.services').factory('dateHelper',function () {
+angular.module('adminWebApp.services').factory('dateHelper',function ($filter) {
 
 	function int(str) {
 		return parseInt(str, 10);
@@ -24,7 +24,41 @@ angular.module('adminWebApp.services').factory('dateHelper',function () {
 		}
 		return string;
 	}
-	return {jsonStringToDate:jsonStringToDate};
+
+    function dateFilter(date) {
+        return $filter('date')(date, 'MM-dd-yyyy');
+    }
+
+    function timeFilter(date) {
+        return $filter('date')(date, 'hh:mm');
+    }
+
+    function twoDigits(d) {
+        if(0 <= d && d < 10) return "0" + d.toString();
+        if(-10 < d && d < 0) return "-0" + (-1*d).toString();
+        return d.toString();
+    }
+
+    function toMysqlFormat(date) {
+        return date.getUTCFullYear() + "-" + twoDigits(1 + date.getUTCMonth()) + "-" + twoDigits(date.getUTCDate()) + " " + twoDigits(date.getUTCHours()) + ":" + twoDigits(date.getUTCMinutes()) + ":" + twoDigits(date.getUTCSeconds());
+    }
+
+    function joinDateTime(date, time) {
+        if (date === 'undefined' || date === null) {
+            return null;
+        }
+        var d = new Date(date + ' ' + time)
+        return toMysqlFormat(d);
+    }
+    
+	return {
+        jsonStringToDate: jsonStringToDate,
+        toMysqlForma: toMysqlFormat,
+        twoDigits: twoDigits,
+        joinDateTime: joinDateTime,
+        dateFilter: dateFilter,
+        timeFilter: timeFilter
+    };
 });
 
 
