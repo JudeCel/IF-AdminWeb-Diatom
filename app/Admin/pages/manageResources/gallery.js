@@ -113,6 +113,25 @@ angular.module('adminWebApp.controllers').controller('GalleryCtrl', ['$scope', '
 			$scope.$broadcast('deleteResourceEvent');
 		};
 
+    // ########################
+
+		$scope.modalShown = false;
+	  $scope.toggleModal = function() {
+	    $scope.modalShown = !$scope.modalShown;
+	  };
+
+	  $scope.data = 'none';
+    $scope.add = function(){
+      var file = document.getElementById('file').files[0],
+          read_file = new FileReader();
+      read_file.onloadend = function(e){
+        $scope.data = e.target.result;
+      }
+      read_file.readAsBinaryString(file);
+    }
+
+    // ########################
+
 		function doDrop(resources, cb) {
 			var ids = _.pluck(resources, 'id');
 			galleryResource.deleteResource(ids, function (result) {

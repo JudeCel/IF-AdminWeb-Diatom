@@ -5,3 +5,9 @@
 .alert-in-box {
   margin: 0 10px 10px 10px;
 }
+
+.error {
+  input {
+    border-color: $red;
+  }
+}

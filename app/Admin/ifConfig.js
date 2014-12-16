@@ -1,6 +1,6 @@
 var ifConfig = {
 	insiderFocusApiBaseUrlSegment: 'http://localhost:7777/insiderfocus-api',
-
+    uploadImageUrl: '/uploadImage',
 	defaultRoute: '/Home',
 	adminHomeUrl: '/Home',
 	AppName: 'insiderFocusApp',

@@ -26,8 +26,9 @@ angular.module('adminWebApp.services').factory('urlHelper', ['$window', '$locati
 		return "http://" + $location.host() + ":" + ifConfig.publicWebAppPort +  "/login";
 	}
 
-	function getApiUrl() {
-		return "http://" + $location.host() + ":" + ifConfig.apiPort;
+	function getApiUrl(path) {
+        path = path || '';
+		return "http://" + $location.host() + ":" + ifConfig.apiPort + path;
 	}
 
 	return {
