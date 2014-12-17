@@ -8,13 +8,13 @@ angular.module('adminWebApp.controllers').controller('ChangeContactDetailsCtrl',
         $scope.contact = angular.copy($scope.resolvedData);
 
 			usersResource.getCountries(function (result) {
-            $scope.countries = angular.copy(result);
-            for (var i in $scope.countries) {
-                if($scope.contact.country_id == $scope.countries[i].id){
-                    $scope.contact.country_id = $scope.countries[i];
-                    break;
+                $scope.countries = angular.copy(result);
+                for (var i in $scope.countries) {
+                    if($scope.contact.country_id == $scope.countries[i].id){
+                        $scope.contact.country_id = $scope.countries[i];
+                        break;
+                    }
                 }
-            }
         });     
         $scope.error = false;
         $scope.message = "";
@@ -56,5 +56,5 @@ angular.module('adminWebApp.controllers').controller('ChangeContactDetailsCtrl',
             }
         };
 
-		refreshSession.refresh();
+		//refreshSession.refresh();
 }]);

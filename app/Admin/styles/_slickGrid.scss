@@ -155,6 +155,15 @@
 	}
 }
 
+.btn.action-send{
+	position: absolute;
+	right: 120px;
+	top: 6px;
+	&.disabled {
+		@include opacity(50);
+	}
+}
+
 .btn.action-copy {
 	position: absolute;
 	right: 120px;
