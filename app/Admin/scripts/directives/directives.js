@@ -62,7 +62,7 @@
     mfDirectivesModules.directive('ngSessionBuilderStepsArrows', function ($rootScope) {
         return {
             restrict: 'A',
-            template: '<a class="prev_link" ng-click="changeStep()" href="{{linkPrev}}">Prev Step</a><a class="next_link" ng-click="changeStep()" href="{{linkNext}}">Next Step</a>',
+            template: '<a class="prev_link" ng-click="changeStep($event)" href="{{linkPrev}}">Prev Step</a><a class="next_link" ng-click="changeStep($event)" href="{{linkNext}}">Next Step</a>',
             link: function (scope, element, attrs) {
                 var prevLink = element.find('.prev_link'),
                     nextLink = element.find('.next_link');
@@ -83,8 +83,9 @@
                     }
                 }
 
-                scope.changeStep = function() {
-                    $rootScope.$broadcast('changedStep');
+                scope.changeStep = function($event) {
+                    $event.preventDefault();
+                    scope.save();
                 };
 
                 var step = checkSelected(scope.tabs);

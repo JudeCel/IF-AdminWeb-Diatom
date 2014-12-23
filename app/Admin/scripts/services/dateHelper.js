@@ -50,6 +50,12 @@ angular.module('adminWebApp.services').factory('dateHelper',function ($filter) {
         var d = new Date(date + ' ' + time)
         return toMysqlFormat(d);
     }
+
+    function dateDiff(dateA, dateB) {
+        dateA = new Date(dateA);
+        dateB = new Date(dateB);
+        return dateA.getTime() - dateB.getTime();
+    }
     
 	return {
         jsonStringToDate: jsonStringToDate,
@@ -57,7 +63,8 @@ angular.module('adminWebApp.services').factory('dateHelper',function ($filter) {
         twoDigits: twoDigits,
         joinDateTime: joinDateTime,
         dateFilter: dateFilter,
-        timeFilter: timeFilter
+        timeFilter: timeFilter,
+        dateDiff: dateDiff
     };
 });
 

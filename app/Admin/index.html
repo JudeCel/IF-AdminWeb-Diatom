@@ -96,6 +96,19 @@
 <script src="scripts/vendor/angular-ui/modules/directives/select2/select2.js"></script>
 <script src="scripts/vendor/angularui-bootstrap/ui-bootstrap-custom-tpls-0.6.0.min.js"></script>
 <script src="scripts/vendor/jcarousel/jquery.jcarousel.min.js"></script>
+<script src="scripts/vendor/slickGrid/slick.autotooltips.js"></script>
+<script src="scripts/vendor/slickGrid/slick.core.js"></script>
+<script src="scripts/vendor/slickGrid/slick.dataview.js"></script>
+<script src="scripts/vendor/slickGrid/slick.grid.js"></script>
+<script src="scripts/vendor/slickGrid/slick.checkboxselectcolumn.js"></script>
+<script src="scripts/vendor/slickGrid/slick.columnpicker.js"></script>
+<script src="scripts/vendor/slickGrid/slick.rowselectionmodel.js"></script>
+<script src="scripts/vendor/slickGrid/slick.cellselectionmodel.js"></script>
+<script src="scripts/vendor/slickGrid/slick.headerbuttons.js"></script>
+<script src="scripts/vendor/slickGrid/slick.editors.js"></script>
+<script src="scripts/vendor/angular-file-upload.js"></script>
+<script src="scripts/vendor/angular-socket-io/socket.js"></script>
+<script src="scripts/vendor/socket.io.js"></script>
 
 <!-- build:js scripts/scripts.js-->
 <script src="scripts/vendor/stacktrace.js"></script>
@@ -120,9 +133,6 @@
 <script src="pages/users/usersResource.js"></script>
 <script src="pages/users/usersCtrlResolver.js"></script>
 
-<script src="pages/manageSessions/manageSessions.js"></script>
-<script src="pages/manageSessions/manageSessionsCtrlResolver.js"></script>
-<script src="pages/manageSessions/manageSessionsResource.js"></script>
 
 <script src="pages/manageResources/manageResources.js"></script>
 <script src="pages/manageResources/gallery.js"></script>
@@ -142,6 +152,11 @@
 <script src="pages/manageResources/coloursGalleryCtrlResolver.js"></script>
 <script src="pages/manageResources/emailTemplatesCtrlResolver.js"></script>
 
+
+<script src="pages/manageSessions/manageSessions.js"></script>
+<script src="pages/manageSessions/manageSessionsCtrlResolver.js"></script>
+<script src="pages/manageSessions/manageSessionsResource.js"></script>
+
 <script src="pages/manageSessions/sessionBuilderCtrlResolver.js"></script>
 <script src="pages/manageSessions/sessionBuilder.js"></script>
 <script src="pages/manageSessions/editChatSession.js"></script>
@@ -151,9 +166,12 @@
 <script src="pages/manageSessions/sessionResource.js"></script>
 <script src="pages/manageSessions/sessionEmails.js"></script>
 
+
 <script src="pages/header/header.js"></script>
 <script src="pages/footer/footer.js"></script>
 <script src="pages/footer/footerDirective.js"></script>
+
+
 <script src="scripts/services/errorHandler.js"></script>
 <script src="scripts/services/accountFeatures.js"></script>
 <script src="scripts/services/authProvider.js"></script>
@@ -169,10 +187,10 @@
 <script src="scripts/services/userGridUtils.js"></script>
 <script src="scripts/services/searchHelper.js"></script>
 <script src="scripts/services/fileUploaderHelper.js"></script>
-
+<script src="scripts/services/socketHelper.js"></script>
+<script src="scripts/services/utils.js"></script>
 <script src="scripts/services/refreshSession.js"></script>
 <script src="scripts/services/dateHelper.js"></script>
-
 <script src="scripts/services/navigationHelper.js"></script>
 <script src="scripts/services/sessionResource.js"></script>
 
@@ -187,18 +205,6 @@
 <script src="pages/modals/deleteResource.js"></script>
 <script src="pages/modals/copySession.js"></script>
 <script src="pages/modals/downloadResource.js"></script>
-
-<script src="scripts/vendor/slickGrid/slick.autotooltips.js"></script>
-<script src="scripts/vendor/slickGrid/slick.core.js"></script>
-<script src="scripts/vendor/slickGrid/slick.dataview.js"></script>
-<script src="scripts/vendor/slickGrid/slick.grid.js"></script>
-<script src="scripts/vendor/slickGrid/slick.checkboxselectcolumn.js"></script>
-<script src="scripts/vendor/slickGrid/slick.columnpicker.js"></script>
-<script src="scripts/vendor/slickGrid/slick.rowselectionmodel.js"></script>
-<script src="scripts/vendor/slickGrid/slick.cellselectionmodel.js"></script>
-<script src="scripts/vendor/slickGrid/slick.headerbuttons.js"></script>
-<script src="scripts/vendor/slickGrid/slick.editors.js"></script>
-<script src="scripts/vendor/angular-file-upload.js"></script>
 
 <script src="scripts/windowHelper.js"></script>
 <script src="scripts/uriHelper.js"></script>

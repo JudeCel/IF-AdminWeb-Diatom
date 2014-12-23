@@ -1,8 +1,11 @@
 var ifConfig = {
 	insiderFocusApiBaseUrlSegment: 'http://localhost:7777/insiderfocus-api',
     uploadImageUrl: '/uploadImage',
+    uploadPath: '/uploads',
+    sessionLogoThumb: '_thumb',
 	defaultRoute: '/Home',
 	adminHomeUrl: '/Home',
+    defaultSessionLogo: 'images/default_session_logo.png',
 	AppName: 'insiderFocusApp',
 	BackgroundColor: '#D8EFF8',
 	domainName: 'insiderFocus.com',

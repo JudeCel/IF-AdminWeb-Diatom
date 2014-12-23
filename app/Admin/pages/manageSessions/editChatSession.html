@@ -58,21 +58,20 @@
                         </div>
                     </div>
                 </fieldset>
+
                 <fieldset>
 
                     <h3>Select from Brand Logo</h3>
 
-
-                    <div nv-file-drop="" uploader="uploader" ng-show="uploader.isHTML5">
+                    <div ng-show="chatSession.sessionLogoStatus" class="alert alert-info">{{chatSession.sessionLogoStatus}}</div>
+                    <div nv-file-drop="" uploader="uploader" ng-show="uploader.isHTML5" ng-class="uploaderState">
                         <!-- Example: nv-file-drop="" uploader="{Object}" options="{Object}" filters="{String}" -->
                         <div nv-file-over="" uploader="uploader" over-class="bg-warning"
-                             style="min-width: 200px; min-height: 200px; padding: 3px; background: #dedede">
+                             style="min-width: 200px; min-height: 150px; padding: 3px; background: #dedede">
+                            <img ng-src="{{chatSession.session_logo}}" />
                             <div ng-repeat="item in uploader.queue">
-                                <div ng-show="uploader.isHTML5" ng-thumb="{ file: item._file, height: 100 }"></div>
-                                <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()"
-                                        ng-disabled="item.isReady || item.isUploading || item.isSuccess">
-                                    <span class="glyphicon glyphicon-upload"></span> Upload
-                                </button>
+                                <div ng-show="uploader.isHTML5">
+                                </div>
                             </div>
                         </div>
                     </div>

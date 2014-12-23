@@ -54,6 +54,7 @@ var files = {
 
 		'app/Admin/scripts/services/gridFormatters.js',
 		'app/Admin/scripts/services/fileUploaderHelper.js',
+		'app/Admin/scripts/services/socketHelper.js',
 		'app/Admin/scripts/services/navigationHelper.js',
 		'app/Admin/scripts/services/gridUtils.js',
 		'app/Admin/scripts/services/refreshSession.js',
@@ -82,7 +83,9 @@ var files = {
 		'app/Admin/scripts/vendor/angular/angular-sanitize.js',
 		'app/Admin/scripts/vendor/angular/angular-route.js',
 		'app/Admin/scripts/vendor/angular-ui/common/module.js',
-		'app/Admin/scripts/vendor/angularui-bootstrap/ui-bootstrap-custom-tpls-0.6.0.min.js'
+		'app/Admin/scripts/vendor/angularui-bootstrap/ui-bootstrap-custom-tpls-0.6.0.min.js',
+		'app/Admin/scripts/vendor/socket.io.js',
+		'app/Admin/scripts/vendor/angular-socket-io/socket.js'
 	]
 };
 
