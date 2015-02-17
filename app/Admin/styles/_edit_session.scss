@@ -127,3 +127,24 @@
     float: left;
   }
 }
+
+$uploading_mask_bg: #dedede;
+.uploading {
+  position: relative;
+  > div {
+    background: $uploading_mask_bg;
+    > img {
+      visibility: hidden;
+    }
+  }
+  &:after {
+    content: 'Uploading…';
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    margin-top: -10px;
+    top: 50%;
+    right: 0;
+    left: 0;
+  }
+}

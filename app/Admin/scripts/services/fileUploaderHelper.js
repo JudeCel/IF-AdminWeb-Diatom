@@ -1,4 +1,4 @@
-angular.module('adminWebApp.services').factory('fileUploaderHelper', ['FileUploader', 'urlHelper', '$rootScope', function (FileUploader, urlHelper, $rootScope) {
+angular.module('adminWebApp.services').factory('fileUploaderHelper', ['FileUploader', 'urlHelper', '$rootScope', '$routeParams', function (FileUploader, urlHelper, $rootScope, $routeParams) {
 
     function init(options) {
 
@@ -8,7 +8,7 @@ angular.module('adminWebApp.services').factory('fileUploaderHelper', ['FileUploa
         options.queueLimit = options.queueLimit || 1;
         options.headers = options.headers || {
             'x-if-sess': $rootScope.sessId,
-            'userId': $rootScope.userId
+            'session-id': $routeParams.sessionId
         };
 
 

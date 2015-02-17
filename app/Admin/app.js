@@ -7,7 +7,6 @@ angular.module('adminWebApp.modals', []);
 angular.module('adminWebApp.popovers', ['adminWebApp.resources']);
 angular.module('adminWebApp.main', ['adminWebApp.services']);
 angular.module('adminWebApp.controllers', ['adminWebApp.resources', 'adminWebApp.services', 'angularFileUpload']); //FIXME: Should 'angularFileUpload' been here or move it inside 'adminWebApp.services' ?
-angular.module('adminWebApp', ['ngCookies']);
 
 angular.module('adminWebApp', [
 	'ngRoute',
@@ -16,6 +15,7 @@ angular.module('adminWebApp', [
 	'ui',
 	'ui.bootstrap',
 	'ngDragDrop',
+	'btford.socket-io',
 	'adminWebApp.consts',
 	'adminWebApp.resources',
 	'adminWebApp.services',
