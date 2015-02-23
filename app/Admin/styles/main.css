@@ -10523,20 +10523,24 @@ select.select2 {
 .step_arrow_navigation .prev_link {
   float: left;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003129}}
+.step_arrow_navigation [disabled] {
+  display: none;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003135}}
 .uploading {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003137}}
 .uploading > div {
   background: #dedede;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003139}}
 .uploading > div > img {
   visibility: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003143}}
 .uploading:after {
   content: 'Uploading…';
   position: absolute;

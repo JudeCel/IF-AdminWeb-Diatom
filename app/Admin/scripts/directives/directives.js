@@ -62,10 +62,13 @@
     mfDirectivesModules.directive('ngSessionBuilderStepsArrows', function ($rootScope) {
         return {
             restrict: 'A',
+            require: '^ngModel',
             template: '<a class="prev_link" ng-click="changeStep($event)" href="{{linkPrev}}">Prev Step</a><a class="next_link" ng-click="changeStep($event)" href="{{linkNext}}">Next Step</a>',
             link: function (scope, element, attrs) {
                 var prevLink = element.find('.prev_link'),
                     nextLink = element.find('.next_link');
+
+                nextLink.attr('disabled', 'disabled');
                 if ($rootScope.page.name === 'step1') {
                     prevLink.hide();
                 } else if ($rootScope.page.name === 'step5') {
@@ -74,6 +77,10 @@
                     prevLink.show();
                     nextLink.show();
                 }
+
+                scope.$watchCollection(attrs.ngModel, function(newValue) {
+                    nextLink.attr('disabled', scope.form.$invalid);
+                });
 
                 function checkSelected(arr) {
                     for (var i = 0; i < arr.length; i++) {
