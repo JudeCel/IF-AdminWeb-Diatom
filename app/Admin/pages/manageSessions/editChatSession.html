@@ -1,7 +1,6 @@
 <div class="container edit_session" ng-controller="EditChatSessionCtrl">
     <form name="form" ng-submit="save(session)">
-        <div ng-show="error" class="alert alert-danger" >{{message}}</div>
-        <div ng-show="success" class="alert alert-success" >{{message}}</div>
+        <div ng-show="message" class="alert alert-danger" ng-class="{'alert-danger': error, 'alert-success': success}">{{message}}</div>
         <div class="row-fluid">
             <div class="span4">
                 <div class="controls" ng-class="{'error': form.name.$invalid}">
@@ -63,7 +62,7 @@
 
                     <h3>Select from Brand Logo</h3>
 
-                    <div ng-show="chatSession.sessionLogoStatus" class="alert alert-info">{{chatSession.sessionLogoStatus}}</div>
+                    <div ng-show="chatSession.sessionLogoStatus" class="alert " ng-class="{'alert-danger': error, 'alert-info': error == false}">{{chatSession.sessionLogoStatus}}</div>
                     <div nv-file-drop="" uploader="uploader" ng-show="uploader.isHTML5" ng-class="uploaderState">
                         <!-- Example: nv-file-drop="" uploader="{Object}" options="{Object}" filters="{String}" -->
                         <div nv-file-over="" uploader="uploader" over-class="bg-warning"

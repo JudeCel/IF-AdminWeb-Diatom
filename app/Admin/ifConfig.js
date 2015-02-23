@@ -3,6 +3,7 @@ var ifConfig = {
     uploadImageUrl: '/uploadImage',
     uploadPath: '/uploads',
     sessionLogoThumb: '_thumb',
+    sessionLogoSize: 2,
 	defaultRoute: '/Home',
 	adminHomeUrl: '/Home',
     defaultSessionLogo: 'images/default_session_logo.png',

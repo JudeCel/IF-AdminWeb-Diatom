@@ -21,12 +21,15 @@ angular
 
 
             socketHelper.on('file:uploading', function (data) {
+                $scope.error = false;
                 $scope.chatSession.sessionLogoStatus = data.msg;
             });
             socketHelper.on('file:converting', function (data) {
+                $scope.error = false;
                 $scope.chatSession.sessionLogoStatus = data.msg;
             });
             socketHelper.on('file:ready', function (data) {
+                $scope.error = false;
                 $scope.chatSession.sessionLogoStatus = data.msg;
                 $scope.chatSession.session_logo = urlHelper.getApiUrl('/' + data.filePath);
                 setTimeout(function(){
@@ -50,6 +53,22 @@ angular
                     console.log(err);
                 };
                 chatSessionResource.getSession($scope.chatSession.id, resCb, errCb);
+            };
+
+            $scope.uploader.onWhenAddingFileFailed = function (item, filter, options) {
+                $scope.error = true;
+                $scope.chatSession.sessionLogoStatus = filter.name + ": file should be an image";
+            };
+
+            $scope.uploader.onAfterAddingFile = function(item) {
+                if (item.file.size > (ifConfig.sessionLogoSize * 1024 * 1024)) {
+                    $scope.uploader.cancelItem(item);
+                    $scope.uploader.removeFromQueue(item);
+                    $scope.error = true;
+                    $scope.chatSession.sessionLogoStatus = "Image file size should not exceed " + ifConfig.sessionLogoSize + "Mb";
+                } else {
+                    $scope.uploader.uploadItem(item);
+                }
             };
 
             $scope.error = false;
