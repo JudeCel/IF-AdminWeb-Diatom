@@ -15,12 +15,12 @@
                         <h4>Enter Chat Session Date/Time</h4>
 
 
-                        <div class="input-inline" ng-class="{'error': form.start_time.$invalid}">
+                        <div class="input-inline" ng-class="{'error': form.start_time_date.$invalid}">
                             <label for="session_start_date">Start:</label>
                             <input type="text" datepicker ng-required="true" class="input-small" id="session_start_date"
-                                   ng-model="chatSession.start_time"
-                                   name="start_time"
-                                   value="{{chatSession.start_time | date: 'MM-dd-yyyy'}}"/>
+                                   ng-model="chatSession.start_time_date"
+                                   name="start_time_date"
+                                   value="{{chatSession.start_time_date | date: 'MM-dd-yyyy'}}"/>
                             <label for="session_start_date">
                                 <i class="icon-calendar"></i>
                             </label>
@@ -35,13 +35,13 @@
                                 <span ng-show="form.start_time.$error.required" class="sr-only">Start time is required.</span>
                             </div>
                         </div>
-                        <div class="input-inline" ng-class="{'error': form.end_time.$invalid}">
+                        <div class="input-inline" ng-class="{'error': form.end_time_date.$invalid}">
                             <label for="session_end_date">End:</label>
                             <input type="text" datepicker class="input-small" id="session_end_date"
                                    ng-required="true"
-                                   name="end_time"
-                                   ng-model="chatSession.end_time"
-                                   value="{{chatSession.end_time | date: 'MM-dd-yyyy'}}"/>
+                                   name="end_time_date"
+                                   ng-model="chatSession.end_time_date"
+                                   value="{{chatSession.end_time_date | date: 'MM-dd-yyyy'}}"/>
                             <label for="session_end_date">
                                 <i class="icon-calendar"></i>
                             </label>

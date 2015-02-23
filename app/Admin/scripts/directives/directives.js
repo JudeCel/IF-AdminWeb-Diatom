@@ -59,16 +59,16 @@
         }
     });
 
-    mfDirectivesModules.directive('ngSessionBuilderStepsArrows', function ($rootScope) {
+    mfDirectivesModules.directive('ngSessionBuilderStepsArrows', function ($rootScope, $window) {
         return {
             restrict: 'A',
             require: '^ngModel',
-            template: '<a class="prev_link" ng-click="changeStep($event)" href="{{linkPrev}}">Prev Step</a><a class="next_link" ng-click="changeStep($event)" href="{{linkNext}}">Next Step</a>',
+            template: '<button class="prev_link" ng-click="changeStep($event)" data-href="{{linkPrev}}">Prev Step</button><button class="next_link" ng-click="changeStep($event)" data-href="{{linkNext}}">Next Step</button>',
             link: function (scope, element, attrs) {
                 var prevLink = element.find('.prev_link'),
                     nextLink = element.find('.next_link');
-
                 nextLink.attr('disabled', 'disabled');
+
                 if ($rootScope.page.name === 'step1') {
                     prevLink.hide();
                 } else if ($rootScope.page.name === 'step5') {
@@ -79,6 +79,7 @@
                 }
 
                 scope.$watchCollection(attrs.ngModel, function(newValue) {
+                    if (scope.form === undefined) return;
                     nextLink.attr('disabled', scope.form.$invalid);
                 });
 
@@ -91,9 +92,15 @@
                 }
 
                 scope.changeStep = function($event) {
-                    $event.preventDefault();
+                    console.log(this);
+                    if (scope.form === undefined) {
+                        $window.location.hash = $($event.target).attr('data-href');
+                        return;
+                    }
                     scope.save();
                 };
+
+                console.log(scope.currentTab);
 
                 var step = checkSelected(scope.tabs);
                 scope.linkPrev = '#/SessionBuilder/' + scope.currentTab.sessionId +'/step' + step;

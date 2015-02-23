@@ -12,12 +12,16 @@ angular
                 session_logo: $scope.resolvedData.sessionLogoName ? thumbUrl : ifConfig.defaultSessionLogo,
                 sessionLogoStatus: '',
                 name: $scope.resolvedData.name,
-                start_time: dateHelper.dateFilter($scope.resolvedData.start_time),
+                start_time: $scope.resolvedData.start_time,
+                start_time_date: dateHelper.dateFilter($scope.resolvedData.start_time),
                 start_time_hours: dateHelper.timeFilter($scope.resolvedData.start_time) || '00:00',
-                end_time: dateHelper.dateFilter($scope.resolvedData.end_time),
+                end_time: $scope.resolvedData.end_time,
+                end_time_date: dateHelper.dateFilter($scope.resolvedData.end_time),
                 end_time_hours: dateHelper.timeFilter($scope.resolvedData.end_time) || '00:00',
                 step: $rootScope.page.name
             };
+
+            console.log($scope.chatSession);
 
 
             socketHelper.on('file:uploading', function (data) {
@@ -75,8 +79,8 @@ angular
             $scope.message = "";
             $scope.save = function () {
 
-                $scope.chatSession.start_time = dateHelper.joinDateTime($scope.chatSession.start_time, $scope.chatSession.start_time_hours);
-                $scope.chatSession.end_time = dateHelper.joinDateTime($scope.chatSession.end_time, $scope.chatSession.end_time_hours);
+                $scope.chatSession.start_time = dateHelper.joinDateTime($scope.chatSession.start_time_date, $scope.chatSession.start_time_hours);
+                $scope.chatSession.end_time = dateHelper.joinDateTime($scope.chatSession.end_time_date, $scope.chatSession.end_time_hours);
 
                 $scope.loading = true;
 
