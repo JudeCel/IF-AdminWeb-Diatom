@@ -48,13 +48,24 @@
 		}
 	}]);
 
-    mfDirectivesModules.directive('datepicker', function () {
+    mfDirectivesModules.directive('datepicker', function (dateHelper) {
         return {
-            restrict: 'A',
-            link: function (scope, element, attrs) {
-                element.datepicker({
-                    format: 'mm-dd-yyyy'
+            restrict: 'AE',
+            require: '^ngModel',
+            link: function (scope, element, attrs, ctrl) {
+                ctrl.$parsers.unshift(function(viewValue) {
+                    console.log(viewValue);
+                    if (dateHelper.isValidDate(viewValue)) {
+                        ctrl.$setValidity('validDate', true);
+                        //element.datepicker('setValue', viewValue);
+                        return viewValue;
+                    } else {
+                        ctrl.$setValidity('validDate', false);
+                        //element.datepicker('setValue', undefined);
+                        return undefined;
+                    }
                 });
+
             }
         }
     });
@@ -78,7 +89,7 @@
                     nextLink.show();
                 }
 
-                scope.$watchCollection(attrs.ngModel, function(newValue) {
+                scope.$watchCollection(attrs.ngModel, function() {
                     if (scope.form === undefined) return;
                     nextLink.attr('disabled', scope.form.$invalid);
                 });

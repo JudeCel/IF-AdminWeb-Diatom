@@ -20,6 +20,12 @@ angular
                 end_time_hours: dateHelper.timeFilter($scope.resolvedData.end_time) || '00:00',
                 step: $rootScope.page.name
             };
+            $scope.open = function($event) {
+                $event.preventDefault();
+                $event.stopPropagation();
+
+                $scope.opened = true;
+            };
 
             console.log($scope.chatSession);
 
@@ -48,9 +54,8 @@ angular
             };
 
             $scope.uploader.onCompleteAll = function () {
-                var resCb = function (data) {
-                    var thumbUrl = urlHelper.getApiUrl(ifConfig.uploadPath + "/" + $rootScope.accountId + "/" + data.sessionLogoName + ifConfig.sessionLogoThumb + data.sessionLogoExt);
-
+                var resCb = function () {
+                    $scope.chatSession.sessionLogoStatus = 'File have been uploaded';
                 };
 
                 var errCb = function (err) {
@@ -106,6 +111,16 @@ angular
 
 
             };
+
+            $scope.logScope = function($event){
+                console.log($event);
+                console.log($scope.chatSession);
+            };
+            //$scope.validDateCheck = function(date) {
+            //    if (!dateHelper.isValidDate(date)) {
+            //        console.log(this);
+            //    }
+            //};
 
 
             refreshSession.refresh();

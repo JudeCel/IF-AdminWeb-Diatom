@@ -1,4 +1,1313 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("/Admin/styles/fonts/glyphicons-halflings-regular.eot");
+  src: url("/Admin/styles/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/Admin/styles/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("/Admin/styles/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/Admin/styles/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/Admin/styles/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\000038}}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000319}}
+.glyphicon-asterisk:before {
+  content: "\2a";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000322}}
+.glyphicon-plus:before {
+  content: "\2b";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000325}}
+.glyphicon-euro:before,
+.glyphicon-eur:before {
+  content: "\20ac";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000329}}
+.glyphicon-minus:before {
+  content: "\2212";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000332}}
+.glyphicon-cloud:before {
+  content: "\2601";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000335}}
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000338}}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000341}}
+.glyphicon-glass:before {
+  content: "\e001";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000344}}
+.glyphicon-music:before {
+  content: "\e002";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000347}}
+.glyphicon-search:before {
+  content: "\e003";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000350}}
+.glyphicon-heart:before {
+  content: "\e005";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000353}}
+.glyphicon-star:before {
+  content: "\e006";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000356}}
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000359}}
+.glyphicon-user:before {
+  content: "\e008";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000362}}
+.glyphicon-film:before {
+  content: "\e009";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000365}}
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000368}}
+.glyphicon-th:before {
+  content: "\e011";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000371}}
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000374}}
+.glyphicon-ok:before {
+  content: "\e013";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000377}}
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000380}}
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000383}}
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000386}}
+.glyphicon-off:before {
+  content: "\e017";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000389}}
+.glyphicon-signal:before {
+  content: "\e018";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000392}}
+.glyphicon-cog:before {
+  content: "\e019";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000395}}
+.glyphicon-trash:before {
+  content: "\e020";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\0000398}}
+.glyphicon-home:before {
+  content: "\e021";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003101}}
+.glyphicon-file:before {
+  content: "\e022";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003104}}
+.glyphicon-time:before {
+  content: "\e023";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003107}}
+.glyphicon-road:before {
+  content: "\e024";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003110}}
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003113}}
+.glyphicon-download:before {
+  content: "\e026";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003116}}
+.glyphicon-upload:before {
+  content: "\e027";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003119}}
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003122}}
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003125}}
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003128}}
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003131}}
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003134}}
+.glyphicon-lock:before {
+  content: "\e033";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003137}}
+.glyphicon-flag:before {
+  content: "\e034";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003140}}
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003143}}
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003146}}
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003149}}
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003152}}
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003155}}
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003158}}
+.glyphicon-tag:before {
+  content: "\e041";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003161}}
+.glyphicon-tags:before {
+  content: "\e042";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003164}}
+.glyphicon-book:before {
+  content: "\e043";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003167}}
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003170}}
+.glyphicon-print:before {
+  content: "\e045";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003173}}
+.glyphicon-camera:before {
+  content: "\e046";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003176}}
+.glyphicon-font:before {
+  content: "\e047";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003179}}
+.glyphicon-bold:before {
+  content: "\e048";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003182}}
+.glyphicon-italic:before {
+  content: "\e049";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003185}}
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003188}}
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003191}}
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003194}}
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003197}}
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003200}}
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003203}}
+.glyphicon-list:before {
+  content: "\e056";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003206}}
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003209}}
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003212}}
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003215}}
+.glyphicon-picture:before {
+  content: "\e060";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003218}}
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003221}}
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003224}}
+.glyphicon-tint:before {
+  content: "\e064";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003227}}
+.glyphicon-edit:before {
+  content: "\e065";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003230}}
+.glyphicon-share:before {
+  content: "\e066";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003233}}
+.glyphicon-check:before {
+  content: "\e067";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003236}}
+.glyphicon-move:before {
+  content: "\e068";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003239}}
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003242}}
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003245}}
+.glyphicon-backward:before {
+  content: "\e071";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003248}}
+.glyphicon-play:before {
+  content: "\e072";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003251}}
+.glyphicon-pause:before {
+  content: "\e073";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003254}}
+.glyphicon-stop:before {
+  content: "\e074";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003257}}
+.glyphicon-forward:before {
+  content: "\e075";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003260}}
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003263}}
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003266}}
+.glyphicon-eject:before {
+  content: "\e078";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003269}}
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003272}}
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003275}}
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003278}}
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003281}}
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003284}}
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003287}}
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003290}}
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003293}}
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003296}}
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003299}}
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003302}}
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003305}}
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003308}}
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003311}}
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003314}}
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003317}}
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003320}}
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003323}}
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003326}}
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003329}}
+.glyphicon-gift:before {
+  content: "\e102";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003332}}
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003335}}
+.glyphicon-fire:before {
+  content: "\e104";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003338}}
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003341}}
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003344}}
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003347}}
+.glyphicon-plane:before {
+  content: "\e108";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003350}}
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003353}}
+.glyphicon-random:before {
+  content: "\e110";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003356}}
+.glyphicon-comment:before {
+  content: "\e111";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003359}}
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003362}}
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003365}}
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003368}}
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003371}}
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003374}}
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003377}}
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003380}}
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003383}}
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003386}}
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003389}}
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003392}}
+.glyphicon-bell:before {
+  content: "\e123";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003395}}
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003398}}
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003401}}
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003404}}
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003407}}
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003410}}
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003413}}
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003416}}
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003419}}
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003422}}
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003425}}
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003428}}
+.glyphicon-globe:before {
+  content: "\e135";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003431}}
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003434}}
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003437}}
+.glyphicon-filter:before {
+  content: "\e138";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003440}}
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003443}}
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003446}}
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003449}}
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003452}}
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003455}}
+.glyphicon-link:before {
+  content: "\e144";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003458}}
+.glyphicon-phone:before {
+  content: "\e145";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003461}}
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003464}}
+.glyphicon-usd:before {
+  content: "\e148";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003467}}
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003470}}
+.glyphicon-sort:before {
+  content: "\e150";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003473}}
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003476}}
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003479}}
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003482}}
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003485}}
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003488}}
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003491}}
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003494}}
+.glyphicon-expand:before {
+  content: "\e158";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003497}}
+.glyphicon-collapse-down:before {
+  content: "\e159";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003500}}
+.glyphicon-collapse-up:before {
+  content: "\e160";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003503}}
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003506}}
+.glyphicon-flash:before {
+  content: "\e162";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003509}}
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003512}}
+.glyphicon-new-window:before {
+  content: "\e164";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003515}}
+.glyphicon-record:before {
+  content: "\e165";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003518}}
+.glyphicon-save:before {
+  content: "\e166";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003521}}
+.glyphicon-open:before {
+  content: "\e167";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003524}}
+.glyphicon-saved:before {
+  content: "\e168";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003527}}
+.glyphicon-import:before {
+  content: "\e169";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003530}}
+.glyphicon-export:before {
+  content: "\e170";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003533}}
+.glyphicon-send:before {
+  content: "\e171";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003536}}
+.glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003539}}
+.glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003542}}
+.glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003545}}
+.glyphicon-floppy-save:before {
+  content: "\e175";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003548}}
+.glyphicon-floppy-open:before {
+  content: "\e176";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003551}}
+.glyphicon-credit-card:before {
+  content: "\e177";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003554}}
+.glyphicon-transfer:before {
+  content: "\e178";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003557}}
+.glyphicon-cutlery:before {
+  content: "\e179";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003560}}
+.glyphicon-header:before {
+  content: "\e180";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003563}}
+.glyphicon-compressed:before {
+  content: "\e181";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003566}}
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003569}}
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003572}}
+.glyphicon-tower:before {
+  content: "\e184";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003575}}
+.glyphicon-stats:before {
+  content: "\e185";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003578}}
+.glyphicon-sd-video:before {
+  content: "\e186";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003581}}
+.glyphicon-hd-video:before {
+  content: "\e187";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003584}}
+.glyphicon-subtitles:before {
+  content: "\e188";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003587}}
+.glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003590}}
+.glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003593}}
+.glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003596}}
+.glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003599}}
+.glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003602}}
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003605}}
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003608}}
+.glyphicon-cloud-download:before {
+  content: "\e197";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003611}}
+.glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003614}}
+.glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003617}}
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003620}}
+.glyphicon-cd:before {
+  content: "\e201";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003623}}
+.glyphicon-save-file:before {
+  content: "\e202";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003626}}
+.glyphicon-open-file:before {
+  content: "\e203";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003629}}
+.glyphicon-level-up:before {
+  content: "\e204";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003632}}
+.glyphicon-copy:before {
+  content: "\e205";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003635}}
+.glyphicon-paste:before {
+  content: "\e206";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003638}}
+.glyphicon-alert:before {
+  content: "\e209";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003641}}
+.glyphicon-equalizer:before {
+  content: "\e210";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003644}}
+.glyphicon-king:before {
+  content: "\e211";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003647}}
+.glyphicon-queen:before {
+  content: "\e212";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003650}}
+.glyphicon-pawn:before {
+  content: "\e213";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003653}}
+.glyphicon-bishop:before {
+  content: "\e214";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003656}}
+.glyphicon-knight:before {
+  content: "\e215";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003659}}
+.glyphicon-baby-formula:before {
+  content: "\e216";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003662}}
+.glyphicon-tent:before {
+  content: "\26fa";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003665}}
+.glyphicon-blackboard:before {
+  content: "\e218";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003668}}
+.glyphicon-bed:before {
+  content: "\e219";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003671}}
+.glyphicon-apple:before {
+  content: "\f8ff";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003674}}
+.glyphicon-erase:before {
+  content: "\e221";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003677}}
+.glyphicon-hourglass:before {
+  content: "\231b";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003680}}
+.glyphicon-lamp:before {
+  content: "\e223";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003683}}
+.glyphicon-duplicate:before {
+  content: "\e224";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003686}}
+.glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003689}}
+.glyphicon-scissors:before {
+  content: "\e226";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003692}}
+.glyphicon-bitcoin:before {
+  content: "\e227";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003695}}
+.glyphicon-yen:before {
+  content: "\00a5";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003698}}
+.glyphicon-ruble:before {
+  content: "\20bd";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003701}}
+.glyphicon-scale:before {
+  content: "\e230";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003704}}
+.glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003707}}
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003710}}
+.glyphicon-education:before {
+  content: "\e233";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003713}}
+.glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003716}}
+.glyphicon-option-vertical:before {
+  content: "\e235";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003719}}
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003722}}
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003725}}
+.glyphicon-oil:before {
+  content: "\e238";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003728}}
+.glyphicon-grain:before {
+  content: "\e239";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003731}}
+.glyphicon-sunglasses:before {
+  content: "\e240";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003734}}
+.glyphicon-text-size:before {
+  content: "\e241";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003737}}
+.glyphicon-text-color:before {
+  content: "\e242";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003740}}
+.glyphicon-text-background:before {
+  content: "\e243";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003743}}
+.glyphicon-object-align-top:before {
+  content: "\e244";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003746}}
+.glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003749}}
+.glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003752}}
+.glyphicon-object-align-left:before {
+  content: "\e247";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003755}}
+.glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003758}}
+.glyphicon-object-align-right:before {
+  content: "\e249";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003761}}
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003764}}
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003767}}
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003770}}
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003773}}
+.glyphicon-console:before {
+  content: "\e254";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003776}}
+.glyphicon-superscript:before {
+  content: "\e255";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003779}}
+.glyphicon-subscript:before {
+  content: "\e256";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003782}}
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003785}}
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003788}}
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_glyphs\.scss}line{font-family:\00003791}}
+.glyphicon-menu-up:before {
+  content: "\e260";
+}
+
 /*!
  * Bootstrap v2.3.2
  *
@@ -8749,6 +10058,28 @@ input[type="checkbox"] {
   width: 22% !important;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_timepicker\.scss}line{font-family:\000031}}
+.timepicker_wrap {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_timepicker\.scss}line{font-family:\000033}}
+.timepicker_wrap input {
+  width: inherit;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_timepicker\.scss}line{font-family:\000036}}
+.timepicker_wrap .form-group {
+  width: 20px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_timepicker\.scss}line{font-family:\0000311}}
+.date_time_wrap {
+  margin-bottom: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_timepicker\.scss}line{font-family:\0000313}}
+.date_time_wrap .timepicker_wrap {
+  margin-bottom: -39px;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_home\.scss}line{font-family:\000031}}
 .home-tile {
   display: inline-block;
@@ -10401,15 +11732,11 @@ select.select2 {
 .edit_session {
   margin-top: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\000034}}
-.edit_session .input-inline label {
-  display: inline;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\000033}}
 .edit_session html, .edit_session body {
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\000037}}
 .edit_session h1, .edit_session h2 {
   background-color: steelblue;
   font-family: Tahoma, serif;
@@ -10417,15 +11744,15 @@ select.select2 {
   padding: 10px;
   letter-spacing: 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000315}}
 .edit_session h1 {
   font-size: 1.3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000319}}
 .edit_session h2 {
   font-size: 1.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000323}}
 .edit_session canvas {
   background-color: #f3f3f3;
   -webkit-box-shadow: 3px 3px 3px 0 #e3e3e3;
@@ -10435,108 +11762,108 @@ select.select2 {
   height: 100px;
   margin: 6px 0 0 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000333}}
 .edit_session .nv-file-over {
   background-color: #FFBEA3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000337}}
 .edit_session .other-drop-zone {
   border: 2px dashed burlywood;
   padding: 4px;
   height: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000343}}
 .edit_session .other-over-zone {
   background-color: moccasin;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000347}}
 .edit_session .bg {
   background-color: lightgreen;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000351}}
 .edit_session .over-zone {
   border: 2px dashed lavender;
   height: 100px;
   padding: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000357}}
 .edit_session .item-progress-box {
   height: 20px;
   margin-top: -20px;
   margin-left: 60px;
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000364}}
 .edit_session .item-progress {
   background-color: #90B8DA;
   height: 100%;
   width: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000370}}
 .edit_session .total-progress-box {
   height: 20px;
   margin-top: -20px;
   margin-left: 90px;
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000377}}
 .edit_session .total-progress {
   background-color: #90B8DA;
   height: 100%;
   width: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000383}}
 .edit_session .box {
   margin: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000387}}
 .edit_session .progress {
   background-color: mediumpurple;
   height: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000392}}
 .edit_session .uploaded {
   background-color: lightgreen;
   height: 20px;
   width: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\0000398}}
 .edit_session ul > li:nth-child(odd) {
   background-color: #f5f5f5;
   margin: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003103}}
 .edit_session .zone {
   width: 49%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003110}}
 .active a {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003117}}
 .step_arrow_navigation .next_link {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003120}}
 .step_arrow_navigation .prev_link {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003126}}
 .uploading {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003128}}
 .uploading > div {
   background: #dedede;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003130}}
 .uploading > div > img {
   visibility: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mir4a\/projects\/diatom\/IF-AdminWeb-Diatom\/app\/Admin\/styles\/_edit_session\.scss}line{font-family:\00003134}}
 .uploading:after {
   content: 'Uploading…';
   position: absolute;

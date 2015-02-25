@@ -1,0 +1,16 @@
+.timepicker_wrap {
+  display: inline-block;
+  input {
+    width: inherit;
+  }
+  .form-group {
+    width: 20px !important;
+  }
+}
+
+.date_time_wrap {
+  margin-bottom: 30px;
+  .timepicker_wrap {
+    margin-bottom: -39px;
+  }
+}

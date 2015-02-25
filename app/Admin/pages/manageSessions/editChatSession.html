@@ -1,13 +1,18 @@
 <div class="container edit_session" ng-controller="EditChatSessionCtrl">
     <form name="form" ng-submit="save(session)">
-        <div ng-show="message" class="alert alert-danger" ng-class="{'alert-danger': error, 'alert-success': success}">{{message}}</div>
+        <div ng-show="message" class="alert alert-danger" ng-class="{'alert-danger': error, 'alert-success': success}">
+            {{message}}
+        </div>
         <div class="row-fluid">
             <div class="span4">
                 <div class="controls" ng-class="{'error': form.name.$invalid}">
                     <label for="session_name">Name Your Chat Session</label>
                     <input type="text" id="session_name" ng-model="chatSession.name" name="name" ng-required="true"/>
-                    <div ng-show="form.name.$dirty && form.name.$invalid" class="alert alert-danger" role="alert">Invalid:
-                        <span ng-show="form.name.$error.required" class="sr-only">Name of Chat Session is required.</span>
+
+                    <div ng-show="form.name.$dirty && form.name.$invalid" class="alert alert-danger" role="alert">
+                        Invalid:
+                        <span ng-show="form.name.$error.required"
+                              class="sr-only">Name of Chat Session is required.</span>
                     </div>
                 </div>
                 <fieldset>
@@ -15,44 +20,63 @@
                         <h4>Enter Chat Session Date/Time</h4>
 
 
-                        <div class="input-inline" ng-class="{'error': form.start_time_date.$invalid}">
-                            <label for="session_start_date">Start:</label>
-                            <input type="text" datepicker ng-required="true" class="input-small" id="session_start_date"
-                                   ng-model="chatSession.start_time_date"
-                                   name="start_time_date"
-                                   value="{{chatSession.start_time_date | date: 'MM-dd-yyyy'}}"/>
+                        <div class="form-inline date_time_wrap" ng-class="{'error': form.start_time_date.$invalid}">
+                            <label for="session_start_date" ng-click="open($event)">Start:</label>
+                            <input type="text" class="input-small" id="session_start_date"
+                                   ng-required="true"
+                                   name="end_time_date"
+                                   ng-model="chatSession.start_time"
+                                   is-open="opened"
+                                   datepicker-popup="MM-dd-yyyy"
+                                   ng-change="logScope($event)"
+                                   ng-focus="open($event)" />
+
+
                             <label for="session_start_date">
-                                <i class="icon-calendar"></i>
+                                <i class="icon-calendar" ng-click="open($event)"></i>
                             </label>
 
                             /
-                            <input type="time" class="input-small" id="session_start_time"
-                                   ng-model="chatSession.start_time_hours" ng-change="convertDate(chatSession.start_time, chatSession.start_time_hours)"/>
-                            <label for="session_start_time">
-                                <i class="icon-time"></i>
-                            </label>
-                            <div ng-show="form.start_time.$dirty && form.start_time.$invalid" class="alert alert-danger" role="alert">Invalid:
-                                <span ng-show="form.start_time.$error.required" class="sr-only">Start time is required.</span>
+                            <div class="timepicker_wrap">
+                                <timepicker ng-model="chatSession.start_time" ng-change="logScope($event)"
+                                            show-meridian="true" id="session_start_time"></timepicker>
+                            </div>
+
+                            <div ng-show="form.start_time.$dirty && form.start_time.$invalid" class="alert alert-danger"
+                                 role="alert">Invalid:
+                                <span ng-show="form.start_time.$error.required"
+                                      class="sr-only">Start time is required.</span>
                             </div>
                         </div>
-                        <div class="input-inline" ng-class="{'error': form.end_time_date.$invalid}">
-                            <label for="session_end_date">End:</label>
-                            <input type="text" datepicker class="input-small" id="session_end_date"
+                        <div class="form-inline date_time_wrap" ng-class="{'error': form.end_time_date.$invalid}">
+
+                            <label for="session_end_date" ng-click="open($event)">End:</label>
+                            <input type="text" class="input-small" id="session_end_date"
                                    ng-required="true"
                                    name="end_time_date"
+                                   min-date="chatSession.start_time_date"
                                    ng-model="chatSession.end_time_date"
-                                   value="{{chatSession.end_time_date | date: 'MM-dd-yyyy'}}"/>
-                            <label for="session_end_date">
+                                   is-open="opened"
+                                   datepicker-popup="MM-dd-yyyy"
+                                   ng-change="logScope($event)"
+                                   ng-focus="open($event)"
+                                   />
+
+
+                            <label for="session_end_date" ng-click="open($event)" §>
                                 <i class="icon-calendar"></i>
                             </label>
                             /
-                            <input type="time" class="input-small" id="session_end_time"
-                                   ng-model="chatSession.end_time_hours"/>
-                            <label for="session_end_time">
-                                <i class="icon-time"></i>
-                            </label>
-                            <div ng-show="form.end_time.$dirty && form.end_time.$invalid" class="alert alert-danger" role="alert">Invalid:
-                                <span ng-show="form.end_time.$error.required" class="sr-only">End time is required.</span>
+                            <div class="timepicker_wrap">
+                                <timepicker ng-model="chatSession.end_time" ng-change="logScope($event)"
+                                            show-meridian="true" id="session_end_time"></timepicker>
+                            </div>
+
+
+                            <div ng-show="form.end_time.$dirty && form.end_time.$invalid" class="alert alert-danger"
+                                 role="alert">Invalid:
+                                <span ng-show="form.end_time.$error.required"
+                                      class="sr-only">End time is required.</span>
                             </div>
                         </div>
                     </div>
@@ -62,12 +86,16 @@
 
                     <h3>Select from Brand Logo</h3>
 
-                    <div ng-show="chatSession.sessionLogoStatus" class="alert " ng-class="{'alert-danger': error, 'alert-info': error == false}">{{chatSession.sessionLogoStatus}}</div>
+                    <div ng-show="chatSession.sessionLogoStatus" class="alert "
+                         ng-class="{'alert-danger': error, 'alert-info': error == false}">
+                        {{chatSession.sessionLogoStatus}}
+                    </div>
                     <div nv-file-drop="" uploader="uploader" ng-show="uploader.isHTML5" ng-class="uploaderState">
                         <!-- Example: nv-file-drop="" uploader="{Object}" options="{Object}" filters="{String}" -->
                         <div nv-file-over="" uploader="uploader" over-class="bg-warning"
                              style="min-width: 200px; min-height: 150px; padding: 3px; background: #dedede">
-                            <img ng-src="{{chatSession.session_logo}}" />
+                            <img ng-src="{{chatSession.session_logo}}"/>
+
                             <div ng-repeat="item in uploader.queue">
                                 <div ng-show="uploader.isHTML5">
                                 </div>

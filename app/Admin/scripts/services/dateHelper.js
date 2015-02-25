@@ -56,6 +56,15 @@ angular.module('adminWebApp.services').factory('dateHelper',function ($filter) {
         dateB = new Date(dateB);
         return dateA.getTime() - dateB.getTime();
     }
+
+    function isValidDate(date) {
+        if (Object.prototype.toString.call(date) === '[object Date]') {
+            return !isNaN(date.getTime());
+        } else {
+            var d = new Date(date);
+            return !isNaN(d.getTime());
+        }
+    }
     
 	return {
         jsonStringToDate: jsonStringToDate,
@@ -64,7 +73,8 @@ angular.module('adminWebApp.services').factory('dateHelper',function ($filter) {
         joinDateTime: joinDateTime,
         dateFilter: dateFilter,
         timeFilter: timeFilter,
-        dateDiff: dateDiff
+        dateDiff: dateDiff,
+        isValidDate: isValidDate
     };
 });
 
