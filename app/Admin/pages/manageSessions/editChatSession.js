@@ -13,23 +13,16 @@ angular
                 sessionLogoStatus: '',
                 name: $scope.resolvedData.name,
                 start_time: $scope.resolvedData.start_time,
-                start_time_date: dateHelper.dateFilter($scope.resolvedData.start_time),
-                start_time_hours: dateHelper.timeFilter($scope.resolvedData.start_time) || '00:00',
                 end_time: $scope.resolvedData.end_time,
-                end_time_date: dateHelper.dateFilter($scope.resolvedData.end_time),
-                end_time_hours: dateHelper.timeFilter($scope.resolvedData.end_time) || '00:00',
                 step: $rootScope.page.name
             };
-            $scope.open = function($event) {
-                $event.preventDefault();
-                $event.stopPropagation();
 
-                $scope.opened = true;
+            $scope.opened = {
+                start_time: false,
+                end_time: false
             };
 
-            console.log($scope.chatSession);
-
-
+            // File uploading handlers
             socketHelper.on('file:uploading', function (data) {
                 $scope.error = false;
                 $scope.chatSession.sessionLogoStatus = data.msg;
@@ -79,14 +72,21 @@ angular
                     $scope.uploader.uploadItem(item);
                 }
             };
+            // end File uploading handlers
 
             $scope.error = false;
             $scope.message = "";
+
+            $scope.openDatePicker = function($event) {
+                $event.preventDefault();
+                $event.stopPropagation();
+                var target = $event.target.name;
+
+                $scope.opened[target] = true;
+            };
+
             $scope.save = function () {
-
-                $scope.chatSession.start_time = dateHelper.joinDateTime($scope.chatSession.start_time_date, $scope.chatSession.start_time_hours);
-                $scope.chatSession.end_time = dateHelper.joinDateTime($scope.chatSession.end_time_date, $scope.chatSession.end_time_hours);
-
+                
                 $scope.loading = true;
 
                 var resCb = function (data) {
@@ -116,12 +116,6 @@ angular
                 console.log($event);
                 console.log($scope.chatSession);
             };
-            //$scope.validDateCheck = function(date) {
-            //    if (!dateHelper.isValidDate(date)) {
-            //        console.log(this);
-            //    }
-            //};
-
 
             refreshSession.refresh();
 

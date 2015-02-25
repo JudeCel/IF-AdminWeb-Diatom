@@ -68,7 +68,7 @@ angular.module('adminWebApp.services').factory('dateHelper',function ($filter) {
     
 	return {
         jsonStringToDate: jsonStringToDate,
-        toMysqlForma: toMysqlFormat,
+        toMysqlFormat: toMysqlFormat,
         twoDigits: twoDigits,
         joinDateTime: joinDateTime,
         dateFilter: dateFilter,

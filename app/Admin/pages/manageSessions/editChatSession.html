@@ -21,19 +21,19 @@
 
 
                         <div class="form-inline date_time_wrap" ng-class="{'error': form.start_time_date.$invalid}">
-                            <label for="session_start_date" ng-click="open($event)">Start:</label>
+                            <label for="session_start_date">Start:</label>
                             <input type="text" class="input-small" id="session_start_date"
                                    ng-required="true"
-                                   name="end_time_date"
+                                   name="start_time"
                                    ng-model="chatSession.start_time"
-                                   is-open="opened"
+                                   is-open="opened.start_time"
                                    datepicker-popup="MM-dd-yyyy"
                                    ng-change="logScope($event)"
-                                   ng-focus="open($event)" />
+                                   ng-focus="openDatePicker($event)" />
 
 
                             <label for="session_start_date">
-                                <i class="icon-calendar" ng-click="open($event)"></i>
+                                <i class="icon-calendar"></i>
                             </label>
 
                             /
@@ -50,20 +50,20 @@
                         </div>
                         <div class="form-inline date_time_wrap" ng-class="{'error': form.end_time_date.$invalid}">
 
-                            <label for="session_end_date" ng-click="open($event)">End:</label>
+                            <label for="session_end_date">End:</label>
                             <input type="text" class="input-small" id="session_end_date"
                                    ng-required="true"
-                                   name="end_time_date"
-                                   min-date="chatSession.start_time_date"
-                                   ng-model="chatSession.end_time_date"
-                                   is-open="opened"
+                                   name="end_time"
+                                   min-date="chatSession.start_time"
+                                   ng-model="chatSession.end_time"
+                                   is-open="opened.end_time"
                                    datepicker-popup="MM-dd-yyyy"
                                    ng-change="logScope($event)"
-                                   ng-focus="open($event)"
+                                   ng-focus="openDatePicker($event)"
                                    />
 
 
-                            <label for="session_end_date" ng-click="open($event)" §>
+                            <label for="session_end_date">
                                 <i class="icon-calendar"></i>
                             </label>
                             /
