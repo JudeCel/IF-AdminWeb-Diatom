@@ -103,15 +103,12 @@
                 }
 
                 scope.changeStep = function($event) {
-                    console.log(this);
                     if (scope.form === undefined) {
                         $window.location.hash = $($event.target).attr('data-href');
                         return;
                     }
                     scope.save();
                 };
-
-                console.log(scope.currentTab);
 
                 var step = checkSelected(scope.tabs);
                 scope.linkPrev = '#/SessionBuilder/' + scope.currentTab.sessionId +'/step' + step;

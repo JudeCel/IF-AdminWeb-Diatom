@@ -12,8 +12,8 @@ angular
                 session_logo: $scope.resolvedData.sessionLogoName ? thumbUrl : ifConfig.defaultSessionLogo,
                 sessionLogoStatus: '',
                 name: $scope.resolvedData.name,
-                start_time: $scope.resolvedData.start_time,
-                end_time: $scope.resolvedData.end_time,
+                start_time: new Date($scope.resolvedData.start_time),
+                end_time: new Date($scope.resolvedData.end_time),
                 step: $rootScope.page.name
             };
 
@@ -86,7 +86,10 @@ angular
             };
 
             $scope.save = function () {
-                
+
+                $scope.chatSession.start_time = dateHelper.toMysqlFormat($scope.chatSession.start_time);
+                $scope.chatSession.end_time = dateHelper.toMysqlFormat($scope.chatSession.end_time);
+
                 $scope.loading = true;
 
                 var resCb = function (data) {

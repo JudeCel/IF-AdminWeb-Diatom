@@ -40,6 +40,9 @@ angular.module('adminWebApp.services').factory('dateHelper',function ($filter) {
     }
 
     function toMysqlFormat(date) {
+        if (isValidDate(date)) {
+            date = new Date(date);
+        }
         return date.getUTCFullYear() + "-" + twoDigits(1 + date.getUTCMonth()) + "-" + twoDigits(date.getUTCDate()) + " " + twoDigits(date.getUTCHours()) + ":" + twoDigits(date.getUTCMinutes()) + ":" + twoDigits(date.getUTCSeconds());
     }
 

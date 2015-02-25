@@ -1,5 +1,5 @@
 <div class="container edit_session" ng-controller="EditChatSessionCtrl">
-    <form name="form" ng-submit="save(session)">
+    <form name="form">
         <div ng-show="message" class="alert alert-danger" ng-class="{'alert-danger': error, 'alert-success': success}">
             {{message}}
         </div>
@@ -28,8 +28,7 @@
                                    ng-model="chatSession.start_time"
                                    is-open="opened.start_time"
                                    datepicker-popup="MM-dd-yyyy"
-                                   ng-change="logScope($event)"
-                                   ng-focus="openDatePicker($event)" />
+                                   ng-focus="openDatePicker($event)"/>
 
 
                             <label for="session_start_date">
@@ -38,8 +37,8 @@
 
                             /
                             <div class="timepicker_wrap">
-                                <timepicker ng-model="chatSession.start_time" ng-change="logScope($event)"
-                                            show-meridian="true" id="session_start_time"></timepicker>
+                                <timepicker ng-model="chatSession.start_time" show-meridian="true"
+                                            id="session_start_time"></timepicker>
                             </div>
 
                             <div ng-show="form.start_time.$dirty && form.start_time.$invalid" class="alert alert-danger"
@@ -58,9 +57,8 @@
                                    ng-model="chatSession.end_time"
                                    is-open="opened.end_time"
                                    datepicker-popup="MM-dd-yyyy"
-                                   ng-change="logScope($event)"
                                    ng-focus="openDatePicker($event)"
-                                   />
+                                    />
 
 
                             <label for="session_end_date">
@@ -68,8 +66,8 @@
                             </label>
                             /
                             <div class="timepicker_wrap">
-                                <timepicker ng-model="chatSession.end_time" ng-change="logScope($event)"
-                                            show-meridian="true" id="session_end_time"></timepicker>
+                                <timepicker ng-model="chatSession.end_time" show-meridian="true"
+                                            id="session_end_time"></timepicker>
                             </div>
 
 
