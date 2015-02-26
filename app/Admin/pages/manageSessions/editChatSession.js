@@ -12,8 +12,8 @@ angular
                 session_logo: $scope.resolvedData.sessionLogoName ? thumbUrl : ifConfig.defaultSessionLogo,
                 sessionLogoStatus: '',
                 name: $scope.resolvedData.name,
-                start_time: new Date($scope.resolvedData.start_time),
-                end_time: new Date($scope.resolvedData.end_time),
+                start_time: $scope.resolvedData.start_time === null ? null : new Date($scope.resolvedData.start_time),
+                end_time: $scope.resolvedData.end_time === null ? null : new Date($scope.resolvedData.end_time),
                 step: $rootScope.page.name
             };
 
